@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.5)
 project(Module10Assignment)
 
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+# set(CMAKE_CXX_STANDARD 11)
+# set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(Module10Tests Floor.h Floor.cpp Passenger.h Passenger.cpp Simulation.h Simulation.cpp)
+add_executable(Module10Tests Floor.h Floor.cpp Passenger.h Passenger.cpp Simulation.h Simulation.cpp SimLogger.h SimLogger.cpp )
 
 #adding librariey for sdplog
 include(FetchContent)

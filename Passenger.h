@@ -1,5 +1,9 @@
-#ifndef PASSENGERS_H
-#define PASSENGERS_H
+#ifndef PASSENGER_H
+#define PASSENGER_H
+
+#include "Simulation.h"
+//#include "Floor.h"
+#include <map>
 
 class Passenger 
 {
@@ -9,13 +13,22 @@ class Passenger
         Passenger(int desiredFloor, int currentFloor, int start);
         int getDesiredLocation() const;
         int getCurrentLocation() const;
-        //int setEndTime() const;
         
     private:
         int desired;        //represents the passengers desired floor
         int current;        //represents the passengers current floor location
         int startTime;      //passanger time or arrival
         int endTime;        //passanger reaches end floor
+};
+
+class PassengerQueuer
+{
+    public:
+        PassengerQueuer() = default;
+        int Queuer();
+
+    private:
+        //static std::map<int, Floor> floorList;
 };
 
 #endif
