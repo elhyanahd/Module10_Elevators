@@ -1,6 +1,7 @@
 #ifndef FLOOR_H
 #define FLOOR_H
-#include <queue>
+#include <list>
+#include <memory>
 #include "Passenger.h"
 
 class Floor 
@@ -8,13 +9,14 @@ class Floor
     public:
         Floor() : floorLevel(0) {};
         Floor(int level);
-        Floor(int level, std::queue<Passenger> newQueue);
+        Floor(int level, std::list<std::shared_ptr<Passenger>> newQueue);
         int getQueueSize() const;
-        void addToQueue(Passenger newPerson);
+        void addToQueue(std::shared_ptr<Passenger> newPerson);
         int getFloorLevel() const;
+        std::list<std::shared_ptr<Passenger>> getWaitingPassengers();
 
     private:
-        std::queue<Passenger> passengerQueue;
+        std::list<std::shared_ptr<Passenger>> passengerQueue;
         int floorLevel;
 };
 

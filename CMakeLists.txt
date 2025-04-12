@@ -4,7 +4,12 @@ project(Module10Assignment)
 # set(CMAKE_CXX_STANDARD 11)
 # set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(Module10Tests Floor.h Floor.cpp Passenger.h Passenger.cpp Simulation.h Simulation.cpp SimLogger.h SimLogger.cpp )
+add_executable(Module10Tests SimulationRun.cpp 
+                SimLogger.h SimLogger.cpp 
+                Queuer.h Queuer.cpp
+                Passenger.h Passenger.cpp
+                Floor.h Floor.cpp
+                Elevator.h Elevator.cpp)
 
 #adding librariey for sdplog
 include(FetchContent)

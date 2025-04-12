@@ -24,7 +24,7 @@ Floor::Floor(int level)
  * @param level 
  * @param newQueue 
  */
-Floor::Floor(int level, std::queue<Passenger> newQueue)
+Floor::Floor(int level, list<shared_ptr<Passenger>> newQueue)
 {
     if (level < 1 || level > 100)
     {   throw invalid_argument("Level given is outside of bounds 1 to 100");   }
@@ -50,14 +50,14 @@ int Floor::getQueueSize() const
  * 
  * @param newPerson 
  */
-void Floor::addToQueue(Passenger newPerson)
+void Floor::addToQueue(shared_ptr<Passenger> newPerson)
 {   
-    if(newPerson.getCurrentLocation() != floorLevel)
+    if(newPerson->getCurrentLocation() != floorLevel)
     {   throw invalid_argument("Given passenger is not on this floor");   }
-    else if(newPerson.getDesiredLocation() == 0)
+    else if(newPerson->getDesiredLocation() == 0)
     {   throw invalid_argument("Given passenger has no desired floor");   }
     else
-    {   passengerQueue.push(newPerson); }  
+    {   passengerQueue.push_back(newPerson); }  
 }
 
 /**
@@ -67,3 +67,11 @@ void Floor::addToQueue(Passenger newPerson)
  */
 int Floor::getFloorLevel() const
 {   return floorLevel;  }
+
+/**
+ * @brief Returns the list of passangers waiting in that floor
+ * 
+ * @return list<shared_ptr<Passenger>> 
+ */
+list<shared_ptr<Passenger>> Floor::getWaitingPassengers()
+{   return passengerQueue;  }

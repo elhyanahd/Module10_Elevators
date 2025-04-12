@@ -11,7 +11,7 @@ class SimLogger
         void addLogMessage(const std::string message);
 
     private:
-        std::shared_ptr<spdlog::logger> logger;
+        std::shared_ptr<spdlog::logger> logger;     //spdlog instance for logging simulation
 };
 
 #endif
