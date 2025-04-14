@@ -48,7 +48,6 @@ void PassengerQueuer::beginQueue()
             vector<int> passengerValues;
             while(getline(iss, value, ','))
             {   passengerValues.push_back(stoi(value)); }
-            Passenger passenger(passengerValues[2], passengerValues[1], passengerValues[0], false);
 
             //store time when queueing started
             queueStart = (queueTime == 0) ? chrono::high_resolution_clock::now() : queueStart;
@@ -56,21 +55,43 @@ void PassengerQueuer::beginQueue()
             //time delay wait until passenger start time is reached
             //prior to adding passenger to associated floor queue
             this_thread::sleep_for(chrono::seconds(passengerValues[0] - queueTime));
-            logger->addLogMessage("New Passenger waiting on floor " + to_string(passengerValues[1]));
+            
             //update time with start time of latest queued passenger
-            queueTime = passengerValues[0];                
+            queueTime = passengerValues[0];  
+            //add queued passenger to their desired floor
+            addPassengerToFloor(make_shared<Passenger>(passengerValues[2], passengerValues[1], passengerValues[0], false));
 
-            // Add the floor to the map, if it doesn't already exist
-            auto& floor = floorList.emplace(passengerValues[1], make_shared<Floor>(Floor(passengerValues[1]))).first->second;
-
-            // Add new passenger to the floor's queue and private variable
-            floor->addToQueue(make_shared<Passenger>(passenger));
-            passengerList.push(make_shared<Passenger>(passenger));
-
-            i++;
+            i++; //TO BE REMOVED
         }
         input.close();
+
+        logger->addLogMessage("Finished parsing CSV file.");
+        lock_guard<mutex> lock(parseMutex);
+        parsingDone = true;        
     }
+}
+
+/**
+ * @brief Updated the floorList with the given parameter, addding
+ *        passenger to the queue of those waiting on that floor
+ *        Also, add new passenger's current floor location to queue for pick Up
+ * 
+ * @param newPassenger 
+ */
+void PassengerQueuer::addPassengerToFloor(shared_ptr<Passenger> newPassenger)
+{
+    lock_guard<mutex> lock(floorMutex);
+    int passengerLocation = newPassenger->getCurrentLocation();
+    
+    // Add the floor object to the map, if it doesn't already exist
+    auto& floor = floorList.emplace(passengerLocation, make_shared<Floor>(passengerLocation)).first->second;
+
+    // Add new passenger to the floor's queue
+    floor->addToQueue(newPassenger);
+
+    //add passengers floor to pick up request
+    addPickUpRequest(passengerLocation);
+    logger->addLogMessage("New Passenger waiting on floor " + to_string(passengerLocation));
 }
 
 /**
@@ -83,44 +104,90 @@ chrono::time_point<chrono::high_resolution_clock> PassengerQueuer::getStartTime(
 {   return queueStart;  }
 
 /**
- * @brief Get  list of latest passenger was queued.
+ * @brief Return the floor level at the front of the queue.
+ *        Remove floor from internal variables that are keeping track
+ *        of requested floors
  * 
  * @return int 
  */
-queue<shared_ptr<Passenger>> PassengerQueuer::getQueue()
-{   return passengerList;  };
-
-/**
- * @brief Get list of passengers waiting on floors.
- * 
- * @return int 
- */
-map<int, shared_ptr<Floor>> PassengerQueuer::getFloorList()
-{   return floorList;  };
-
-void ElevatorController::beginLoop()
+int PassengerQueuer::getPickUpRequests()
 {
-    bool simulationRun = true;
-    shared_ptr<Elevator> elevatorA = make_shared<Elevator>("A", logger);
-
-    while(simulationRun)
-    {
-        //check if passenger was added to waiting queue
-        if(queued->getQueue().size() > 0)
-        {
-            //Store next queued passanger, and remove from queue 
-            shared_ptr<Passenger> person = queued->getQueue().front();
-            queued->getQueue().pop();
-
-            //check what elevators are available to pick up unit
-            //if elevator is stopped, empty, or ... move to the
-            // passengers current floor location.
-            if(elevatorA->showStatus() == Movement::STOPPED)
-            {
-                elevatorA->moveFloors(person->getCurrentLocation(), queued->getFloorList());
-            }
-        }
-        this_thread::sleep_for(chrono::seconds(1));     //loop every second
+    lock_guard<mutex> lock(requestsMutex);
+    int nextFloor = (requestsQueue.empty()) ? 0 : requestsQueue.front();
+    if (nextFloor != 0)
+    {   
+        requestsQueue.pop();
+        pickUpRequests.erase(nextFloor);
     }
+
+    return nextFloor;
 }
 
+/**
+ * @brief Check if floor passenger requested to be picked up
+ *        on is already on the list. If not, queue the floorID
+ *        and store the floorID in the list for future checks
+ * 
+ * @param floorID (floor number)
+ */
+void PassengerQueuer::addPickUpRequest(int floorID)
+{   
+    lock_guard<mutex> lock(requestsMutex);
+
+    if (pickUpRequests.find(floorID) == pickUpRequests.end() ) 
+    {
+        requestsQueue.push(floorID);
+        pickUpRequests.insert(floorID);
+    }
+};
+
+/**
+ * @brief Retrieve the Floor object that is associated
+ *          with the floorID parameter (aka the floor level number)
+ * 
+ * @param floorID 
+ * @return shared_ptr<Floor> 
+ */
+shared_ptr<Floor> PassengerQueuer::getFloor(int floorID)
+{   
+    lock_guard<mutex> lock(floorMutex);                         
+    return (floorList.find(floorID) != floorList.end()) ? floorList[floorID] : nullptr;
+};
+
+/**
+ * @brief Check if there are still passengers by checking if there
+ *         are passangers still waiting on the floors and if there
+ *         are still pick up requests queued
+ * 
+ * @return true 
+ * @return false 
+ */
+bool PassengerQueuer::noPassengersWaiting()
+{
+    lock_guard<mutex> lock(floorMutex);
+    lock_guard<mutex> lock2(requestsMutex);
+
+    //TO DO: determine if this is applicable
+    if(!pickUpRequests.empty())
+    {   return false;   }
+
+    for(auto& it : floorList)
+    {
+        if(it.second->getQueueSize() != 0)
+        {  return false;    }
+    }
+
+    return true;
+}
+
+/**
+ * @brief check if file finished parsing.
+ * 
+ * @return true 
+ * @return false 
+ */
+bool PassengerQueuer::isParseDone()
+{
+    lock_guard<mutex> lock(parseMutex);
+    return parsingDone;
+}

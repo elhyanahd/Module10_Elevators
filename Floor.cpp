@@ -18,30 +18,15 @@ Floor::Floor(int level)
 }
 
 /**
- * @brief Construct a new Floor object which sets internal variables
- *        Throw invalid_argument if level is outside of min and max
- * 
- * @param level 
- * @param newQueue 
- */
-Floor::Floor(int level, list<shared_ptr<Passenger>> newQueue)
-{
-    if (level < 1 || level > 100)
-    {   throw invalid_argument("Level given is outside of bounds 1 to 100");   }
-    else
-    {  
-        floorLevel = level;
-        passengerQueue = newQueue;
-    }
-}
-
-/**
  * @brief Return the amound of people waiting on the floor
  * 
  * @return int 
  */
-int Floor::getQueueSize() const
-{   return static_cast<int>(passengerQueue.size());   }
+int Floor::getQueueSize()
+{   
+    lock_guard<mutex> lock(queueMutex);
+    return static_cast<int>(passengerQueue.size());   
+}
 
 /**
  * @brief Add new passanger to the queue for the floor
@@ -52,6 +37,7 @@ int Floor::getQueueSize() const
  */
 void Floor::addToQueue(shared_ptr<Passenger> newPerson)
 {   
+    lock_guard<mutex> lock(queueMutex);
     if(newPerson->getCurrentLocation() != floorLevel)
     {   throw invalid_argument("Given passenger is not on this floor");   }
     else if(newPerson->getDesiredLocation() == 0)
@@ -61,17 +47,27 @@ void Floor::addToQueue(shared_ptr<Passenger> newPerson)
 }
 
 /**
+ * @brief Take the first element in the queue and 
+ *         remove the first element from queue
+ * 
+ * @return std::shared_ptr<Passenger> 
+ */
+std::shared_ptr<Passenger> Floor::popFromQueue()
+{
+    lock_guard<mutex> lock(queueMutex);
+    if(passengerQueue.size() != 0)
+    {   
+        auto passenger = passengerQueue.front();
+        passengerQueue.pop_front(); 
+        return passenger;
+    }
+    return nullptr;
+}
+
+/**
  * @brief Return the floor level of this object
  * 
  * @return int 
  */
 int Floor::getFloorLevel() const
 {   return floorLevel;  }
-
-/**
- * @brief Returns the list of passangers waiting in that floor
- * 
- * @return list<shared_ptr<Passenger>> 
- */
-list<shared_ptr<Passenger>> Floor::getWaitingPassengers()
-{   return passengerQueue;  }

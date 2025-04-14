@@ -2,6 +2,7 @@
 #define FLOOR_H
 #include <list>
 #include <memory>
+#include <mutex>
 #include "Passenger.h"
 
 class Floor 
@@ -9,15 +10,15 @@ class Floor
     public:
         Floor() : floorLevel(0) {};
         Floor(int level);
-        Floor(int level, std::list<std::shared_ptr<Passenger>> newQueue);
-        int getQueueSize() const;
+        int getQueueSize();
         void addToQueue(std::shared_ptr<Passenger> newPerson);
+        std::shared_ptr<Passenger> popFromQueue();
         int getFloorLevel() const;
-        std::list<std::shared_ptr<Passenger>> getWaitingPassengers();
 
     private:
         std::list<std::shared_ptr<Passenger>> passengerQueue;
         int floorLevel;
+        std::mutex queueMutex;
 };
 
 #endif
