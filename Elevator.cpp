@@ -112,6 +112,8 @@ bool Elevator::shouldStop(shared_ptr<Floor> floorObject)
  */
 void Elevator::moveFloors(int nextFloor, shared_ptr<PassengerQueuer> queuer)
 {
+    //int updatedNext = (elevatorDirection == Movement::DOWN) ? nextFloor - 1 : nextFloor + 1;
+    //while(updatedNext != currentFloor)
     while((nextFloor != currentFloor))
     {    
         switch(elevatorStatus)
@@ -147,7 +149,7 @@ void Elevator::moveFloors(int nextFloor, shared_ptr<PassengerQueuer> queuer)
                 // Prior to moving up, check if there are passengers that 
                 // need to be dropped off or picked up; or if requested floor is
                 // is reached. Stop elevator if true, else move floors
-                if(currentFloor == nextFloor || shouldStop(queuer->getFloor(currentFloor)))
+                if(shouldStop(queuer->getFloor(currentFloor)))
                 {   elevatorStatus = Movement::STOPPING;    }
                 else
                 {
@@ -173,7 +175,7 @@ void Elevator::moveFloors(int nextFloor, shared_ptr<PassengerQueuer> queuer)
                 // Prior to moving down, check if there are passengers that 
                 // need to be dropped off or picked up; or if requested floor is
                 // is reached. Stop elevator if true, else move floors
-                if(currentFloor == nextFloor || shouldStop(queuer->getFloor(currentFloor)))
+                if(shouldStop(queuer->getFloor(currentFloor)))
                 {   elevatorStatus = Movement::STOPPING;    }
                 else
                 {                    

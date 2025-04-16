@@ -21,13 +21,26 @@ int main()
     shared_ptr<Elevator> elevatorD = make_shared<Elevator>("D", logger);
 
     //Thread to queue passangers, without conflicting elevators
-    std::thread passengerThread([&]() { queuer->beginQueue();   });
+    thread passengerThread([&]() { queuer->beginQueue();   });
 
-    std::thread elevatorAThread([&]() {  elevatorA->simulationLoop(queuer); });
+    thread elevatorAThread([&]() {  elevatorA->simulationLoop(queuer); });
+    thread elevatorBThread([&]() {  elevatorB->simulationLoop(queuer); });
+    thread elevatorCThread([&]() {  elevatorC->simulationLoop(queuer); });
+    thread elevatorDThread([&]() {  elevatorD->simulationLoop(queuer); });
 
     passengerThread.join();
     elevatorAThread.join();
+    elevatorBThread.join();
+    elevatorCThread.join();
+    elevatorDThread.join();
 
-    // logger->addLogMessage("Elevation Simulation ended.");
+    chrono::time_point<chrono::high_resolution_clock> simulationEnd = chrono::high_resolution_clock::now();
+    logger->addLogMessage("Elevation Simulation ended.");
+
+    auto duration = simulationEnd - queuer->getStartTime();
+    auto duration_s = std::chrono::duration_cast<std::chrono::seconds>(duration);
+    int time_s = duration_s.count();
+    int passengerCount = queuer->getPassengerCount();
+    logger->addLogMessage(to_string(passengerCount) + " were picked up and dropped off within " + to_string(time_s) + " seconds.");
     return 0;
 }

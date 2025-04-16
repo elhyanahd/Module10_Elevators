@@ -38,8 +38,7 @@ void PassengerQueuer::beginQueue()
 
         //loop through the csv file and store passengers startTime, desired floor, and
         //current floor location. Then queue the passengers up to on their desired floor
-        int i = 0;
-        while(getline(input, line) && i < 2)
+        while(getline(input, line))
         {   
             //Seperate column by delimeter and store information of new Passanger
             //create new Passanger object with the information
@@ -60,8 +59,7 @@ void PassengerQueuer::beginQueue()
             queueTime = passengerValues[0];  
             //add queued passenger to their desired floor
             addPassengerToFloor(make_shared<Passenger>(passengerValues[2], passengerValues[1], passengerValues[0], false));
-
-            i++; //TO BE REMOVED
+            passengerCount++;
         }
         input.close();
 
@@ -186,3 +184,12 @@ bool PassengerQueuer::isParseDone()
     lock_guard<mutex> lock(parseMutex);
     return parsingDone;
 }
+
+/**
+ * @brief return the total number of passengers 
+ *        that were queued from CSV file.
+ * 
+ * @return int 
+ */
+int PassengerQueuer::getPassengerCount() const
+{   return passengerCount;  }

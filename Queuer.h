@@ -21,6 +21,7 @@ class PassengerQueuer
         std::shared_ptr<Floor> getFloor(int floorID);
         bool noPassengersWaiting();
         bool isParseDone();
+        int getPassengerCount() const;
 
     protected:
         void addPickUpRequest(int floorID);
@@ -37,6 +38,7 @@ class PassengerQueuer
         std::mutex requestsMutex;                                                       //for thread safety, used for locks so threads don't collide
         std::mutex parseMutex;
         bool parsingDone;
-};
+        int passengerCount;
+    };
 
 #endif
