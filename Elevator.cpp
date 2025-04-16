@@ -14,63 +14,47 @@ using namespace std;
 void Elevator::pickUpPassengers(shared_ptr<Floor> floorObject)
 {   
     lock_guard<mutex> lock(elevatorMutex);
-
+    
+    //if floor is not in floor list of Queuer class return
     if(floorObject == nullptr)
     {   return; }
 
-    //verify that the elevator is not at max 
-    //and greater than or equal to 0
-    if (passengersInElevator.size() < MAX_CAPACITY && passengersInElevator.size() >= 0)
-    {      
+    //verify that the elevator is not at max capacity
+    if (passengersInElevator.size() < MAX_CAPACITY)
+    {    
+        //if there are no passengers waiting on the floor return  
         int queueSize = static_cast<int>(floorObject->getQueueSize()); 
-        //check if there are no passengers waiting on the floor
+        
         if(queueSize == 0)
         {   return; }
 
-        //check how much space is available, if there is enough
-        //add as much passengers as there is space by checking the
-        //waiting number of Passengers on the floor
+        //check how much space is available in elevator
         int spaceAvailable = MAX_CAPACITY - static_cast<int>(passengersInElevator.size());
         int floorID = 0;
         lock_guard<mutex> lock(requestsMutex);
-        if(spaceAvailable == 1 || queueSize == 1)
-        {
-            auto passenger = floorObject->popFromQueue();
-            passengersInElevator.insert({passenger->getDesiredLocation(), passenger});
-            logger->addLogMessage("Elevator " + elevatorID + " picked up 1 passenger on floor " + to_string(currentFloor));
 
-            //store riding passengers drop off requests
-            
+        //Add passengers according to how much space is 
+        //available in the elevator
+        int max = (spaceAvailable < queueSize) ? spaceAvailable : queueSize;
+        for(int i = 0; i < max; i++)
+        {
+            //update the floor's queue to remove the passengers
+            //that enetered the elevator
+            auto passenger = floorObject->popFromQueue();
             floorID = passenger->getDesiredLocation();
+            passengersInElevator.insert({floorID, passenger});
+
+            //store riding passengers' drop off requests
             if (dropOffRequests.find(floorID) == dropOffRequests.end() ) 
             {
                 requestsQueue.push(floorID);
                 dropOffRequests.insert(floorID);
             }
         }
-        else
-        {
-            int max = (spaceAvailable < queueSize) ? spaceAvailable : queueSize;
-            for(int i = 0; i < max; i++)
-            {
-                auto passenger = floorObject->popFromQueue();
-                floorID = passenger->getDesiredLocation();
-                passengersInElevator.insert({floorID, passenger});
-
-                //store riding passengers drop off requests
-                if (dropOffRequests.find(floorID) == dropOffRequests.end() ) 
-                {
-                    requestsQueue.push(floorID);
-                    dropOffRequests.insert(floorID);
-                }
-            }
-            logger->addLogMessage("Elevator " + elevatorID + " picked up " + to_string(max) + " passengers on floor " + to_string(currentFloor));
-        }
-    }
-    else
-    {
-        logger->addLogMessage("Elevator " + elevatorID + " picked up 0 passengers on floor " + to_string(currentFloor));
-    }   
+        //Update the logger with information on the number of passengers that were picked up
+        logger->addLogMessage("Elevator " + elevatorID + " picked up " + to_string(max) + 
+                                " passenger(s) on floor " + to_string(currentFloor));
+    }  
 }
 
 /**
@@ -83,8 +67,10 @@ void Elevator::dropOffPassengers()
 {  
     lock_guard<mutex> lock(elevatorMutex);
 
-    //check if there are people in the elevator
-    if(passengersInElevator.size() == 0)
+    // if there are no passengers in the elevator
+    //and there are no passengers with the current 
+    //floor's drop of request return 
+    if(passengersInElevator.size() == 0 || passengersInElevator.find(currentFloor) == passengersInElevator.end())
     {  return; }
 
     //erase passangers in elevator that need to leave
@@ -118,14 +104,15 @@ bool Elevator::shouldStop(shared_ptr<Floor> floorObject)
 
 /**
  * @brief Control the movement of the elevator movement.
- *        Update the internal vectors based on the current 
- *        elevator status
+ *        Update the internal variables based on the current 
+ *        elevator status. Stop movement loop only when requested 
+ *        floor has been reached.
  * 
  * @param nextFloor (which passengers need to be dropped of or picked up at)
  */
 void Elevator::moveFloors(int nextFloor, shared_ptr<PassengerQueuer> queuer)
 {
-    while(nextFloor != currentFloor)
+    while((nextFloor != currentFloor))
     {    
         switch(elevatorStatus)
         {
@@ -165,7 +152,7 @@ void Elevator::moveFloors(int nextFloor, shared_ptr<PassengerQueuer> queuer)
                 else
                 {
                     // wait 10 seconds, mimic time elevator takes to move
-                    this_thread::sleep_for(chrono::seconds(10)); 
+                    this_thread::sleep_for(chrono::seconds(2)); 
                     
                     //Update floor level only when less then max
                     //else change direction elevator is moving
@@ -191,7 +178,7 @@ void Elevator::moveFloors(int nextFloor, shared_ptr<PassengerQueuer> queuer)
                 else
                 {                    
                     // wait 10 seconds, delay time for elevator to move
-                    this_thread::sleep_for(chrono::seconds(10));      
+                    this_thread::sleep_for(chrono::seconds(2));      
                     
                     //Decrement the floor only when greater then min
                     //else change direction elevator is moving
@@ -231,50 +218,86 @@ int Elevator::getDropOffRequests()
     return nextFloor;
 }
 
+/**
+ * @brief Return whether the Elevator object's
+ *        finished picking up and dropping off passengers
+ * 
+ * @return true 
+ * @return false 
+ */
 bool Elevator::didLoopEnd()
 {
     lock_guard<mutex> lock(simulationMutex);
     return simulationEnd;
 }
 
+/**
+ * @brief When called, sets the elvator direction to the 
+ *        based on the given requested floor 
+ * 
+ * @param nextFloor 
+ */
+void Elevator::setDirection(int nextFloor)
+{
+    if(nextFloor > currentFloor)
+    {   
+        elevatorDirection = Movement::UP;   
+        elevatorStatus = Movement::UP;
+    }
+    else
+    {   
+        elevatorDirection = Movement::DOWN; 
+        elevatorStatus = Movement::DOWN;
+    }
+}
 
+/**
+ * @brief Loops through until CSV file is parsed, all passengers
+ *        in the elevator are dropped off, and there are no passengers 
+ *        waiting to be picked up on the floor
+ * 
+ *       While elevator simulation has not ended, check for pick up 
+ *       requests (retrived from the parsed file) and drop off requests
+ *       (retrieved from pciked up passengers). Move elevator to satisfy
+ *       the requests it receives.
+ * 
+ * @param queuer 
+ */
 void Elevator::simulationLoop(shared_ptr<PassengerQueuer> queuer)
 {
     lock_guard<mutex> lock(simulationMutex);
 
     while(!simulationEnd)
     {
+        //check for pick up requests
+        //if valid floor move to the requested floor
+        //else wait once 1s before returning to loop
         int nextFloor = queuer->getPickUpRequests();
-        //check for and move to requested floor
-        //if valid floor level else wait once 1s before returning to loop
         if(nextFloor == 0)
         {   this_thread::sleep_for(chrono::seconds(1)); }   //1 second time delay
         else
         {   
-            //go in the direction of the next queued floor for pick up
-            if(nextFloor > currentFloor)
-            {   
-                elevatorDirection = Movement::UP;   
-                elevatorStatus = Movement::UP;
-            }
-            else
-            {   
-                elevatorDirection = Movement::DOWN; 
-                elevatorStatus = Movement::DOWN;
-            }
+            //go in the direction of the requested floor for pick up
+            setDirection(nextFloor);
 
-            //move to queued floor for pick up
+            //move to requested floor
             moveFloors(nextFloor, queuer);  
 
-            //when queued floor is reached, head to riding passengers' desired floor
-            //until the queue is empty
-            while(!requestsQueue.empty())
+            //when requested floor is reached, check for drop off requests
+            //perform those requests until the queue is empty
+            while(!passengersInElevator.empty())
             {
                 nextFloor = getDropOffRequests();
                 if(nextFloor == 0)
                 {   this_thread::sleep_for(chrono::seconds(1)); }   //1 second time delay
                 else
-                {   moveFloors(nextFloor, queuer);  }
+                {   
+                    //go in the direction of the requested floor for drop off
+                    setDirection(nextFloor);
+
+                    //move to requested floor for drop off
+                    moveFloors(nextFloor, queuer);  
+                }
             }
         }
 

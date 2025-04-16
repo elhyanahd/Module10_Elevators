@@ -155,9 +155,8 @@ shared_ptr<Floor> PassengerQueuer::getFloor(int floorID)
 };
 
 /**
- * @brief Check if there are still passengers by checking if there
- *         are passangers still waiting on the floors and if there
- *         are still pick up requests queued
+ * @brief Check if there are still passengers waiting on 
+ *        the floors to be picked up.
  * 
  * @return true 
  * @return false 
@@ -166,10 +165,6 @@ bool PassengerQueuer::noPassengersWaiting()
 {
     lock_guard<mutex> lock(floorMutex);
     lock_guard<mutex> lock2(requestsMutex);
-
-    //TO DO: determine if this is applicable
-    if(!pickUpRequests.empty())
-    {   return false;   }
 
     for(auto& it : floorList)
     {

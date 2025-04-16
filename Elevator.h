@@ -36,6 +36,7 @@ class Elevator
         bool shouldStop(std::shared_ptr<Floor> floorObject);
         void moveFloors(int nextFloor, std::shared_ptr<PassengerQueuer> queuer);
         int getDropOffRequests(); 
+        void setDirection(int nextFloor);
 
     private:
         int currentFloor;
