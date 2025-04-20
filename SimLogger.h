@@ -7,7 +7,7 @@
 class SimLogger 
 {
     public:
-        SimLogger();
+        SimLogger(std::string filename);
         void addLogMessage(const std::string message);
 
     private:
