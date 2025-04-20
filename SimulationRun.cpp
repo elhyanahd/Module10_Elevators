@@ -8,17 +8,25 @@ using namespace std;
 int main() 
 {
     //declaration of Logger Class
-    shared_ptr<SimLogger> logger = make_shared<SimLogger>();
-    logger->addLogMessage("Elevator Simulation started.");
+    shared_ptr<SimLogger> queuerLogger = make_shared<SimLogger>("QueuerLog.txt");
+    shared_ptr<SimLogger> elevatorALogger = make_shared<SimLogger>("ElevatorALog.txt");
+    shared_ptr<SimLogger> elevatorBLogger = make_shared<SimLogger>("ElevatorBLog.txt");
+    shared_ptr<SimLogger> elevatorCLogger = make_shared<SimLogger>("ElevatorCLog.txt");
+    shared_ptr<SimLogger> elevatorDLogger = make_shared<SimLogger>("ElevatorDLog.txt");
+    queuerLogger->addLogMessage("Elevator Simulation started.");
+    elevatorALogger->addLogMessage("Elevator Simulation started.");
+    elevatorBLogger->addLogMessage("Elevator Simulation started.");
+    elevatorCLogger->addLogMessage("Elevator Simulation started.");
+    elevatorDLogger->addLogMessage("Elevator Simulation started.");
         
     //declaration to parse file and queue passangers
-    shared_ptr<PassengerQueuer> queuer = make_shared<PassengerQueuer>(logger);
+    shared_ptr<PassengerQueuer> queuer = make_shared<PassengerQueuer>(queuerLogger);
 
     //declarations for elevators
-    shared_ptr<Elevator> elevatorA = make_shared<Elevator>("A", logger);
-    shared_ptr<Elevator> elevatorB = make_shared<Elevator>("B", logger);
-    shared_ptr<Elevator> elevatorC = make_shared<Elevator>("C", logger);
-    shared_ptr<Elevator> elevatorD = make_shared<Elevator>("D", logger);
+    shared_ptr<Elevator> elevatorA = make_shared<Elevator>("A", elevatorALogger);
+    shared_ptr<Elevator> elevatorB = make_shared<Elevator>("B", elevatorBLogger);
+    shared_ptr<Elevator> elevatorC = make_shared<Elevator>("C", elevatorCLogger);
+    shared_ptr<Elevator> elevatorD = make_shared<Elevator>("D", elevatorDLogger);
 
     //Thread to queue passangers, without conflicting elevators
     thread passengerThread([&]() { queuer->beginQueue();   });
@@ -35,12 +43,16 @@ int main()
     elevatorDThread.join();
 
     chrono::time_point<chrono::high_resolution_clock> simulationEnd = chrono::high_resolution_clock::now();
-    logger->addLogMessage("Elevation Simulation ended.");
+    queuerLogger->addLogMessage("Elevator Simulation ended.");
+    elevatorALogger->addLogMessage("Elevator Simulation ended.");
+    elevatorBLogger->addLogMessage("Elevator Simulation ended.");
+    elevatorCLogger->addLogMessage("Elevator Simulation ended.");
+    elevatorDLogger->addLogMessage("Elevator Simulation ended.");
 
     auto duration = simulationEnd - queuer->getStartTime();
     auto duration_s = std::chrono::duration_cast<std::chrono::seconds>(duration);
-    int time_s = duration_s.count();
+    int time_s = static_cast<int>(duration_s.count());
     int passengerCount = queuer->getPassengerCount();
-    logger->addLogMessage(to_string(passengerCount) + " were picked up and dropped off within " + to_string(time_s) + " seconds.");
+    queuerLogger->addLogMessage(to_string(passengerCount) + " were picked up and dropped off within " + to_string(time_s) + " seconds.");
     return 0;
 }

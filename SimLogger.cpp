@@ -6,14 +6,22 @@ using namespace std;
  * @brief Construct a SimLogger object which initializes the 
  *        logger information 
  */
-SimLogger::SimLogger()
+SimLogger::SimLogger(string filename)
 {
-    //set text file output
-    logger = spdlog::basic_logger_mt("sim_logger", "logs/elevator_sim_log.txt", true);
-    // Set the logger to output infomation messages set immediatley when given
-    logger->flush_on(spdlog::level::info);
-    //Set Logger pattern : timestep and message type
-    logger->set_pattern("[%Y-%m-%d %H:%M:%S] [%^%l%$] %v");
+    
+    // Try to retrieve existing logger
+    logger = spdlog::get(filename);
+
+    // If it doesn't exist yet, create and register it
+    if (!logger)
+    {
+        //set text file output
+        logger = spdlog::basic_logger_mt(filename, "logs/" + filename, true);
+        // Set the logger to output infomation messages set immediatley when given
+        logger->flush_on(spdlog::level::info);
+        //Set Logger pattern : timestep and message type
+        logger->set_pattern("[%Y-%m-%d %H:%M:%S] [%^%l%$] %v");
+    }
 }
 
 /**
