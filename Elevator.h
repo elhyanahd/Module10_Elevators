@@ -8,7 +8,6 @@
 #include "Floor.h"
 #include "Queuer.h"
 #include <map>
-#include <queue>
 #include <set>
 #include <memory>
 #include <mutex>
@@ -31,7 +30,7 @@ class Elevator
         bool didLoopEnd();
         
     protected:
-        void pickUpPassengers(std::shared_ptr<Floor> floorObject);
+        void pickUpPassengers(std::shared_ptr<PassengerQueuer> queuer, int requestedFloor);
         void dropOffPassengers();
         bool shouldStop(std::shared_ptr<Floor> floorObject);
         void moveFloors(int nextFloor, std::shared_ptr<PassengerQueuer> queuer);
@@ -49,7 +48,7 @@ class Elevator
         std::mutex elevatorMutex;
         std::mutex simulationMutex;
         std::mutex requestsMutex;
-        std::queue<int> requestsQueue;                                                  //queue of pick up requests 
+        std::list<int> requestsQueue;                                                  //queue of pick up requests 
         std::set<int> dropOffRequests;                                                   //list of floors to drop off passengers
 };
 

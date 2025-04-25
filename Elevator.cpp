@@ -11,10 +11,11 @@ using namespace std;
  * 
  * @param passengers (who were added to the elevator) 
  */
-void Elevator::pickUpPassengers(shared_ptr<Floor> floorObject)
-{   
+void Elevator::pickUpPassengers(shared_ptr<PassengerQueuer> queuer, int requestedFloor)
+{     
+    shared_ptr<Floor> floorObject = queuer->getFloor(currentFloor);
+
     lock_guard<mutex> lock(elevatorMutex);
-    
     //if floor is not in floor list of Queuer class return
     if(floorObject == nullptr)
     {   return; }
@@ -22,6 +23,12 @@ void Elevator::pickUpPassengers(shared_ptr<Floor> floorObject)
     //verify that the elevator is not at max capacity
     if (passengersInElevator.size() < MAX_CAPACITY)
     {    
+        //remove floor from request list if it was not
+        //part of the original request
+        //TO DO: modify to remove instance of request based on
+        //number pf passengers that are removed
+        if(requestedFloor != currentFloor)
+        {   queuer->removeRequests(currentFloor);   }
         //if there are no passengers waiting on the floor return  
         int queueSize = static_cast<int>(floorObject->getQueueSize()); 
         
@@ -54,7 +61,7 @@ void Elevator::pickUpPassengers(shared_ptr<Floor> floorObject)
             //store riding passengers' drop off requests
             if (dropOffRequests.find(floorID) == dropOffRequests.end() ) 
             {
-                requestsQueue.push(floorID);
+                requestsQueue.push_back(floorID);
                 dropOffRequests.insert(floorID);
             }
         }
@@ -73,6 +80,7 @@ void Elevator::pickUpPassengers(shared_ptr<Floor> floorObject)
 void Elevator::dropOffPassengers()
 {  
     lock_guard<mutex> lock(elevatorMutex);
+    lock_guard<mutex> lock2(requestsMutex);
 
     // if there are no passengers in the elevator
     //and there are no passengers with the current 
@@ -86,6 +94,13 @@ void Elevator::dropOffPassengers()
     passengersInElevator.erase(currentFloor);
     logger->addLogMessage("Elevator " + elevatorID + " dropped off " + to_string(previousSize - passengersInElevator.size()) + 
                             " passenger(s) on floor " + to_string(currentFloor));
+
+    //if extra dropped offs were made, remove floor from requests
+    if (dropOffRequests.find(currentFloor) != dropOffRequests.end() ) 
+    {
+        requestsQueue.remove(currentFloor);
+        dropOffRequests.erase(currentFloor);
+    }
 }
 
 /**
@@ -99,14 +114,16 @@ void Elevator::dropOffPassengers()
 bool Elevator::shouldStop(shared_ptr<Floor> floorObject)
 {
     lock_guard<mutex> lock(elevatorMutex);
+    bool stop = false;
 
     if(!(passengersInElevator.find(currentFloor) == passengersInElevator.end()))
-    {   return true;    }
+    {   stop = true;    }
+    else if(floorObject == nullptr || passengersInElevator.size() == MAX_CAPACITY)
+    {   stop = false;   }
+    else
+    { stop = (floorObject->getQueueSize() > 0);  }
 
-    if(floorObject == nullptr)
-    {   return false;   }
-
-    return (floorObject->getQueueSize() > 0);
+    return stop;
 }
 
 /**
@@ -119,9 +136,9 @@ bool Elevator::shouldStop(shared_ptr<Floor> floorObject)
  */
 void Elevator::moveFloors(int nextFloor, shared_ptr<PassengerQueuer> queuer)
 {
-    int updatedNext = (elevatorDirection == Movement::DOWN) ? nextFloor - 1 : nextFloor + 1;
-    while(updatedNext != currentFloor)
-    //while((nextFloor != currentFloor))
+    bool stopMoving = false;
+    
+    while(!stopMoving)
     {    
         switch(elevatorStatus)
         {
@@ -137,8 +154,8 @@ void Elevator::moveFloors(int nextFloor, shared_ptr<PassengerQueuer> queuer)
 
                 //when stopped, drop off and pick up passengers
                 dropOffPassengers();
-                pickUpPassengers(queuer->getFloor(currentFloor));
-                logger->addLogMessage("Elevator " + elevatorID + " has " + to_string(passengersInElevator.size()) + " passenger(s)");
+                pickUpPassengers(queuer, nextFloor);
+                logger->addLogMessage("Elevator " + elevatorID + " now has " + to_string(passengersInElevator.size()) + " passenger(s)");
 
                 //Prior to moving, if at max/max floor change direction
                 //Else, if not at max  or min floor and elevator  
@@ -153,16 +170,15 @@ void Elevator::moveFloors(int nextFloor, shared_ptr<PassengerQueuer> queuer)
                 break;
 
             case Movement::UP:
-                
                 // Prior to moving up, check if there are passengers that 
                 // need to be dropped off or picked up; or if requested floor is
                 // is reached. Stop elevator if true, else move floors
-                if(shouldStop(queuer->getFloor(currentFloor)))
+                if( shouldStop(queuer->getFloor(currentFloor)))
                 {   elevatorStatus = Movement::STOPPING;    }
                 else
                 {
                     // wait 10 seconds, mimic time elevator takes to move
-                    this_thread::sleep_for(chrono::seconds(1)); 
+                    this_thread::sleep_for(chrono::seconds(10)); 
                     
                     //Update floor level only when less then max
                     //else change direction elevator is moving
@@ -183,12 +199,12 @@ void Elevator::moveFloors(int nextFloor, shared_ptr<PassengerQueuer> queuer)
                 // Prior to moving down, check if there are passengers that 
                 // need to be dropped off or picked up; or if requested floor is
                 // is reached. Stop elevator if true, else move floors
-                if(shouldStop(queuer->getFloor(currentFloor)))
+                if( shouldStop(queuer->getFloor(currentFloor)))
                 {   elevatorStatus = Movement::STOPPING;    }
                 else
                 {                    
                     // wait 10 seconds, delay time for elevator to move
-                    this_thread::sleep_for(chrono::seconds(1));      
+                    this_thread::sleep_for(chrono::seconds(10));      
                     
                     //Decrement the floor only when greater then min
                     //else change direction elevator is moving
@@ -205,6 +221,12 @@ void Elevator::moveFloors(int nextFloor, shared_ptr<PassengerQueuer> queuer)
                 }                
                 break;
         }
+
+        //if at given floor and finished dropping/picking up passengers
+        //then end loop
+        int floorReached = (elevatorStatus == Movement::UP) ? nextFloor + 1 : nextFloor - 1;
+        if(currentFloor == floorReached && elevatorStatus == elevatorDirection)
+        {   stopMoving = true;  }
     }
 }
 
@@ -221,7 +243,7 @@ int Elevator::getDropOffRequests()
     int nextFloor = (requestsQueue.empty()) ? 0 : requestsQueue.front();
     if (nextFloor != 0)
     {   
-        requestsQueue.pop();
+        requestsQueue.pop_front();
         dropOffRequests.erase(nextFloor);
     }
 
@@ -288,30 +310,33 @@ void Elevator::simulationLoop(shared_ptr<PassengerQueuer> queuer)
         {   this_thread::sleep_for(chrono::seconds(1)); }   //1 second time delay
         else
         {   
-            //go in the direction of the requested floor for pick up
             setDirection(nextFloor);
-
-            //move to requested floor
             moveFloors(nextFloor, queuer);  
         }
 
             //when requested floor is reached, check for drop off requests
-            //perform those requests until the queue is empty
-            while(!passengersInElevator.empty())
+            //if there are no request check if there are passengers,
+            //perform those drop offs until elevator is empty
+            bool needToDropOff = true;
+            while(needToDropOff)
             {
                 nextFloor = getDropOffRequests();
                 if(nextFloor != 0)
                 {   
-                    //go in the direction of the requested floor for drop off
                     setDirection(nextFloor);
-
-                    //move to requested floor for drop off
                     moveFloors(nextFloor, queuer);  
                 }
+                // else if(!passengersInElevator.empty())
+                // {
+                //     nextFloor = passengersInElevator.begin()->first;
+                //     setDirection(nextFloor);
+                //     moveFloors(nextFloor, queuer);  
+                // }
+                else
+                {   needToDropOff = false;  }
             }
 
-        lock_guard<mutex> lock2(elevatorMutex);
-        if(passengersInElevator.size() == 0 && queuer->noPassengersWaiting() && queuer->isParseDone())
-        { simulationEnd =  true;    }
+            if(passengersInElevator.empty() && queuer->noPassengersWaiting() && queuer->isParseDone())
+            {   simulationEnd =  true;  }
     }
 }

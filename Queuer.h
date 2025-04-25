@@ -5,7 +5,7 @@
 #include <memory>
 #include <chrono>
 #include <thread>
-#include <queue>
+#include <list>
 #include <mutex>
 #include <set>
 #include "SimLogger.h"
@@ -14,10 +14,12 @@
 class PassengerQueuer
 {
     public:
-        PassengerQueuer(std::shared_ptr<SimLogger> logger) : logger(logger), queueTime(0), parsingDone(false) {};
+        PassengerQueuer(std::shared_ptr<SimLogger> logger) : logger(logger), queueTime(0), 
+            passengerCount(0), parsingDone(false) {};
         void beginQueue();
         std::chrono::time_point<std::chrono::high_resolution_clock> getStartTime() const;
         int getPickUpRequests();
+        void removeRequests(int floorID);
         std::shared_ptr<Floor> getFloor(int floorID);
         bool noPassengersWaiting();
         bool isParseDone();
@@ -32,7 +34,7 @@ class PassengerQueuer
         std::chrono::time_point<std::chrono::high_resolution_clock> queueStart;         //exact time when first passenger was queued
         int queueTime;                                                                  //stores time when last passenger was queued
         std::map<int, std::shared_ptr<Floor>> floorList;                                //list of all floors and passengers waiting on them
-        std::queue<int> requestsQueue;                                                  //queue of pick up requests 
+        std::list<int> requestsQueue;                                                  //queue of pick up requests 
         std::set<int> pickUpRequests;                                                   //list of floors to pick up passengers
         std::mutex floorMutex;                                                          //for thread safety, used for locks so threads don't collide
         std::mutex requestsMutex;                                                       //for thread safety, used for locks so threads don't collide

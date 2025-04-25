@@ -114,11 +114,29 @@ int PassengerQueuer::getPickUpRequests()
     int nextFloor = (requestsQueue.empty()) ? 0 : requestsQueue.front();
     if (nextFloor != 0)
     {   
-        requestsQueue.pop();
+        requestsQueue.pop_front();
         pickUpRequests.erase(nextFloor);
     }
 
     return nextFloor;
+}
+
+/**
+ * @brief Check if the given floor was reached by
+ *        elevator and dropped off passengers. If true,
+ *        remove request from list.
+ * 
+ * @param floorID 
+ */
+void PassengerQueuer::removeRequests(int floorID)
+{
+    lock_guard<mutex> lock(requestsMutex);
+
+    if (pickUpRequests.find(floorID) != pickUpRequests.end() ) 
+    {
+        requestsQueue.remove(floorID);
+        pickUpRequests.erase(floorID);
+    }
 }
 
 /**
@@ -131,13 +149,13 @@ int PassengerQueuer::getPickUpRequests()
 void PassengerQueuer::addPickUpRequest(int floorID)
 {   
     lock_guard<mutex> lock(requestsMutex);
-
+    //TO DO: add request regardless of whether it was previously added.
     if (pickUpRequests.find(floorID) == pickUpRequests.end() ) 
     {
-        requestsQueue.push(floorID);
+        requestsQueue.push_back(floorID);
         pickUpRequests.insert(floorID);
     }
-};
+}
 
 /**
  * @brief Retrieve the Floor object that is associated
@@ -150,7 +168,7 @@ shared_ptr<Floor> PassengerQueuer::getFloor(int floorID)
 {   
     lock_guard<mutex> lock(floorMutex);                         
     return (floorList.find(floorID) != floorList.end()) ? floorList[floorID] : nullptr;
-};
+}
 
 /**
  * @brief Check if there are still passengers waiting on 
