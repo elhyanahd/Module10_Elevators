@@ -178,7 +178,7 @@ void Elevator::moveFloors(int nextFloor, shared_ptr<PassengerQueuer> queuer)
                 else
                 {
                     // wait 10 seconds, mimic time elevator takes to move
-                    this_thread::sleep_for(chrono::seconds(10)); 
+                    this_thread::sleep_for(chrono::seconds(5)); 
                     
                     //Update floor level only when less then max
                     //else change direction elevator is moving
@@ -204,7 +204,7 @@ void Elevator::moveFloors(int nextFloor, shared_ptr<PassengerQueuer> queuer)
                 else
                 {                    
                     // wait 10 seconds, delay time for elevator to move
-                    this_thread::sleep_for(chrono::seconds(10));      
+                    this_thread::sleep_for(chrono::seconds(5));      
                     
                     //Decrement the floor only when greater then min
                     //else change direction elevator is moving
