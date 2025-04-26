@@ -23,9 +23,10 @@ enum class Movement
 class Elevator
 {
     public:
-        Elevator::Elevator(std::string ID, std::shared_ptr<SimLogger> logger): 
-            elevatorStatus(Movement::UP), elevatorDirection(Movement::UP), currentFloor(1),
-            elevatorID(ID), logger(logger), simulationEnd(false), passengersInElevator({}) {}
+        explicit Elevator::Elevator(std::string ID, std::shared_ptr<SimLogger> logger, 
+            std::shared_ptr<std::list<std::shared_ptr<Passenger>>> averageTime, std::shared_ptr<std::mutex> averageTimeMutex): 
+            elevatorStatus(Movement::UP), elevatorDirection(Movement::UP), currentFloor(1), averageTime(averageTime),
+            elevatorID(ID), logger(logger), simulationEnd(false), passengersInElevator({}), averageTimeMutex(averageTimeMutex) {}
         void simulationLoop(std::shared_ptr<PassengerQueuer> queuer);
         bool didLoopEnd();
         
@@ -40,11 +41,14 @@ class Elevator
     private:
         int currentFloor;
         bool simulationEnd;
+        std::chrono::time_point<std::chrono::high_resolution_clock> startTime;
         std::string elevatorID;
         Movement elevatorDirection;
         Movement elevatorStatus;
         std::multimap<int, std::shared_ptr<Passenger>> passengersInElevator;
         std::shared_ptr<SimLogger> logger;
+        std::shared_ptr<std::list<std::shared_ptr<Passenger>>> averageTime;
+        std::shared_ptr<std::mutex> averageTimeMutex;
         std::mutex elevatorMutex;
         std::mutex simulationMutex;
         std::mutex requestsMutex;

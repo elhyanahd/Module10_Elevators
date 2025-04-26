@@ -36,7 +36,7 @@ void PassengerQueuer::beginQueue()
 
         //loop through the csv file and store passengers startTime, desired floor, and
         //current floor location. Then queue the passengers up to on their desired floor
-        while(getline(input, line))
+        while(getline(input, line) && passengerCount < 15)
         {   
             //Seperate column by delimeter and store information of new Passanger
             //create new Passanger object with the information
@@ -45,9 +45,6 @@ void PassengerQueuer::beginQueue()
             vector<int> passengerValues;
             while(getline(iss, value, ','))
             {   passengerValues.push_back(stoi(value)); }
-
-            //store time when queueing started
-            queueStart = (queueTime == 0) ? chrono::high_resolution_clock::now() : queueStart;
             
             //time delay wait until passenger start time is reached
             //prior to adding passenger to associated floor queue
@@ -56,7 +53,7 @@ void PassengerQueuer::beginQueue()
             //update time with start time of latest queued passenger
             queueTime = passengerValues[0];  
             //add queued passenger to their desired floor
-            addPassengerToFloor(make_shared<Passenger>(passengerValues[2], passengerValues[1], passengerValues[0], false));
+            addPassengerToFloor(make_shared<Passenger>(passengerValues[2], passengerValues[1], chrono::high_resolution_clock::now()));
             passengerCount++;
         }
         input.close();
@@ -89,15 +86,6 @@ void PassengerQueuer::addPassengerToFloor(shared_ptr<Passenger> newPassenger)
     addPickUpRequest(passengerLocation);
     logger->addLogMessage("New Passenger waiting on floor " + to_string(passengerLocation));
 }
-
-/**
- * @brief Return the time when first Passenger began 
- *         waiting (aka start time)
- * 
- * @return  std::chrono::time_point<std::chrono::high_resolution_clock> 
- */
-chrono::time_point<chrono::high_resolution_clock> PassengerQueuer::getStartTime() const
-{   return queueStart;  }
 
 /**
  * @brief Return the floor level at the front of the queue.

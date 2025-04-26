@@ -2,24 +2,27 @@
 #define PASSENGER_H
 
 #include <map>
+#include <chrono>
 
 class Passenger 
 {
     public:
         //Construct an object that sets variables to 0
-        Passenger() : desired(0), current(0), startTime(0), endTime(0), inElevator(false) {};
-        Passenger(int desiredFloor, int currentFloor, int start, bool inside);
+        Passenger() : desired(0), current(0) {};
+        Passenger(int desiredFloor, int currentFloor, std::chrono::time_point<std::chrono::high_resolution_clock> start);
         int getDesiredLocation() const;
         int getCurrentLocation() const;
-        bool checkIfRiding() const;
-        void setElevatorCheck(const bool riding); 
+        void setElevatorInfo(std::chrono::time_point<std::chrono::high_resolution_clock> enterTime); 
+        void setReachedInfo(std::chrono::time_point<std::chrono::high_resolution_clock> exitTime);
+        int getWaitTime() const;
+        int getTravelTime() const;
         
     private:
         int desired;        //represents the passengers desired floor
         int current;        //represents the passengers current floor location
-        int startTime;      //passanger time or arrival
-        int endTime;        //passanger reaches end floor
-        bool inElevator;    //passenger riding elevator
+        std::chrono::time_point<std::chrono::high_resolution_clock> startTime;      // wait start time
+        std::chrono::time_point<std::chrono::high_resolution_clock> ridingTime;     //time got on elevator
+        std::chrono::time_point<std::chrono::high_resolution_clock> endTime;        //time reaches end floor
 };
 
 #endif

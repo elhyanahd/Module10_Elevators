@@ -54,6 +54,7 @@ void Elevator::pickUpPassengers(shared_ptr<PassengerQueuer> queuer, int requeste
             {   continue;   }
 
             floorID = passenger->getDesiredLocation();
+            passenger->setElevatorInfo(chrono::high_resolution_clock::now());          //record when passenger began riding elevator 
             passengersInElevator.insert({floorID, passenger});
             pickedUp++;
 
@@ -88,10 +89,25 @@ void Elevator::dropOffPassengers()
 
     //erase passangers in elevator that need to leave
     //from the internal variable
-    int previousSize = static_cast<int>(passengersInElevator.size());
-    passengersInElevator.erase(currentFloor);
-    logger->addLogMessage("Elevator " + elevatorID + " dropped off " + to_string(previousSize - passengersInElevator.size()) + 
+    int amount = 0;
+    vector<shared_ptr<Passenger>> forAverage;
+    for (auto it = passengersInElevator.lower_bound(currentFloor); it != passengersInElevator.upper_bound(currentFloor); )
+    {
+        it->second->setReachedInfo(std::chrono::high_resolution_clock::now());      //record when passenger exited
+        forAverage.push_back(it->second);                                           //store object for average calculation
+        // Erase and advance safely
+        it = passengersInElevator.erase(it);
+        ++amount;
+    }
+    logger->addLogMessage("Elevator " + elevatorID + " dropped off " + to_string(amount) + 
                             " passenger(s) on floor " + to_string(currentFloor));
+
+    //adding previously obtained objects to list
+    //did outside of loop to avoid halting other threads
+    {
+        lock_guard<mutex> lock(*averageTimeMutex);
+        averageTime->insert(averageTime->end(), forAverage.begin(), forAverage.end());
+    }
 
     //if extra dropped offs were made, remove floor from requests
     if (dropOffRequests.find(currentFloor) != dropOffRequests.end() ) 

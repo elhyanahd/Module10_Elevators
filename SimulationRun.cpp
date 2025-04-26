@@ -28,11 +28,15 @@ int main()
     //declaration to parse file and queue passangers
     shared_ptr<PassengerQueuer> queuer = make_shared<PassengerQueuer>(queuerLogger);
 
+    //declaration of list that will be used to calculate average wait time and average travel time
+    shared_ptr<list<shared_ptr<Passenger>>> averageTime = make_shared<list<shared_ptr<Passenger>>>();
+    shared_ptr<mutex> averageTimeMutex = make_shared<mutex>();
+
     //declarations for elevators
-    shared_ptr<Elevator> elevatorA = make_shared<Elevator>("A", elevatorALogger);
-    shared_ptr<Elevator> elevatorB = make_shared<Elevator>("B", elevatorBLogger);
-    shared_ptr<Elevator> elevatorC = make_shared<Elevator>("C", elevatorCLogger);
-    shared_ptr<Elevator> elevatorD = make_shared<Elevator>("D", elevatorDLogger);
+    shared_ptr<Elevator> elevatorA = make_shared<Elevator>("A", elevatorALogger, averageTime, averageTimeMutex);
+    shared_ptr<Elevator> elevatorB = make_shared<Elevator>("B", elevatorBLogger, averageTime, averageTimeMutex);
+    shared_ptr<Elevator> elevatorC = make_shared<Elevator>("C", elevatorCLogger, averageTime, averageTimeMutex);
+    shared_ptr<Elevator> elevatorD = make_shared<Elevator>("D", elevatorDLogger, averageTime, averageTimeMutex);
 
     //Thread to queue passangers, without conflicting elevators
     thread passengerThread([&]() { queuer->beginQueue();   });
@@ -55,10 +59,21 @@ int main()
     elevatorCLogger->addLogMessage("Elevator Simulation ended.");
     elevatorDLogger->addLogMessage("Elevator Simulation ended.");
 
-    auto duration = simulationEnd - queuer->getStartTime();
-    auto duration_s = chrono::duration_cast<chrono::seconds>(duration);
-    int time_s = static_cast<int>(duration_s.count());
     int passengerCount = queuer->getPassengerCount();
-    queuerLogger->addLogMessage(to_string(passengerCount) + " were picked up and dropped off within " + to_string(time_s) + " seconds.");
+    queuerLogger->addLogMessage(to_string(passengerCount) + " were picked up and dropped off.");
+
+    //Calculate average wait time and travel time
+    double waitTime = 0;
+    double travelTime = 0;
+    for(auto passenger : *averageTime)
+    {
+        waitTime += passenger->getWaitTime();
+        travelTime += passenger->getTravelTime();
+    }
+
+    waitTime = waitTime / passengerCount;
+    travelTime = travelTime / passengerCount;
+    queuerLogger->addLogMessage("Average wait time is: " + to_string(waitTime) + " seconds");
+    queuerLogger->addLogMessage("Average travel time is: " + to_string(travelTime) + " seconds");
     return 0;
 }

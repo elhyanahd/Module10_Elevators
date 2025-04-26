@@ -12,7 +12,7 @@ using namespace std;
  * @param desiredFloor 
  * @param currentFloor 
  */
-Passenger::Passenger(int desiredFloor, int currentFloor, int start, bool inside)
+Passenger::Passenger(int desiredFloor, int currentFloor, chrono::time_point<std::chrono::high_resolution_clock> start)
 {
     if(currentFloor < 1 || currentFloor > 100)
     {   throw invalid_argument("Provided current floor location is invalid");   }
@@ -23,8 +23,6 @@ Passenger::Passenger(int desiredFloor, int currentFloor, int start, bool inside)
         desired = desiredFloor;
         current = currentFloor;
         startTime = start;
-        endTime = 0;
-        inElevator = inside;
     }
 }
 
@@ -45,21 +43,48 @@ int Passenger::getCurrentLocation() const
 {   return current; }
 
 /**
- * @brief Return whether the passenger is in the 
- *        elevator or not
- * 
- * @return true 
- * @return false 
- */
-bool Passenger::checkIfRiding() const
-{   return inElevator;  }
-
-/**
- * @brief Set internal variable to given parameter 
- *        which will indicate whether the passenger is 
+ * @brief Set internal variable to given parameter
+ *        which will indicate when passenger started
  *        riding the elevator
  * 
  * @param riding 
+ * @param enterTime 
  */
-void Passenger::setElevatorCheck(const bool riding)
-{   inElevator = riding;    }
+void Passenger::setElevatorInfo(chrono::time_point<chrono::high_resolution_clock> enterTime)
+{   ridingTime = enterTime; }
+
+/**
+ * @brief Set internal variable to given parameter
+ *        which will indicate whether  when 
+ *        passenger stopped riding the elevator
+ * 
+ * @param exitTime 
+ */
+void Passenger::setReachedInfo(std::chrono::time_point<std::chrono::high_resolution_clock> exitTime)
+{   endTime = exitTime; }
+
+/**
+ * @brief Return the wait time based on the startTime (when the Passenger began waiting)
+ *        and the ride time (when the Passenger entered the elevator)
+ * 
+ * @return int 
+ */
+int Passenger::getWaitTime() const
+{   
+    auto time = ridingTime - startTime;
+    auto time_s = chrono::duration_cast<chrono::seconds>(time).count();  
+    return static_cast<int>(time_s);
+}
+
+/**
+ * @brief Return the travel time based on the endTime (when the Passenger exited the elevator)
+ *        and the ride time (when the Passenger entered the elevator)
+ * 
+ * @return int 
+ */
+int Passenger::getTravelTime() const
+{   
+    auto time = endTime - ridingTime;  
+    auto time_s = chrono::duration_cast<chrono::seconds>(time).count();  
+    return static_cast<int>(time_s);
+}

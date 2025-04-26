@@ -17,7 +17,6 @@ class PassengerQueuer
         PassengerQueuer(std::shared_ptr<SimLogger> logger) : logger(logger), queueTime(0), 
             passengerCount(0), parsingDone(false) {};
         void beginQueue();
-        std::chrono::time_point<std::chrono::high_resolution_clock> getStartTime() const;
         int getPickUpRequests();
         void removeRequests(int floorID);
         std::shared_ptr<Floor> getFloor(int floorID);
@@ -31,7 +30,6 @@ class PassengerQueuer
 
     private:
         std::shared_ptr<SimLogger> logger;                                              //variable to access logger class
-        std::chrono::time_point<std::chrono::high_resolution_clock> queueStart;         //exact time when first passenger was queued
         int queueTime;                                                                  //stores time when last passenger was queued
         std::map<int, std::shared_ptr<Floor>> floorList;                                //list of all floors and passengers waiting on them
         std::list<int> requestsQueue;                                                  //queue of pick up requests 
