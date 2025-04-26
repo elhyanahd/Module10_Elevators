@@ -5,11 +5,11 @@
 using namespace std;
 
 /**
- * @brief Based on the amount of space available, add passengers 
- *        inside the elevator based on the number of people
- *        waiting
+ * @brief * @brief Based on the amount of space available, add passengers 
+ *        inside the elevator 
  * 
- * @param passengers (who were added to the elevator) 
+ * @param queuer 
+ * @param requestedFloor 
  */
 void Elevator::pickUpPassengers(shared_ptr<PassengerQueuer> queuer, int requestedFloor)
 {     
@@ -17,6 +17,7 @@ void Elevator::pickUpPassengers(shared_ptr<PassengerQueuer> queuer, int requeste
 
     lock_guard<mutex> lock(elevatorMutex);
     //if floor is not in floor list of Queuer class return
+    //TO DO: Try with this removed
     if(floorObject == nullptr)
     {   return; }
 
@@ -25,8 +26,6 @@ void Elevator::pickUpPassengers(shared_ptr<PassengerQueuer> queuer, int requeste
     {    
         //remove floor from request list if it was not
         //part of the original request
-        //TO DO: modify to remove instance of request based on
-        //number pf passengers that are removed
         if(requestedFloor != currentFloor)
         {   queuer->removeRequests(currentFloor);   }
         //if there are no passengers waiting on the floor return  
@@ -72,10 +71,9 @@ void Elevator::pickUpPassengers(shared_ptr<PassengerQueuer> queuer, int requeste
 }
 
 /**
- * @brief Update private variable to parallel the amount
+ * @brief Drop of passengers that are inside the elevator.
+ *        Update private variable to parallel the amount
  *        of passengers who are leaving
- * 
- * @param leavingPassengers 
  */
 void Elevator::dropOffPassengers()
 {  
@@ -104,8 +102,10 @@ void Elevator::dropOffPassengers()
 }
 
 /**
- @brief Check if there are passengers waiting on current floor
- *         and check if there are passengers who desire to get of the current floor
+ @brief Determine if the elevaor should stop, by checking:
+ *      1. for passengers who need to get off
+ *      2. if elevator is at max capacity
+ *      3. for passengers waiting on current floor,
  * 
  * @param floorObject 
  * @return true 
@@ -132,11 +132,13 @@ bool Elevator::shouldStop(shared_ptr<Floor> floorObject)
  *        elevator status. Stop movement loop only when requested 
  *        floor has been reached.
  * 
- * @param nextFloor (which passengers need to be dropped of or picked up at)
+ * @param nextFloor (current floor request)
+ * @param queuer 
  */
 void Elevator::moveFloors(int nextFloor, shared_ptr<PassengerQueuer> queuer)
 {
     bool stopMoving = false;
+    int floorReached = 0;
     
     while(!stopMoving)
     {    
@@ -224,7 +226,7 @@ void Elevator::moveFloors(int nextFloor, shared_ptr<PassengerQueuer> queuer)
 
         //if at given floor and finished dropping/picking up passengers
         //then end loop
-        int floorReached = (elevatorStatus == Movement::UP) ? nextFloor + 1 : nextFloor - 1;
+        floorReached = (elevatorStatus == Movement::UP) ? nextFloor + 1 : nextFloor - 1;
         if(currentFloor == floorReached && elevatorStatus == elevatorDirection)
         {   stopMoving = true;  }
     }
@@ -301,42 +303,36 @@ void Elevator::simulationLoop(shared_ptr<PassengerQueuer> queuer)
 
     while(!simulationEnd)
     {
-        //check for pick up requests
-        //if valid floor move to the requested floor
-        //else wait once 1s before returning to loop
+        //check for pick up requests if there are passengers waiting
+        //and if elevator is not at max capacity
         int nextFloor = (passengersInElevator.size() == MAX_CAPACITY || (queuer->noPassengersWaiting() && queuer->isParseDone())) 
             ? 0 : queuer->getPickUpRequests();
-        if(nextFloor == 0)
-        {   this_thread::sleep_for(chrono::seconds(1)); }   //1 second time delay
-        else
+        if(nextFloor != 0)
         {   
             setDirection(nextFloor);
             moveFloors(nextFloor, queuer);  
         }
 
-            //when requested floor is reached, check for drop off requests
-            //if there are no request check if there are passengers,
-            //perform those drop offs until elevator is empty
-            bool needToDropOff = true;
-            while(needToDropOff)
-            {
-                nextFloor = getDropOffRequests();
-                if(nextFloor != 0)
-                {   
-                    setDirection(nextFloor);
-                    moveFloors(nextFloor, queuer);  
-                }
-                // else if(!passengersInElevator.empty())
-                // {
-                //     nextFloor = passengersInElevator.begin()->first;
-                //     setDirection(nextFloor);
-                //     moveFloors(nextFloor, queuer);  
-                // }
-                else
-                {   needToDropOff = false;  }
+        //once pick up is complete, check for drop off requests
+        //perform those drop offs until elevator is empty 
+        //(aka requests are no longer available)
+        bool needToDropOff = true;
+        while(needToDropOff)
+        {
+            nextFloor = getDropOffRequests();
+            if(nextFloor != 0)
+            {   
+                setDirection(nextFloor);
+                moveFloors(nextFloor, queuer);  
             }
+            else
+            {   needToDropOff = false;  }
+        }
 
-            if(passengersInElevator.empty() && queuer->noPassengersWaiting() && queuer->isParseDone())
-            {   simulationEnd =  true;  }
+        this_thread::sleep_for(chrono::seconds(1));   //1 second time delay
+
+        //check if simulation should end
+        if(passengersInElevator.empty() && queuer->noPassengersWaiting() && queuer->isParseDone())
+        {   simulationEnd =  true;  }
     }
 }

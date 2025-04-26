@@ -13,8 +13,6 @@ using namespace std;
  * @brief Parse through csv file and record the time new
  *        passengers began waiting, their desired floors,
  *        and current floor level location
- * 
- * @return int 
  */
 void PassengerQueuer::beginQueue()
 {
@@ -122,9 +120,11 @@ int PassengerQueuer::getPickUpRequests()
 }
 
 /**
- * @brief Check if the given floor was reached by
- *        elevator and dropped off passengers. If true,
- *        remove request from list.
+ * @brief When given floor was reached by elevator
+ *        and passengers were picked up, function
+ *        removes request from list.
+ *        NOTE: Intended to be used solely for requests
+ *        that weren't the original floor given from getPickUpRequests()
  * 
  * @param floorID 
  */

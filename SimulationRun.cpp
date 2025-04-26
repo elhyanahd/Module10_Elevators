@@ -5,6 +5,12 @@
 
 using namespace std;
 
+/**
+ * @brief Main thread of elevator simulation
+ *        Runs 5 threads: four elevator threads and 1 parser
+ * 
+ * @return int 
+ */
 int main() 
 {
     //declaration of Logger Class
@@ -50,7 +56,7 @@ int main()
     elevatorDLogger->addLogMessage("Elevator Simulation ended.");
 
     auto duration = simulationEnd - queuer->getStartTime();
-    auto duration_s = std::chrono::duration_cast<std::chrono::seconds>(duration);
+    auto duration_s = chrono::duration_cast<chrono::seconds>(duration);
     int time_s = static_cast<int>(duration_s.count());
     int passengerCount = queuer->getPassengerCount();
     queuerLogger->addLogMessage(to_string(passengerCount) + " were picked up and dropped off within " + to_string(time_s) + " seconds.");

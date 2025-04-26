@@ -13,7 +13,6 @@ class Floor
         int getQueueSize();
         void addToQueue(std::shared_ptr<Passenger> newPerson);
         std::shared_ptr<Passenger> popFromQueue();
-        int getFloorLevel() const;
 
     private:
         std::list<std::shared_ptr<Passenger>> passengerQueue;

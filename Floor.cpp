@@ -18,7 +18,7 @@ Floor::Floor(int level)
 }
 
 /**
- * @brief Return the amound of people waiting on the floor
+ * @brief Return the amount of people waiting on the floor
  * 
  * @return int 
  */
@@ -52,7 +52,7 @@ void Floor::addToQueue(shared_ptr<Passenger> newPerson)
  * 
  * @return std::shared_ptr<Passenger> 
  */
-std::shared_ptr<Passenger> Floor::popFromQueue()
+shared_ptr<Passenger> Floor::popFromQueue()
 {
     lock_guard<mutex> lock(queueMutex);
     if(passengerQueue.size() != 0)
@@ -63,11 +63,3 @@ std::shared_ptr<Passenger> Floor::popFromQueue()
     }
     return nullptr;
 }
-
-/**
- * @brief Return the floor level of this object
- * 
- * @return int 
- */
-int Floor::getFloorLevel() const
-{   return floorLevel;  }
