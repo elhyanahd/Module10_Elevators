@@ -52,7 +52,6 @@ int main()
     elevatorCThread.join();
     elevatorDThread.join();
 
-    chrono::time_point<chrono::high_resolution_clock> simulationEnd = chrono::high_resolution_clock::now();
     queuerLogger->addLogMessage("Elevator Simulation ended.");
     elevatorALogger->addLogMessage("Elevator Simulation ended.");
     elevatorBLogger->addLogMessage("Elevator Simulation ended.");

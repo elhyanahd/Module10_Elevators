@@ -1,0 +1,2383 @@
+[2025-04-26 15:44:26] [info] Elevator Simulation started.
+[2025-04-26 15:46:10] [info] Elevator A leaving floor 1
+[2025-04-26 15:46:20] [info] Elevator A leaving floor 2
+[2025-04-26 15:46:30] [info] Elevator A leaving floor 3
+[2025-04-26 15:46:40] [info] Elevator A leaving floor 4
+[2025-04-26 15:46:50] [info] Elevator A leaving floor 5
+[2025-04-26 15:47:00] [info] Elevator A leaving floor 6
+[2025-04-26 15:47:10] [info] Elevator A leaving floor 7
+[2025-04-26 15:47:20] [info] Elevator A leaving floor 8
+[2025-04-26 15:47:30] [info] Elevator A leaving floor 9
+[2025-04-26 15:47:40] [info] Elevator A leaving floor 10
+[2025-04-26 15:47:50] [info] Elevator A leaving floor 11
+[2025-04-26 15:48:00] [info] Elevator A leaving floor 12
+[2025-04-26 15:48:10] [info] Elevator A leaving floor 13
+[2025-04-26 15:48:20] [info] Elevator A leaving floor 14
+[2025-04-26 15:48:30] [info] Elevator A leaving floor 15
+[2025-04-26 15:48:40] [info] Elevator A leaving floor 16
+[2025-04-26 15:48:50] [info] Elevator A leaving floor 17
+[2025-04-26 15:49:00] [info] Elevator A leaving floor 18
+[2025-04-26 15:49:10] [info] Elevator A leaving floor 19
+[2025-04-26 15:49:20] [info] Elevator A leaving floor 20
+[2025-04-26 15:49:30] [info] Elevator A leaving floor 21
+[2025-04-26 15:49:40] [info] Elevator A leaving floor 22
+[2025-04-26 15:49:50] [info] Elevator A leaving floor 23
+[2025-04-26 15:50:00] [info] Elevator A leaving floor 24
+[2025-04-26 15:50:10] [info] Elevator A leaving floor 25
+[2025-04-26 15:50:20] [info] Elevator A leaving floor 26
+[2025-04-26 15:50:30] [info] Elevator A leaving floor 27
+[2025-04-26 15:50:40] [info] Elevator A leaving floor 28
+[2025-04-26 15:50:50] [info] Elevator A leaving floor 29
+[2025-04-26 15:51:00] [info] Elevator A leaving floor 30
+[2025-04-26 15:51:10] [info] Elevator A leaving floor 31
+[2025-04-26 15:51:20] [info] Elevator A leaving floor 32
+[2025-04-26 15:51:30] [info] Elevator A leaving floor 33
+[2025-04-26 15:51:40] [info] Elevator A leaving floor 34
+[2025-04-26 15:51:50] [info] Elevator A leaving floor 35
+[2025-04-26 15:52:01] [info] Elevator A leaving floor 36
+[2025-04-26 15:52:11] [info] Elevator A leaving floor 37
+[2025-04-26 15:52:21] [info] Elevator A leaving floor 38
+[2025-04-26 15:52:31] [info] Elevator A leaving floor 39
+[2025-04-26 15:52:41] [info] Elevator A leaving floor 40
+[2025-04-26 15:52:51] [info] Elevator A leaving floor 41
+[2025-04-26 15:53:01] [info] Elevator A leaving floor 42
+[2025-04-26 15:53:11] [info] Elevator A leaving floor 43
+[2025-04-26 15:53:21] [info] Elevator A leaving floor 44
+[2025-04-26 15:53:31] [info] Elevator A leaving floor 45
+[2025-04-26 15:53:41] [info] Elevator A leaving floor 46
+[2025-04-26 15:53:51] [info] Elevator A leaving floor 47
+[2025-04-26 15:54:01] [info] Elevator A leaving floor 48
+[2025-04-26 15:54:12] [info] Elevator A leaving floor 49
+[2025-04-26 15:54:22] [info] Elevator A leaving floor 50
+[2025-04-26 15:54:32] [info] Elevator A leaving floor 51
+[2025-04-26 15:54:42] [info] Elevator A leaving floor 52
+[2025-04-26 15:54:52] [info] Elevator A leaving floor 53
+[2025-04-26 15:55:02] [info] Elevator A leaving floor 54
+[2025-04-26 15:55:12] [info] Elevator A leaving floor 55
+[2025-04-26 15:55:22] [info] Elevator A leaving floor 56
+[2025-04-26 15:55:32] [info] Elevator A leaving floor 57
+[2025-04-26 15:55:42] [info] Elevator A leaving floor 58
+[2025-04-26 15:55:52] [info] Elevator A leaving floor 59
+[2025-04-26 15:56:02] [info] Elevator A leaving floor 60
+[2025-04-26 15:56:12] [info] Elevator A leaving floor 61
+[2025-04-26 15:56:22] [info] Elevator A leaving floor 62
+[2025-04-26 15:56:32] [info] Elevator A leaving floor 63
+[2025-04-26 15:56:42] [info] Elevator A leaving floor 64
+[2025-04-26 15:56:52] [info] Elevator A leaving floor 65
+[2025-04-26 15:57:02] [info] Elevator A leaving floor 66
+[2025-04-26 15:57:12] [info] Elevator A leaving floor 67
+[2025-04-26 15:57:22] [info] Elevator A leaving floor 68
+[2025-04-26 15:57:32] [info] Elevator A leaving floor 69
+[2025-04-26 15:57:42] [info] Elevator A leaving floor 70
+[2025-04-26 15:57:53] [info] Elevator A leaving floor 71
+[2025-04-26 15:58:03] [info] Elevator A leaving floor 70
+[2025-04-26 15:58:13] [info] Elevator A leaving floor 69
+[2025-04-26 15:58:23] [info] Elevator A leaving floor 68
+[2025-04-26 15:58:33] [info] Elevator A leaving floor 67
+[2025-04-26 15:58:43] [info] Elevator A leaving floor 66
+[2025-04-26 15:58:53] [info] Elevator A leaving floor 65
+[2025-04-26 15:59:03] [info] Elevator A leaving floor 64
+[2025-04-26 15:59:05] [info] Elevator A stopped on floor 63
+[2025-04-26 15:59:05] [info] Elevator A picked up 1 passenger(s) on floor 63
+[2025-04-26 15:59:05] [info] Elevator A now has 1 passenger(s)
+[2025-04-26 15:59:15] [info] Elevator A leaving floor 63
+[2025-04-26 15:59:17] [info] Elevator A stopped on floor 62
+[2025-04-26 15:59:17] [info] Elevator A picked up 1 passenger(s) on floor 62
+[2025-04-26 15:59:17] [info] Elevator A now has 2 passenger(s)
+[2025-04-26 15:59:27] [info] Elevator A leaving floor 62
+[2025-04-26 15:59:37] [info] Elevator A leaving floor 61
+[2025-04-26 15:59:47] [info] Elevator A leaving floor 60
+[2025-04-26 15:59:57] [info] Elevator A leaving floor 59
+[2025-04-26 16:00:07] [info] Elevator A leaving floor 58
+[2025-04-26 16:00:17] [info] Elevator A leaving floor 57
+[2025-04-26 16:00:27] [info] Elevator A leaving floor 56
+[2025-04-26 16:00:37] [info] Elevator A leaving floor 55
+[2025-04-26 16:00:47] [info] Elevator A leaving floor 54
+[2025-04-26 16:00:57] [info] Elevator A leaving floor 53
+[2025-04-26 16:01:07] [info] Elevator A leaving floor 52
+[2025-04-26 16:01:17] [info] Elevator A leaving floor 51
+[2025-04-26 16:01:27] [info] Elevator A leaving floor 50
+[2025-04-26 16:01:37] [info] Elevator A leaving floor 49
+[2025-04-26 16:01:47] [info] Elevator A leaving floor 48
+[2025-04-26 16:01:57] [info] Elevator A leaving floor 47
+[2025-04-26 16:02:07] [info] Elevator A leaving floor 46
+[2025-04-26 16:02:17] [info] Elevator A leaving floor 45
+[2025-04-26 16:02:27] [info] Elevator A leaving floor 44
+[2025-04-26 16:02:37] [info] Elevator A leaving floor 43
+[2025-04-26 16:02:39] [info] Elevator A stopped on floor 42
+[2025-04-26 16:02:39] [info] Elevator A picked up 1 passenger(s) on floor 42
+[2025-04-26 16:02:39] [info] Elevator A now has 3 passenger(s)
+[2025-04-26 16:02:49] [info] Elevator A leaving floor 42
+[2025-04-26 16:02:59] [info] Elevator A leaving floor 41
+[2025-04-26 16:03:09] [info] Elevator A leaving floor 40
+[2025-04-26 16:03:19] [info] Elevator A leaving floor 39
+[2025-04-26 16:03:29] [info] Elevator A leaving floor 38
+[2025-04-26 16:03:39] [info] Elevator A leaving floor 37
+[2025-04-26 16:03:41] [info] Elevator A stopped on floor 36
+[2025-04-26 16:03:41] [info] Elevator A dropped off 1 passenger(s) on floor 36
+[2025-04-26 16:03:41] [info] Elevator A now has 2 passenger(s)
+[2025-04-26 16:03:52] [info] Elevator A leaving floor 36
+[2025-04-26 16:04:02] [info] Elevator A leaving floor 35
+[2025-04-26 16:04:12] [info] Elevator A leaving floor 34
+[2025-04-26 16:04:22] [info] Elevator A leaving floor 35
+[2025-04-26 16:04:32] [info] Elevator A leaving floor 36
+[2025-04-26 16:04:42] [info] Elevator A leaving floor 37
+[2025-04-26 16:04:52] [info] Elevator A leaving floor 38
+[2025-04-26 16:05:02] [info] Elevator A leaving floor 39
+[2025-04-26 16:05:12] [info] Elevator A leaving floor 40
+[2025-04-26 16:05:22] [info] Elevator A leaving floor 41
+[2025-04-26 16:05:32] [info] Elevator A leaving floor 42
+[2025-04-26 16:05:42] [info] Elevator A leaving floor 43
+[2025-04-26 16:05:52] [info] Elevator A leaving floor 44
+[2025-04-26 16:06:02] [info] Elevator A leaving floor 45
+[2025-04-26 16:06:04] [info] Elevator A stopped on floor 46
+[2025-04-26 16:06:04] [info] Elevator A picked up 1 passenger(s) on floor 46
+[2025-04-26 16:06:04] [info] Elevator A now has 3 passenger(s)
+[2025-04-26 16:06:14] [info] Elevator A leaving floor 46
+[2025-04-26 16:06:24] [info] Elevator A leaving floor 47
+[2025-04-26 16:06:34] [info] Elevator A leaving floor 48
+[2025-04-26 16:06:44] [info] Elevator A leaving floor 49
+[2025-04-26 16:06:54] [info] Elevator A leaving floor 50
+[2025-04-26 16:06:56] [info] Elevator A stopped on floor 51
+[2025-04-26 16:06:56] [info] Elevator A picked up 1 passenger(s) on floor 51
+[2025-04-26 16:06:56] [info] Elevator A now has 4 passenger(s)
+[2025-04-26 16:07:06] [info] Elevator A leaving floor 51
+[2025-04-26 16:07:16] [info] Elevator A leaving floor 52
+[2025-04-26 16:07:26] [info] Elevator A leaving floor 53
+[2025-04-26 16:07:36] [info] Elevator A leaving floor 54
+[2025-04-26 16:07:46] [info] Elevator A leaving floor 55
+[2025-04-26 16:07:56] [info] Elevator A leaving floor 56
+[2025-04-26 16:08:06] [info] Elevator A leaving floor 57
+[2025-04-26 16:08:16] [info] Elevator A leaving floor 58
+[2025-04-26 16:08:26] [info] Elevator A leaving floor 59
+[2025-04-26 16:08:36] [info] Elevator A leaving floor 60
+[2025-04-26 16:08:46] [info] Elevator A leaving floor 61
+[2025-04-26 16:08:56] [info] Elevator A leaving floor 62
+[2025-04-26 16:09:06] [info] Elevator A leaving floor 63
+[2025-04-26 16:09:16] [info] Elevator A leaving floor 64
+[2025-04-26 16:09:18] [info] Elevator A stopped on floor 65
+[2025-04-26 16:09:18] [info] Elevator A picked up 1 passenger(s) on floor 65
+[2025-04-26 16:09:18] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 16:09:28] [info] Elevator A leaving floor 65
+[2025-04-26 16:09:38] [info] Elevator A leaving floor 66
+[2025-04-26 16:09:40] [info] Elevator A stopped on floor 67
+[2025-04-26 16:09:40] [info] Elevator A dropped off 1 passenger(s) on floor 67
+[2025-04-26 16:09:40] [info] Elevator A now has 4 passenger(s)
+[2025-04-26 16:09:50] [info] Elevator A leaving floor 67
+[2025-04-26 16:10:00] [info] Elevator A leaving floor 68
+[2025-04-26 16:10:10] [info] Elevator A leaving floor 69
+[2025-04-26 16:10:20] [info] Elevator A leaving floor 70
+[2025-04-26 16:10:30] [info] Elevator A leaving floor 71
+[2025-04-26 16:10:40] [info] Elevator A leaving floor 72
+[2025-04-26 16:10:50] [info] Elevator A leaving floor 73
+[2025-04-26 16:11:00] [info] Elevator A leaving floor 74
+[2025-04-26 16:11:10] [info] Elevator A leaving floor 75
+[2025-04-26 16:11:20] [info] Elevator A leaving floor 76
+[2025-04-26 16:11:30] [info] Elevator A leaving floor 77
+[2025-04-26 16:11:40] [info] Elevator A leaving floor 78
+[2025-04-26 16:11:42] [info] Elevator A stopped on floor 79
+[2025-04-26 16:11:42] [info] Elevator A dropped off 1 passenger(s) on floor 79
+[2025-04-26 16:11:42] [info] Elevator A now has 3 passenger(s)
+[2025-04-26 16:11:52] [info] Elevator A leaving floor 79
+[2025-04-26 16:12:02] [info] Elevator A leaving floor 80
+[2025-04-26 16:12:12] [info] Elevator A leaving floor 79
+[2025-04-26 16:12:22] [info] Elevator A leaving floor 78
+[2025-04-26 16:12:32] [info] Elevator A leaving floor 77
+[2025-04-26 16:12:42] [info] Elevator A leaving floor 76
+[2025-04-26 16:12:52] [info] Elevator A leaving floor 75
+[2025-04-26 16:13:02] [info] Elevator A leaving floor 74
+[2025-04-26 16:13:12] [info] Elevator A leaving floor 73
+[2025-04-26 16:13:22] [info] Elevator A leaving floor 72
+[2025-04-26 16:13:32] [info] Elevator A leaving floor 71
+[2025-04-26 16:13:42] [info] Elevator A leaving floor 70
+[2025-04-26 16:13:44] [info] Elevator A stopped on floor 69
+[2025-04-26 16:13:44] [info] Elevator A picked up 1 passenger(s) on floor 69
+[2025-04-26 16:13:44] [info] Elevator A now has 4 passenger(s)
+[2025-04-26 16:13:54] [info] Elevator A leaving floor 69
+[2025-04-26 16:14:04] [info] Elevator A leaving floor 68
+[2025-04-26 16:14:14] [info] Elevator A leaving floor 67
+[2025-04-26 16:14:24] [info] Elevator A leaving floor 66
+[2025-04-26 16:14:34] [info] Elevator A leaving floor 65
+[2025-04-26 16:14:44] [info] Elevator A leaving floor 64
+[2025-04-26 16:14:54] [info] Elevator A leaving floor 63
+[2025-04-26 16:15:04] [info] Elevator A leaving floor 62
+[2025-04-26 16:15:14] [info] Elevator A leaving floor 61
+[2025-04-26 16:15:24] [info] Elevator A leaving floor 60
+[2025-04-26 16:15:26] [info] Elevator A stopped on floor 59
+[2025-04-26 16:15:26] [info] Elevator A picked up 1 passenger(s) on floor 59
+[2025-04-26 16:15:26] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 16:15:36] [info] Elevator A leaving floor 59
+[2025-04-26 16:15:46] [info] Elevator A leaving floor 58
+[2025-04-26 16:15:56] [info] Elevator A leaving floor 57
+[2025-04-26 16:16:06] [info] Elevator A leaving floor 56
+[2025-04-26 16:16:08] [info] Elevator A stopped on floor 55
+[2025-04-26 16:16:08] [info] Elevator A picked up 1 passenger(s) on floor 55
+[2025-04-26 16:16:08] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 16:16:18] [info] Elevator A leaving floor 55
+[2025-04-26 16:16:28] [info] Elevator A leaving floor 54
+[2025-04-26 16:16:38] [info] Elevator A leaving floor 53
+[2025-04-26 16:16:48] [info] Elevator A leaving floor 52
+[2025-04-26 16:16:58] [info] Elevator A leaving floor 51
+[2025-04-26 16:17:08] [info] Elevator A leaving floor 50
+[2025-04-26 16:17:18] [info] Elevator A leaving floor 49
+[2025-04-26 16:17:28] [info] Elevator A leaving floor 48
+[2025-04-26 16:17:38] [info] Elevator A leaving floor 47
+[2025-04-26 16:17:48] [info] Elevator A leaving floor 46
+[2025-04-26 16:17:58] [info] Elevator A leaving floor 45
+[2025-04-26 16:18:08] [info] Elevator A leaving floor 44
+[2025-04-26 16:18:18] [info] Elevator A leaving floor 43
+[2025-04-26 16:18:28] [info] Elevator A leaving floor 42
+[2025-04-26 16:18:38] [info] Elevator A leaving floor 41
+[2025-04-26 16:18:48] [info] Elevator A leaving floor 40
+[2025-04-26 16:18:58] [info] Elevator A leaving floor 39
+[2025-04-26 16:19:08] [info] Elevator A leaving floor 38
+[2025-04-26 16:19:18] [info] Elevator A leaving floor 37
+[2025-04-26 16:19:20] [info] Elevator A stopped on floor 36
+[2025-04-26 16:19:20] [info] Elevator A picked up 1 passenger(s) on floor 36
+[2025-04-26 16:19:20] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 16:19:30] [info] Elevator A leaving floor 36
+[2025-04-26 16:19:40] [info] Elevator A leaving floor 35
+[2025-04-26 16:19:42] [info] Elevator A stopped on floor 34
+[2025-04-26 16:19:42] [info] Elevator A dropped off 1 passenger(s) on floor 34
+[2025-04-26 16:19:42] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 16:19:52] [info] Elevator A leaving floor 34
+[2025-04-26 16:20:02] [info] Elevator A leaving floor 33
+[2025-04-26 16:20:12] [info] Elevator A leaving floor 32
+[2025-04-26 16:20:22] [info] Elevator A leaving floor 31
+[2025-04-26 16:20:32] [info] Elevator A leaving floor 30
+[2025-04-26 16:20:42] [info] Elevator A leaving floor 29
+[2025-04-26 16:20:44] [info] Elevator A stopped on floor 28
+[2025-04-26 16:20:44] [info] Elevator A picked up 1 passenger(s) on floor 28
+[2025-04-26 16:20:44] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 16:20:54] [info] Elevator A leaving floor 28
+[2025-04-26 16:21:04] [info] Elevator A leaving floor 27
+[2025-04-26 16:21:14] [info] Elevator A leaving floor 26
+[2025-04-26 16:21:24] [info] Elevator A leaving floor 25
+[2025-04-26 16:21:34] [info] Elevator A leaving floor 24
+[2025-04-26 16:21:44] [info] Elevator A leaving floor 23
+[2025-04-26 16:21:54] [info] Elevator A leaving floor 22
+[2025-04-26 16:22:04] [info] Elevator A leaving floor 21
+[2025-04-26 16:22:14] [info] Elevator A leaving floor 20
+[2025-04-26 16:22:24] [info] Elevator A leaving floor 19
+[2025-04-26 16:22:34] [info] Elevator A leaving floor 18
+[2025-04-26 16:22:44] [info] Elevator A leaving floor 17
+[2025-04-26 16:22:54] [info] Elevator A leaving floor 16
+[2025-04-26 16:23:04] [info] Elevator A leaving floor 15
+[2025-04-26 16:23:14] [info] Elevator A leaving floor 14
+[2025-04-26 16:23:24] [info] Elevator A leaving floor 13
+[2025-04-26 16:23:34] [info] Elevator A leaving floor 12
+[2025-04-26 16:23:44] [info] Elevator A leaving floor 11
+[2025-04-26 16:23:54] [info] Elevator A leaving floor 10
+[2025-04-26 16:24:04] [info] Elevator A leaving floor 9
+[2025-04-26 16:24:07] [info] Elevator A stopped on floor 8
+[2025-04-26 16:24:07] [info] Elevator A dropped off 1 passenger(s) on floor 8
+[2025-04-26 16:24:07] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 16:24:17] [info] Elevator A leaving floor 8
+[2025-04-26 16:24:27] [info] Elevator A leaving floor 7
+[2025-04-26 16:24:37] [info] Elevator A leaving floor 6
+[2025-04-26 16:24:39] [info] Elevator A stopped on floor 5
+[2025-04-26 16:24:39] [info] Elevator A dropped off 1 passenger(s) on floor 5
+[2025-04-26 16:24:39] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 16:24:49] [info] Elevator A leaving floor 5
+[2025-04-26 16:24:51] [info] Elevator A stopped on floor 4
+[2025-04-26 16:24:51] [info] Elevator A dropped off 1 passenger(s) on floor 4
+[2025-04-26 16:24:51] [info] Elevator A now has 4 passenger(s)
+[2025-04-26 16:25:01] [info] Elevator A leaving floor 4
+[2025-04-26 16:25:11] [info] Elevator A leaving floor 3
+[2025-04-26 16:25:21] [info] Elevator A leaving floor 4
+[2025-04-26 16:25:31] [info] Elevator A leaving floor 5
+[2025-04-26 16:25:41] [info] Elevator A leaving floor 6
+[2025-04-26 16:25:51] [info] Elevator A leaving floor 7
+[2025-04-26 16:26:01] [info] Elevator A leaving floor 8
+[2025-04-26 16:26:11] [info] Elevator A leaving floor 9
+[2025-04-26 16:26:21] [info] Elevator A leaving floor 10
+[2025-04-26 16:26:31] [info] Elevator A leaving floor 11
+[2025-04-26 16:26:41] [info] Elevator A leaving floor 12
+[2025-04-26 16:26:51] [info] Elevator A leaving floor 13
+[2025-04-26 16:27:01] [info] Elevator A leaving floor 14
+[2025-04-26 16:27:11] [info] Elevator A leaving floor 15
+[2025-04-26 16:27:21] [info] Elevator A leaving floor 16
+[2025-04-26 16:27:31] [info] Elevator A leaving floor 17
+[2025-04-26 16:27:41] [info] Elevator A leaving floor 18
+[2025-04-26 16:27:51] [info] Elevator A leaving floor 19
+[2025-04-26 16:28:01] [info] Elevator A leaving floor 20
+[2025-04-26 16:28:11] [info] Elevator A leaving floor 21
+[2025-04-26 16:28:21] [info] Elevator A leaving floor 22
+[2025-04-26 16:28:31] [info] Elevator A leaving floor 23
+[2025-04-26 16:28:33] [info] Elevator A stopped on floor 24
+[2025-04-26 16:28:33] [info] Elevator A picked up 1 passenger(s) on floor 24
+[2025-04-26 16:28:33] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 16:28:43] [info] Elevator A leaving floor 24
+[2025-04-26 16:28:53] [info] Elevator A leaving floor 25
+[2025-04-26 16:29:03] [info] Elevator A leaving floor 26
+[2025-04-26 16:29:13] [info] Elevator A leaving floor 27
+[2025-04-26 16:29:23] [info] Elevator A leaving floor 28
+[2025-04-26 16:29:33] [info] Elevator A leaving floor 29
+[2025-04-26 16:29:35] [info] Elevator A stopped on floor 30
+[2025-04-26 16:29:35] [info] Elevator A picked up 1 passenger(s) on floor 30
+[2025-04-26 16:29:35] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 16:29:45] [info] Elevator A leaving floor 30
+[2025-04-26 16:29:47] [info] Elevator A stopped on floor 31
+[2025-04-26 16:29:47] [info] Elevator A dropped off 1 passenger(s) on floor 31
+[2025-04-26 16:29:47] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 16:29:57] [info] Elevator A leaving floor 31
+[2025-04-26 16:29:59] [info] Elevator A stopped on floor 32
+[2025-04-26 16:29:59] [info] Elevator A picked up 1 passenger(s) on floor 32
+[2025-04-26 16:29:59] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 16:30:09] [info] Elevator A leaving floor 32
+[2025-04-26 16:30:19] [info] Elevator A leaving floor 33
+[2025-04-26 16:30:29] [info] Elevator A leaving floor 34
+[2025-04-26 16:30:39] [info] Elevator A leaving floor 35
+[2025-04-26 16:30:49] [info] Elevator A leaving floor 36
+[2025-04-26 16:30:59] [info] Elevator A leaving floor 37
+[2025-04-26 16:31:01] [info] Elevator A stopped on floor 38
+[2025-04-26 16:31:01] [info] Elevator A picked up 1 passenger(s) on floor 38
+[2025-04-26 16:31:01] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 16:31:11] [info] Elevator A leaving floor 38
+[2025-04-26 16:31:21] [info] Elevator A leaving floor 39
+[2025-04-26 16:31:31] [info] Elevator A leaving floor 40
+[2025-04-26 16:31:41] [info] Elevator A leaving floor 41
+[2025-04-26 16:31:51] [info] Elevator A leaving floor 42
+[2025-04-26 16:31:53] [info] Elevator A stopped on floor 43
+[2025-04-26 16:31:53] [info] Elevator A picked up 1 passenger(s) on floor 43
+[2025-04-26 16:31:53] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 16:32:03] [info] Elevator A leaving floor 43
+[2025-04-26 16:32:13] [info] Elevator A leaving floor 44
+[2025-04-26 16:32:23] [info] Elevator A leaving floor 45
+[2025-04-26 16:32:33] [info] Elevator A leaving floor 46
+[2025-04-26 16:32:43] [info] Elevator A leaving floor 47
+[2025-04-26 16:32:53] [info] Elevator A leaving floor 48
+[2025-04-26 16:33:03] [info] Elevator A leaving floor 49
+[2025-04-26 16:33:13] [info] Elevator A leaving floor 50
+[2025-04-26 16:33:23] [info] Elevator A leaving floor 51
+[2025-04-26 16:33:33] [info] Elevator A leaving floor 52
+[2025-04-26 16:33:43] [info] Elevator A leaving floor 53
+[2025-04-26 16:33:53] [info] Elevator A leaving floor 54
+[2025-04-26 16:34:03] [info] Elevator A leaving floor 55
+[2025-04-26 16:34:13] [info] Elevator A leaving floor 56
+[2025-04-26 16:34:23] [info] Elevator A leaving floor 57
+[2025-04-26 16:34:33] [info] Elevator A leaving floor 58
+[2025-04-26 16:34:43] [info] Elevator A leaving floor 59
+[2025-04-26 16:34:53] [info] Elevator A leaving floor 60
+[2025-04-26 16:34:55] [info] Elevator A stopped on floor 61
+[2025-04-26 16:34:55] [info] Elevator A dropped off 1 passenger(s) on floor 61
+[2025-04-26 16:34:55] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 16:35:05] [info] Elevator A leaving floor 61
+[2025-04-26 16:35:15] [info] Elevator A leaving floor 62
+[2025-04-26 16:35:17] [info] Elevator A stopped on floor 63
+[2025-04-26 16:35:17] [info] Elevator A dropped off 1 passenger(s) on floor 63
+[2025-04-26 16:35:17] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 16:35:27] [info] Elevator A leaving floor 63
+[2025-04-26 16:35:37] [info] Elevator A leaving floor 64
+[2025-04-26 16:35:47] [info] Elevator A leaving floor 65
+[2025-04-26 16:35:57] [info] Elevator A leaving floor 66
+[2025-04-26 16:36:07] [info] Elevator A leaving floor 67
+[2025-04-26 16:36:17] [info] Elevator A leaving floor 68
+[2025-04-26 16:36:27] [info] Elevator A leaving floor 69
+[2025-04-26 16:36:37] [info] Elevator A leaving floor 70
+[2025-04-26 16:36:47] [info] Elevator A leaving floor 71
+[2025-04-26 16:36:57] [info] Elevator A leaving floor 72
+[2025-04-26 16:37:07] [info] Elevator A leaving floor 73
+[2025-04-26 16:37:09] [info] Elevator A stopped on floor 74
+[2025-04-26 16:37:09] [info] Elevator A picked up 1 passenger(s) on floor 74
+[2025-04-26 16:37:09] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 16:37:19] [info] Elevator A leaving floor 74
+[2025-04-26 16:37:21] [info] Elevator A stopped on floor 75
+[2025-04-26 16:37:21] [info] Elevator A dropped off 1 passenger(s) on floor 75
+[2025-04-26 16:37:21] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 16:37:31] [info] Elevator A leaving floor 75
+[2025-04-26 16:37:41] [info] Elevator A leaving floor 76
+[2025-04-26 16:37:51] [info] Elevator A leaving floor 77
+[2025-04-26 16:38:01] [info] Elevator A leaving floor 78
+[2025-04-26 16:38:11] [info] Elevator A leaving floor 79
+[2025-04-26 16:38:21] [info] Elevator A leaving floor 80
+[2025-04-26 16:38:31] [info] Elevator A leaving floor 81
+[2025-04-26 16:38:33] [info] Elevator A stopped on floor 82
+[2025-04-26 16:38:33] [info] Elevator A picked up 1 passenger(s) on floor 82
+[2025-04-26 16:38:33] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 16:38:43] [info] Elevator A leaving floor 82
+[2025-04-26 16:38:53] [info] Elevator A leaving floor 83
+[2025-04-26 16:38:55] [info] Elevator A stopped on floor 84
+[2025-04-26 16:38:55] [info] Elevator A dropped off 1 passenger(s) on floor 84
+[2025-04-26 16:38:55] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 16:39:05] [info] Elevator A leaving floor 84
+[2025-04-26 16:39:15] [info] Elevator A leaving floor 85
+[2025-04-26 16:39:25] [info] Elevator A leaving floor 86
+[2025-04-26 16:39:27] [info] Elevator A stopped on floor 87
+[2025-04-26 16:39:27] [info] Elevator A dropped off 1 passenger(s) on floor 87
+[2025-04-26 16:39:27] [info] Elevator A picked up 1 passenger(s) on floor 87
+[2025-04-26 16:39:27] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 16:39:37] [info] Elevator A leaving floor 87
+[2025-04-26 16:39:47] [info] Elevator A leaving floor 88
+[2025-04-26 16:39:57] [info] Elevator A leaving floor 89
+[2025-04-26 16:40:07] [info] Elevator A leaving floor 90
+[2025-04-26 16:40:09] [info] Elevator A stopped on floor 91
+[2025-04-26 16:40:09] [info] Elevator A dropped off 1 passenger(s) on floor 91
+[2025-04-26 16:40:09] [info] Elevator A picked up 1 passenger(s) on floor 91
+[2025-04-26 16:40:09] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 16:40:19] [info] Elevator A leaving floor 91
+[2025-04-26 16:40:29] [info] Elevator A leaving floor 92
+[2025-04-26 16:40:31] [info] Elevator A stopped on floor 93
+[2025-04-26 16:40:31] [info] Elevator A dropped off 1 passenger(s) on floor 93
+[2025-04-26 16:40:31] [info] Elevator A picked up 2 passenger(s) on floor 93
+[2025-04-26 16:40:31] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 16:40:41] [info] Elevator A leaving floor 93
+[2025-04-26 16:40:43] [info] Elevator A stopped on floor 94
+[2025-04-26 16:40:43] [info] Elevator A picked up 1 passenger(s) on floor 94
+[2025-04-26 16:40:43] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 16:40:45] [info] Elevator A stopped on floor 94
+[2025-04-26 16:40:45] [info] Elevator A dropped off 1 passenger(s) on floor 94
+[2025-04-26 16:40:45] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 16:40:55] [info] Elevator A leaving floor 94
+[2025-04-26 16:40:57] [info] Elevator A stopped on floor 95
+[2025-04-26 16:40:57] [info] Elevator A dropped off 1 passenger(s) on floor 95
+[2025-04-26 16:40:57] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 16:41:07] [info] Elevator A leaving floor 95
+[2025-04-26 16:41:09] [info] Elevator A stopped on floor 96
+[2025-04-26 16:41:09] [info] Elevator A picked up 1 passenger(s) on floor 96
+[2025-04-26 16:41:09] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 16:41:19] [info] Elevator A leaving floor 96
+[2025-04-26 16:41:29] [info] Elevator A leaving floor 95
+[2025-04-26 16:41:39] [info] Elevator A leaving floor 94
+[2025-04-26 16:41:41] [info] Elevator A stopped on floor 93
+[2025-04-26 16:41:41] [info] Elevator A picked up 1 passenger(s) on floor 93
+[2025-04-26 16:41:41] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 16:41:51] [info] Elevator A leaving floor 93
+[2025-04-26 16:42:01] [info] Elevator A leaving floor 92
+[2025-04-26 16:42:11] [info] Elevator A leaving floor 91
+[2025-04-26 16:42:21] [info] Elevator A leaving floor 90
+[2025-04-26 16:42:24] [info] Elevator A stopped on floor 89
+[2025-04-26 16:42:24] [info] Elevator A dropped off 1 passenger(s) on floor 89
+[2025-04-26 16:42:24] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 16:42:34] [info] Elevator A leaving floor 89
+[2025-04-26 16:42:44] [info] Elevator A leaving floor 88
+[2025-04-26 16:42:54] [info] Elevator A leaving floor 87
+[2025-04-26 16:43:04] [info] Elevator A leaving floor 86
+[2025-04-26 16:43:14] [info] Elevator A leaving floor 85
+[2025-04-26 16:43:24] [info] Elevator A leaving floor 84
+[2025-04-26 16:43:34] [info] Elevator A leaving floor 83
+[2025-04-26 16:43:44] [info] Elevator A leaving floor 82
+[2025-04-26 16:43:54] [info] Elevator A leaving floor 81
+[2025-04-26 16:44:04] [info] Elevator A leaving floor 80
+[2025-04-26 16:44:14] [info] Elevator A leaving floor 79
+[2025-04-26 16:44:24] [info] Elevator A leaving floor 78
+[2025-04-26 16:44:34] [info] Elevator A leaving floor 77
+[2025-04-26 16:44:44] [info] Elevator A leaving floor 76
+[2025-04-26 16:44:54] [info] Elevator A leaving floor 75
+[2025-04-26 16:45:04] [info] Elevator A leaving floor 74
+[2025-04-26 16:45:14] [info] Elevator A leaving floor 73
+[2025-04-26 16:45:16] [info] Elevator A stopped on floor 72
+[2025-04-26 16:45:16] [info] Elevator A picked up 1 passenger(s) on floor 72
+[2025-04-26 16:45:16] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 16:45:26] [info] Elevator A leaving floor 72
+[2025-04-26 16:45:36] [info] Elevator A leaving floor 71
+[2025-04-26 16:45:46] [info] Elevator A leaving floor 70
+[2025-04-26 16:45:56] [info] Elevator A leaving floor 69
+[2025-04-26 16:45:58] [info] Elevator A stopped on floor 68
+[2025-04-26 16:45:58] [info] Elevator A dropped off 1 passenger(s) on floor 68
+[2025-04-26 16:45:58] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 16:46:08] [info] Elevator A leaving floor 68
+[2025-04-26 16:46:18] [info] Elevator A leaving floor 67
+[2025-04-26 16:46:28] [info] Elevator A leaving floor 66
+[2025-04-26 16:46:38] [info] Elevator A leaving floor 65
+[2025-04-26 16:46:48] [info] Elevator A leaving floor 64
+[2025-04-26 16:46:58] [info] Elevator A leaving floor 63
+[2025-04-26 16:47:08] [info] Elevator A leaving floor 62
+[2025-04-26 16:47:18] [info] Elevator A leaving floor 61
+[2025-04-26 16:47:28] [info] Elevator A leaving floor 60
+[2025-04-26 16:47:38] [info] Elevator A leaving floor 59
+[2025-04-26 16:47:48] [info] Elevator A leaving floor 58
+[2025-04-26 16:47:58] [info] Elevator A leaving floor 57
+[2025-04-26 16:48:00] [info] Elevator A stopped on floor 56
+[2025-04-26 16:48:00] [info] Elevator A dropped off 1 passenger(s) on floor 56
+[2025-04-26 16:48:00] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 16:48:10] [info] Elevator A leaving floor 56
+[2025-04-26 16:48:20] [info] Elevator A leaving floor 55
+[2025-04-26 16:48:30] [info] Elevator A leaving floor 54
+[2025-04-26 16:48:40] [info] Elevator A leaving floor 53
+[2025-04-26 16:48:50] [info] Elevator A leaving floor 52
+[2025-04-26 16:49:00] [info] Elevator A leaving floor 51
+[2025-04-26 16:49:10] [info] Elevator A leaving floor 50
+[2025-04-26 16:49:20] [info] Elevator A leaving floor 49
+[2025-04-26 16:49:30] [info] Elevator A leaving floor 48
+[2025-04-26 16:49:40] [info] Elevator A leaving floor 47
+[2025-04-26 16:49:50] [info] Elevator A leaving floor 46
+[2025-04-26 16:50:00] [info] Elevator A leaving floor 45
+[2025-04-26 16:50:10] [info] Elevator A leaving floor 44
+[2025-04-26 16:50:12] [info] Elevator A stopped on floor 43
+[2025-04-26 16:50:12] [info] Elevator A dropped off 1 passenger(s) on floor 43
+[2025-04-26 16:50:12] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 16:50:22] [info] Elevator A leaving floor 43
+[2025-04-26 16:50:32] [info] Elevator A leaving floor 42
+[2025-04-26 16:50:42] [info] Elevator A leaving floor 41
+[2025-04-26 16:50:52] [info] Elevator A leaving floor 40
+[2025-04-26 16:51:02] [info] Elevator A leaving floor 39
+[2025-04-26 16:51:12] [info] Elevator A leaving floor 38
+[2025-04-26 16:51:14] [info] Elevator A stopped on floor 37
+[2025-04-26 16:51:14] [info] Elevator A picked up 1 passenger(s) on floor 37
+[2025-04-26 16:51:14] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 16:51:24] [info] Elevator A leaving floor 37
+[2025-04-26 16:51:26] [info] Elevator A stopped on floor 36
+[2025-04-26 16:51:26] [info] Elevator A picked up 2 passenger(s) on floor 36
+[2025-04-26 16:51:26] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 16:51:36] [info] Elevator A leaving floor 36
+[2025-04-26 16:51:46] [info] Elevator A leaving floor 35
+[2025-04-26 16:51:56] [info] Elevator A leaving floor 34
+[2025-04-26 16:52:06] [info] Elevator A leaving floor 33
+[2025-04-26 16:52:16] [info] Elevator A leaving floor 32
+[2025-04-26 16:52:26] [info] Elevator A leaving floor 31
+[2025-04-26 16:52:36] [info] Elevator A leaving floor 30
+[2025-04-26 16:52:38] [info] Elevator A stopped on floor 29
+[2025-04-26 16:52:38] [info] Elevator A dropped off 1 passenger(s) on floor 29
+[2025-04-26 16:52:38] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 16:52:48] [info] Elevator A leaving floor 29
+[2025-04-26 16:52:58] [info] Elevator A leaving floor 28
+[2025-04-26 16:53:08] [info] Elevator A leaving floor 27
+[2025-04-26 16:53:18] [info] Elevator A leaving floor 26
+[2025-04-26 16:53:20] [info] Elevator A stopped on floor 25
+[2025-04-26 16:53:20] [info] Elevator A picked up 1 passenger(s) on floor 25
+[2025-04-26 16:53:20] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 16:53:30] [info] Elevator A leaving floor 25
+[2025-04-26 16:53:40] [info] Elevator A leaving floor 24
+[2025-04-26 16:53:42] [info] Elevator A stopped on floor 23
+[2025-04-26 16:53:42] [info] Elevator A dropped off 1 passenger(s) on floor 23
+[2025-04-26 16:53:42] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 16:53:52] [info] Elevator A leaving floor 23
+[2025-04-26 16:54:02] [info] Elevator A leaving floor 22
+[2025-04-26 16:54:12] [info] Elevator A leaving floor 21
+[2025-04-26 16:54:14] [info] Elevator A stopped on floor 20
+[2025-04-26 16:54:14] [info] Elevator A dropped off 1 passenger(s) on floor 20
+[2025-04-26 16:54:14] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 16:54:24] [info] Elevator A leaving floor 20
+[2025-04-26 16:54:34] [info] Elevator A leaving floor 19
+[2025-04-26 16:54:44] [info] Elevator A leaving floor 18
+[2025-04-26 16:54:46] [info] Elevator A stopped on floor 17
+[2025-04-26 16:54:46] [info] Elevator A picked up 2 passenger(s) on floor 17
+[2025-04-26 16:54:46] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 16:54:56] [info] Elevator A leaving floor 17
+[2025-04-26 16:55:06] [info] Elevator A leaving floor 16
+[2025-04-26 16:55:16] [info] Elevator A leaving floor 15
+[2025-04-26 16:55:26] [info] Elevator A leaving floor 14
+[2025-04-26 16:55:36] [info] Elevator A leaving floor 13
+[2025-04-26 16:55:46] [info] Elevator A leaving floor 12
+[2025-04-26 16:55:56] [info] Elevator A leaving floor 11
+[2025-04-26 16:56:06] [info] Elevator A leaving floor 10
+[2025-04-26 16:56:16] [info] Elevator A leaving floor 9
+[2025-04-26 16:56:26] [info] Elevator A leaving floor 8
+[2025-04-26 16:56:28] [info] Elevator A stopped on floor 7
+[2025-04-26 16:56:28] [info] Elevator A dropped off 1 passenger(s) on floor 7
+[2025-04-26 16:56:28] [info] Elevator A picked up 1 passenger(s) on floor 7
+[2025-04-26 16:56:28] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 16:56:38] [info] Elevator A leaving floor 7
+[2025-04-26 16:56:48] [info] Elevator A leaving floor 6
+[2025-04-26 16:56:50] [info] Elevator A stopped on floor 5
+[2025-04-26 16:56:50] [info] Elevator A dropped off 1 passenger(s) on floor 5
+[2025-04-26 16:56:50] [info] Elevator A picked up 1 passenger(s) on floor 5
+[2025-04-26 16:56:50] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 16:57:00] [info] Elevator A leaving floor 5
+[2025-04-26 16:57:10] [info] Elevator A leaving floor 4
+[2025-04-26 16:57:20] [info] Elevator A leaving floor 5
+[2025-04-26 16:57:30] [info] Elevator A leaving floor 6
+[2025-04-26 16:57:40] [info] Elevator A leaving floor 7
+[2025-04-26 16:57:50] [info] Elevator A leaving floor 8
+[2025-04-26 16:58:00] [info] Elevator A leaving floor 9
+[2025-04-26 16:58:10] [info] Elevator A leaving floor 10
+[2025-04-26 16:58:20] [info] Elevator A leaving floor 11
+[2025-04-26 16:58:30] [info] Elevator A leaving floor 12
+[2025-04-26 16:58:40] [info] Elevator A leaving floor 13
+[2025-04-26 16:58:50] [info] Elevator A leaving floor 14
+[2025-04-26 16:59:00] [info] Elevator A leaving floor 15
+[2025-04-26 16:59:10] [info] Elevator A leaving floor 16
+[2025-04-26 16:59:20] [info] Elevator A leaving floor 17
+[2025-04-26 16:59:30] [info] Elevator A leaving floor 18
+[2025-04-26 16:59:40] [info] Elevator A leaving floor 19
+[2025-04-26 16:59:50] [info] Elevator A leaving floor 20
+[2025-04-26 17:00:00] [info] Elevator A leaving floor 21
+[2025-04-26 17:00:10] [info] Elevator A leaving floor 22
+[2025-04-26 17:00:20] [info] Elevator A leaving floor 23
+[2025-04-26 17:00:30] [info] Elevator A leaving floor 24
+[2025-04-26 17:00:41] [info] Elevator A leaving floor 25
+[2025-04-26 17:00:51] [info] Elevator A leaving floor 26
+[2025-04-26 17:01:01] [info] Elevator A leaving floor 27
+[2025-04-26 17:01:11] [info] Elevator A leaving floor 28
+[2025-04-26 17:01:21] [info] Elevator A leaving floor 29
+[2025-04-26 17:01:31] [info] Elevator A leaving floor 30
+[2025-04-26 17:01:41] [info] Elevator A leaving floor 31
+[2025-04-26 17:01:51] [info] Elevator A leaving floor 32
+[2025-04-26 17:01:53] [info] Elevator A stopped on floor 33
+[2025-04-26 17:01:53] [info] Elevator A dropped off 1 passenger(s) on floor 33
+[2025-04-26 17:01:53] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 17:02:03] [info] Elevator A leaving floor 33
+[2025-04-26 17:02:05] [info] Elevator A stopped on floor 34
+[2025-04-26 17:02:05] [info] Elevator A dropped off 1 passenger(s) on floor 34
+[2025-04-26 17:02:05] [info] Elevator A picked up 1 passenger(s) on floor 34
+[2025-04-26 17:02:05] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 17:02:15] [info] Elevator A leaving floor 34
+[2025-04-26 17:02:25] [info] Elevator A leaving floor 35
+[2025-04-26 17:02:35] [info] Elevator A leaving floor 36
+[2025-04-26 17:02:45] [info] Elevator A leaving floor 37
+[2025-04-26 17:02:55] [info] Elevator A leaving floor 38
+[2025-04-26 17:03:05] [info] Elevator A leaving floor 39
+[2025-04-26 17:03:07] [info] Elevator A stopped on floor 40
+[2025-04-26 17:03:07] [info] Elevator A dropped off 1 passenger(s) on floor 40
+[2025-04-26 17:03:07] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 17:03:17] [info] Elevator A leaving floor 40
+[2025-04-26 17:03:27] [info] Elevator A leaving floor 41
+[2025-04-26 17:03:37] [info] Elevator A leaving floor 42
+[2025-04-26 17:03:47] [info] Elevator A leaving floor 43
+[2025-04-26 17:03:57] [info] Elevator A leaving floor 44
+[2025-04-26 17:04:07] [info] Elevator A leaving floor 45
+[2025-04-26 17:04:17] [info] Elevator A leaving floor 46
+[2025-04-26 17:04:27] [info] Elevator A leaving floor 47
+[2025-04-26 17:04:37] [info] Elevator A leaving floor 48
+[2025-04-26 17:04:47] [info] Elevator A leaving floor 49
+[2025-04-26 17:04:57] [info] Elevator A leaving floor 50
+[2025-04-26 17:05:07] [info] Elevator A leaving floor 51
+[2025-04-26 17:05:17] [info] Elevator A leaving floor 52
+[2025-04-26 17:05:27] [info] Elevator A leaving floor 53
+[2025-04-26 17:05:37] [info] Elevator A leaving floor 54
+[2025-04-26 17:05:47] [info] Elevator A leaving floor 55
+[2025-04-26 17:05:49] [info] Elevator A stopped on floor 56
+[2025-04-26 17:05:49] [info] Elevator A dropped off 1 passenger(s) on floor 56
+[2025-04-26 17:05:49] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 17:05:59] [info] Elevator A leaving floor 56
+[2025-04-26 17:06:01] [info] Elevator A stopped on floor 57
+[2025-04-26 17:06:01] [info] Elevator A picked up 1 passenger(s) on floor 57
+[2025-04-26 17:06:01] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 17:06:11] [info] Elevator A leaving floor 57
+[2025-04-26 17:06:21] [info] Elevator A leaving floor 58
+[2025-04-26 17:06:31] [info] Elevator A leaving floor 59
+[2025-04-26 17:06:41] [info] Elevator A leaving floor 60
+[2025-04-26 17:06:51] [info] Elevator A leaving floor 61
+[2025-04-26 17:07:01] [info] Elevator A leaving floor 62
+[2025-04-26 17:07:11] [info] Elevator A leaving floor 63
+[2025-04-26 17:07:21] [info] Elevator A leaving floor 64
+[2025-04-26 17:07:31] [info] Elevator A leaving floor 65
+[2025-04-26 17:07:33] [info] Elevator A stopped on floor 66
+[2025-04-26 17:07:33] [info] Elevator A picked up 1 passenger(s) on floor 66
+[2025-04-26 17:07:33] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 17:07:43] [info] Elevator A leaving floor 66
+[2025-04-26 17:07:53] [info] Elevator A leaving floor 67
+[2025-04-26 17:08:03] [info] Elevator A leaving floor 68
+[2025-04-26 17:08:13] [info] Elevator A leaving floor 69
+[2025-04-26 17:08:23] [info] Elevator A leaving floor 70
+[2025-04-26 17:08:25] [info] Elevator A stopped on floor 71
+[2025-04-26 17:08:25] [info] Elevator A picked up 1 passenger(s) on floor 71
+[2025-04-26 17:08:25] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 17:08:35] [info] Elevator A leaving floor 71
+[2025-04-26 17:08:45] [info] Elevator A leaving floor 72
+[2025-04-26 17:08:55] [info] Elevator A leaving floor 73
+[2025-04-26 17:09:05] [info] Elevator A leaving floor 74
+[2025-04-26 17:09:07] [info] Elevator A stopped on floor 75
+[2025-04-26 17:09:07] [info] Elevator A dropped off 1 passenger(s) on floor 75
+[2025-04-26 17:09:07] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 17:09:17] [info] Elevator A leaving floor 75
+[2025-04-26 17:09:27] [info] Elevator A leaving floor 76
+[2025-04-26 17:09:29] [info] Elevator A stopped on floor 77
+[2025-04-26 17:09:29] [info] Elevator A picked up 1 passenger(s) on floor 77
+[2025-04-26 17:09:29] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 17:09:39] [info] Elevator A leaving floor 77
+[2025-04-26 17:09:49] [info] Elevator A leaving floor 78
+[2025-04-26 17:09:59] [info] Elevator A leaving floor 79
+[2025-04-26 17:10:09] [info] Elevator A leaving floor 80
+[2025-04-26 17:10:19] [info] Elevator A leaving floor 81
+[2025-04-26 17:10:29] [info] Elevator A leaving floor 82
+[2025-04-26 17:10:39] [info] Elevator A leaving floor 83
+[2025-04-26 17:10:49] [info] Elevator A leaving floor 84
+[2025-04-26 17:10:59] [info] Elevator A leaving floor 85
+[2025-04-26 17:11:09] [info] Elevator A leaving floor 86
+[2025-04-26 17:11:19] [info] Elevator A leaving floor 87
+[2025-04-26 17:11:29] [info] Elevator A leaving floor 88
+[2025-04-26 17:11:39] [info] Elevator A leaving floor 89
+[2025-04-26 17:11:49] [info] Elevator A leaving floor 90
+[2025-04-26 17:11:59] [info] Elevator A leaving floor 91
+[2025-04-26 17:12:01] [info] Elevator A stopped on floor 92
+[2025-04-26 17:12:01] [info] Elevator A dropped off 1 passenger(s) on floor 92
+[2025-04-26 17:12:01] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 17:12:11] [info] Elevator A leaving floor 92
+[2025-04-26 17:12:21] [info] Elevator A leaving floor 93
+[2025-04-26 17:12:31] [info] Elevator A leaving floor 94
+[2025-04-26 17:12:33] [info] Elevator A stopped on floor 95
+[2025-04-26 17:12:33] [info] Elevator A dropped off 1 passenger(s) on floor 95
+[2025-04-26 17:12:33] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 17:12:43] [info] Elevator A leaving floor 95
+[2025-04-26 17:12:53] [info] Elevator A leaving floor 96
+[2025-04-26 17:13:03] [info] Elevator A leaving floor 95
+[2025-04-26 17:13:13] [info] Elevator A leaving floor 94
+[2025-04-26 17:13:23] [info] Elevator A leaving floor 93
+[2025-04-26 17:13:33] [info] Elevator A leaving floor 92
+[2025-04-26 17:13:43] [info] Elevator A leaving floor 91
+[2025-04-26 17:13:45] [info] Elevator A stopped on floor 90
+[2025-04-26 17:13:45] [info] Elevator A picked up 1 passenger(s) on floor 90
+[2025-04-26 17:13:45] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 17:13:55] [info] Elevator A leaving floor 90
+[2025-04-26 17:13:57] [info] Elevator A stopped on floor 89
+[2025-04-26 17:13:57] [info] Elevator A picked up 1 passenger(s) on floor 89
+[2025-04-26 17:13:57] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 17:14:07] [info] Elevator A leaving floor 89
+[2025-04-26 17:14:17] [info] Elevator A leaving floor 88
+[2025-04-26 17:14:27] [info] Elevator A leaving floor 87
+[2025-04-26 17:14:37] [info] Elevator A leaving floor 86
+[2025-04-26 17:14:47] [info] Elevator A leaving floor 85
+[2025-04-26 17:14:57] [info] Elevator A leaving floor 84
+[2025-04-26 17:15:07] [info] Elevator A leaving floor 83
+[2025-04-26 17:15:17] [info] Elevator A leaving floor 82
+[2025-04-26 17:15:27] [info] Elevator A leaving floor 81
+[2025-04-26 17:15:37] [info] Elevator A leaving floor 80
+[2025-04-26 17:15:39] [info] Elevator A stopped on floor 79
+[2025-04-26 17:15:39] [info] Elevator A dropped off 1 passenger(s) on floor 79
+[2025-04-26 17:15:39] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 17:15:49] [info] Elevator A leaving floor 79
+[2025-04-26 17:15:59] [info] Elevator A leaving floor 78
+[2025-04-26 17:16:09] [info] Elevator A leaving floor 77
+[2025-04-26 17:16:19] [info] Elevator A leaving floor 76
+[2025-04-26 17:16:29] [info] Elevator A leaving floor 75
+[2025-04-26 17:16:31] [info] Elevator A stopped on floor 74
+[2025-04-26 17:16:31] [info] Elevator A picked up 1 passenger(s) on floor 74
+[2025-04-26 17:16:31] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 17:16:41] [info] Elevator A leaving floor 74
+[2025-04-26 17:16:51] [info] Elevator A leaving floor 73
+[2025-04-26 17:17:01] [info] Elevator A leaving floor 72
+[2025-04-26 17:17:11] [info] Elevator A leaving floor 71
+[2025-04-26 17:17:21] [info] Elevator A leaving floor 70
+[2025-04-26 17:17:31] [info] Elevator A leaving floor 69
+[2025-04-26 17:17:41] [info] Elevator A leaving floor 68
+[2025-04-26 17:17:51] [info] Elevator A leaving floor 67
+[2025-04-26 17:18:01] [info] Elevator A leaving floor 66
+[2025-04-26 17:18:11] [info] Elevator A leaving floor 65
+[2025-04-26 17:18:21] [info] Elevator A leaving floor 64
+[2025-04-26 17:18:31] [info] Elevator A leaving floor 63
+[2025-04-26 17:18:41] [info] Elevator A leaving floor 62
+[2025-04-26 17:18:43] [info] Elevator A stopped on floor 61
+[2025-04-26 17:18:43] [info] Elevator A dropped off 1 passenger(s) on floor 61
+[2025-04-26 17:18:43] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 17:18:53] [info] Elevator A leaving floor 61
+[2025-04-26 17:19:04] [info] Elevator A leaving floor 60
+[2025-04-26 17:19:14] [info] Elevator A leaving floor 59
+[2025-04-26 17:19:24] [info] Elevator A leaving floor 58
+[2025-04-26 17:19:34] [info] Elevator A leaving floor 57
+[2025-04-26 17:19:44] [info] Elevator A leaving floor 56
+[2025-04-26 17:19:54] [info] Elevator A leaving floor 55
+[2025-04-26 17:20:04] [info] Elevator A leaving floor 54
+[2025-04-26 17:20:14] [info] Elevator A leaving floor 53
+[2025-04-26 17:20:16] [info] Elevator A stopped on floor 52
+[2025-04-26 17:20:16] [info] Elevator A picked up 1 passenger(s) on floor 52
+[2025-04-26 17:20:16] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 17:20:26] [info] Elevator A leaving floor 52
+[2025-04-26 17:20:36] [info] Elevator A leaving floor 51
+[2025-04-26 17:20:38] [info] Elevator A stopped on floor 50
+[2025-04-26 17:20:38] [info] Elevator A dropped off 1 passenger(s) on floor 50
+[2025-04-26 17:20:38] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 17:20:48] [info] Elevator A leaving floor 50
+[2025-04-26 17:20:58] [info] Elevator A leaving floor 49
+[2025-04-26 17:21:00] [info] Elevator A stopped on floor 48
+[2025-04-26 17:21:00] [info] Elevator A dropped off 1 passenger(s) on floor 48
+[2025-04-26 17:21:00] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 17:21:10] [info] Elevator A leaving floor 48
+[2025-04-26 17:21:20] [info] Elevator A leaving floor 47
+[2025-04-26 17:21:30] [info] Elevator A leaving floor 46
+[2025-04-26 17:21:40] [info] Elevator A leaving floor 45
+[2025-04-26 17:21:50] [info] Elevator A leaving floor 44
+[2025-04-26 17:22:00] [info] Elevator A leaving floor 43
+[2025-04-26 17:22:10] [info] Elevator A leaving floor 42
+[2025-04-26 17:22:20] [info] Elevator A leaving floor 41
+[2025-04-26 17:22:22] [info] Elevator A stopped on floor 40
+[2025-04-26 17:22:22] [info] Elevator A picked up 1 passenger(s) on floor 40
+[2025-04-26 17:22:22] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 17:22:32] [info] Elevator A leaving floor 40
+[2025-04-26 17:22:42] [info] Elevator A leaving floor 39
+[2025-04-26 17:22:52] [info] Elevator A leaving floor 38
+[2025-04-26 17:23:02] [info] Elevator A leaving floor 37
+[2025-04-26 17:23:12] [info] Elevator A leaving floor 36
+[2025-04-26 17:23:22] [info] Elevator A leaving floor 35
+[2025-04-26 17:23:24] [info] Elevator A stopped on floor 34
+[2025-04-26 17:23:24] [info] Elevator A picked up 1 passenger(s) on floor 34
+[2025-04-26 17:23:24] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 17:23:34] [info] Elevator A leaving floor 34
+[2025-04-26 17:23:44] [info] Elevator A leaving floor 33
+[2025-04-26 17:23:54] [info] Elevator A leaving floor 32
+[2025-04-26 17:23:56] [info] Elevator A stopped on floor 31
+[2025-04-26 17:23:56] [info] Elevator A dropped off 1 passenger(s) on floor 31
+[2025-04-26 17:23:56] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 17:24:06] [info] Elevator A leaving floor 31
+[2025-04-26 17:24:16] [info] Elevator A leaving floor 30
+[2025-04-26 17:24:26] [info] Elevator A leaving floor 29
+[2025-04-26 17:24:36] [info] Elevator A leaving floor 28
+[2025-04-26 17:24:46] [info] Elevator A leaving floor 27
+[2025-04-26 17:24:48] [info] Elevator A stopped on floor 26
+[2025-04-26 17:24:48] [info] Elevator A picked up 1 passenger(s) on floor 26
+[2025-04-26 17:24:48] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 17:24:58] [info] Elevator A leaving floor 26
+[2025-04-26 17:25:08] [info] Elevator A leaving floor 25
+[2025-04-26 17:25:18] [info] Elevator A leaving floor 24
+[2025-04-26 17:25:28] [info] Elevator A leaving floor 23
+[2025-04-26 17:25:38] [info] Elevator A leaving floor 22
+[2025-04-26 17:25:48] [info] Elevator A leaving floor 21
+[2025-04-26 17:25:58] [info] Elevator A leaving floor 20
+[2025-04-26 17:26:00] [info] Elevator A stopped on floor 19
+[2025-04-26 17:26:00] [info] Elevator A dropped off 1 passenger(s) on floor 19
+[2025-04-26 17:26:00] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 17:26:10] [info] Elevator A leaving floor 19
+[2025-04-26 17:26:20] [info] Elevator A leaving floor 18
+[2025-04-26 17:26:30] [info] Elevator A leaving floor 17
+[2025-04-26 17:26:40] [info] Elevator A leaving floor 16
+[2025-04-26 17:26:42] [info] Elevator A stopped on floor 15
+[2025-04-26 17:26:42] [info] Elevator A picked up 1 passenger(s) on floor 15
+[2025-04-26 17:26:42] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 17:26:52] [info] Elevator A leaving floor 15
+[2025-04-26 17:27:02] [info] Elevator A leaving floor 14
+[2025-04-26 17:27:12] [info] Elevator A leaving floor 13
+[2025-04-26 17:27:22] [info] Elevator A leaving floor 12
+[2025-04-26 17:27:32] [info] Elevator A leaving floor 11
+[2025-04-26 17:27:34] [info] Elevator A stopped on floor 10
+[2025-04-26 17:27:34] [info] Elevator A dropped off 1 passenger(s) on floor 10
+[2025-04-26 17:27:34] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 17:27:44] [info] Elevator A leaving floor 10
+[2025-04-26 17:27:46] [info] Elevator A stopped on floor 9
+[2025-04-26 17:27:46] [info] Elevator A dropped off 1 passenger(s) on floor 9
+[2025-04-26 17:27:46] [info] Elevator A picked up 1 passenger(s) on floor 9
+[2025-04-26 17:27:46] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 17:27:56] [info] Elevator A leaving floor 9
+[2025-04-26 17:28:06] [info] Elevator A leaving floor 8
+[2025-04-26 17:28:08] [info] Elevator A stopped on floor 7
+[2025-04-26 17:28:08] [info] Elevator A dropped off 2 passenger(s) on floor 7
+[2025-04-26 17:28:08] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 17:28:18] [info] Elevator A leaving floor 7
+[2025-04-26 17:28:28] [info] Elevator A leaving floor 6
+[2025-04-26 17:28:38] [info] Elevator A leaving floor 5
+[2025-04-26 17:28:40] [info] Elevator A stopped on floor 4
+[2025-04-26 17:28:40] [info] Elevator A picked up 1 passenger(s) on floor 4
+[2025-04-26 17:28:40] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 17:28:50] [info] Elevator A leaving floor 4
+[2025-04-26 17:28:52] [info] Elevator A stopped on floor 3
+[2025-04-26 17:28:52] [info] Elevator A picked up 1 passenger(s) on floor 3
+[2025-04-26 17:28:52] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 17:29:02] [info] Elevator A leaving floor 3
+[2025-04-26 17:29:04] [info] Elevator A stopped on floor 2
+[2025-04-26 17:29:04] [info] Elevator A picked up 1 passenger(s) on floor 2
+[2025-04-26 17:29:04] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 17:29:14] [info] Elevator A leaving floor 2
+[2025-04-26 17:29:16] [info] Elevator A stopped on floor 1
+[2025-04-26 17:29:16] [info] Elevator A dropped off 1 passenger(s) on floor 1
+[2025-04-26 17:29:16] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 17:29:26] [info] Elevator A leaving floor 1
+[2025-04-26 17:29:28] [info] Elevator A stopped on floor 2
+[2025-04-26 17:29:28] [info] Elevator A picked up 1 passenger(s) on floor 2
+[2025-04-26 17:29:28] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 17:29:38] [info] Elevator A leaving floor 2
+[2025-04-26 17:29:48] [info] Elevator A leaving floor 3
+[2025-04-26 17:29:58] [info] Elevator A leaving floor 4
+[2025-04-26 17:30:08] [info] Elevator A leaving floor 5
+[2025-04-26 17:30:18] [info] Elevator A leaving floor 6
+[2025-04-26 17:30:28] [info] Elevator A leaving floor 7
+[2025-04-26 17:30:38] [info] Elevator A leaving floor 8
+[2025-04-26 17:30:48] [info] Elevator A leaving floor 9
+[2025-04-26 17:30:50] [info] Elevator A stopped on floor 10
+[2025-04-26 17:30:50] [info] Elevator A dropped off 1 passenger(s) on floor 10
+[2025-04-26 17:30:50] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 17:31:00] [info] Elevator A leaving floor 10
+[2025-04-26 17:31:10] [info] Elevator A leaving floor 11
+[2025-04-26 17:31:20] [info] Elevator A leaving floor 12
+[2025-04-26 17:31:30] [info] Elevator A leaving floor 13
+[2025-04-26 17:31:40] [info] Elevator A leaving floor 14
+[2025-04-26 17:31:50] [info] Elevator A leaving floor 15
+[2025-04-26 17:32:00] [info] Elevator A leaving floor 16
+[2025-04-26 17:32:02] [info] Elevator A stopped on floor 17
+[2025-04-26 17:32:02] [info] Elevator A dropped off 1 passenger(s) on floor 17
+[2025-04-26 17:32:02] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 17:32:12] [info] Elevator A leaving floor 17
+[2025-04-26 17:32:22] [info] Elevator A leaving floor 18
+[2025-04-26 17:32:32] [info] Elevator A leaving floor 19
+[2025-04-26 17:32:42] [info] Elevator A leaving floor 20
+[2025-04-26 17:32:52] [info] Elevator A leaving floor 21
+[2025-04-26 17:33:02] [info] Elevator A leaving floor 22
+[2025-04-26 17:33:12] [info] Elevator A leaving floor 23
+[2025-04-26 17:33:22] [info] Elevator A leaving floor 24
+[2025-04-26 17:33:24] [info] Elevator A stopped on floor 25
+[2025-04-26 17:33:24] [info] Elevator A picked up 1 passenger(s) on floor 25
+[2025-04-26 17:33:24] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 17:33:34] [info] Elevator A leaving floor 25
+[2025-04-26 17:33:44] [info] Elevator A leaving floor 26
+[2025-04-26 17:33:54] [info] Elevator A leaving floor 27
+[2025-04-26 17:34:04] [info] Elevator A leaving floor 28
+[2025-04-26 17:34:14] [info] Elevator A leaving floor 29
+[2025-04-26 17:34:24] [info] Elevator A leaving floor 30
+[2025-04-26 17:34:34] [info] Elevator A leaving floor 31
+[2025-04-26 17:34:36] [info] Elevator A stopped on floor 32
+[2025-04-26 17:34:36] [info] Elevator A dropped off 1 passenger(s) on floor 32
+[2025-04-26 17:34:36] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 17:34:46] [info] Elevator A leaving floor 32
+[2025-04-26 17:34:56] [info] Elevator A leaving floor 33
+[2025-04-26 17:35:06] [info] Elevator A leaving floor 34
+[2025-04-26 17:35:16] [info] Elevator A leaving floor 35
+[2025-04-26 17:35:26] [info] Elevator A leaving floor 36
+[2025-04-26 17:35:28] [info] Elevator A stopped on floor 37
+[2025-04-26 17:35:28] [info] Elevator A dropped off 1 passenger(s) on floor 37
+[2025-04-26 17:35:28] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 17:35:38] [info] Elevator A leaving floor 37
+[2025-04-26 17:35:48] [info] Elevator A leaving floor 38
+[2025-04-26 17:35:58] [info] Elevator A leaving floor 39
+[2025-04-26 17:36:08] [info] Elevator A leaving floor 40
+[2025-04-26 17:36:18] [info] Elevator A leaving floor 41
+[2025-04-26 17:36:28] [info] Elevator A leaving floor 42
+[2025-04-26 17:36:38] [info] Elevator A leaving floor 43
+[2025-04-26 17:36:48] [info] Elevator A leaving floor 44
+[2025-04-26 17:36:58] [info] Elevator A leaving floor 45
+[2025-04-26 17:37:08] [info] Elevator A leaving floor 46
+[2025-04-26 17:37:18] [info] Elevator A leaving floor 47
+[2025-04-26 17:37:28] [info] Elevator A leaving floor 48
+[2025-04-26 17:37:38] [info] Elevator A leaving floor 49
+[2025-04-26 17:37:49] [info] Elevator A leaving floor 50
+[2025-04-26 17:37:51] [info] Elevator A stopped on floor 51
+[2025-04-26 17:37:51] [info] Elevator A dropped off 1 passenger(s) on floor 51
+[2025-04-26 17:37:51] [info] Elevator A now has 4 passenger(s)
+[2025-04-26 17:38:01] [info] Elevator A leaving floor 51
+[2025-04-26 17:38:11] [info] Elevator A leaving floor 52
+[2025-04-26 17:38:21] [info] Elevator A leaving floor 53
+[2025-04-26 17:38:31] [info] Elevator A leaving floor 54
+[2025-04-26 17:38:41] [info] Elevator A leaving floor 55
+[2025-04-26 17:38:51] [info] Elevator A leaving floor 56
+[2025-04-26 17:38:53] [info] Elevator A stopped on floor 57
+[2025-04-26 17:38:53] [info] Elevator A dropped off 1 passenger(s) on floor 57
+[2025-04-26 17:38:53] [info] Elevator A now has 3 passenger(s)
+[2025-04-26 17:39:03] [info] Elevator A leaving floor 57
+[2025-04-26 17:39:13] [info] Elevator A leaving floor 58
+[2025-04-26 17:39:23] [info] Elevator A leaving floor 59
+[2025-04-26 17:39:33] [info] Elevator A leaving floor 60
+[2025-04-26 17:39:43] [info] Elevator A leaving floor 61
+[2025-04-26 17:39:53] [info] Elevator A leaving floor 62
+[2025-04-26 17:40:03] [info] Elevator A leaving floor 63
+[2025-04-26 17:40:13] [info] Elevator A leaving floor 64
+[2025-04-26 17:40:23] [info] Elevator A leaving floor 65
+[2025-04-26 17:40:33] [info] Elevator A leaving floor 66
+[2025-04-26 17:40:43] [info] Elevator A leaving floor 67
+[2025-04-26 17:40:53] [info] Elevator A leaving floor 68
+[2025-04-26 17:41:03] [info] Elevator A leaving floor 69
+[2025-04-26 17:41:13] [info] Elevator A leaving floor 70
+[2025-04-26 17:41:23] [info] Elevator A leaving floor 71
+[2025-04-26 17:41:33] [info] Elevator A leaving floor 72
+[2025-04-26 17:41:43] [info] Elevator A leaving floor 73
+[2025-04-26 17:41:45] [info] Elevator A stopped on floor 74
+[2025-04-26 17:41:45] [info] Elevator A dropped off 1 passenger(s) on floor 74
+[2025-04-26 17:41:45] [info] Elevator A now has 2 passenger(s)
+[2025-04-26 17:41:55] [info] Elevator A leaving floor 74
+[2025-04-26 17:42:05] [info] Elevator A leaving floor 75
+[2025-04-26 17:42:15] [info] Elevator A leaving floor 76
+[2025-04-26 17:42:25] [info] Elevator A leaving floor 77
+[2025-04-26 17:42:35] [info] Elevator A leaving floor 78
+[2025-04-26 17:42:45] [info] Elevator A leaving floor 79
+[2025-04-26 17:42:55] [info] Elevator A leaving floor 80
+[2025-04-26 17:43:05] [info] Elevator A leaving floor 81
+[2025-04-26 17:43:15] [info] Elevator A leaving floor 82
+[2025-04-26 17:43:25] [info] Elevator A leaving floor 83
+[2025-04-26 17:43:35] [info] Elevator A leaving floor 84
+[2025-04-26 17:43:45] [info] Elevator A leaving floor 85
+[2025-04-26 17:43:55] [info] Elevator A leaving floor 86
+[2025-04-26 17:44:05] [info] Elevator A leaving floor 87
+[2025-04-26 17:44:15] [info] Elevator A leaving floor 88
+[2025-04-26 17:44:17] [info] Elevator A stopped on floor 89
+[2025-04-26 17:44:17] [info] Elevator A dropped off 1 passenger(s) on floor 89
+[2025-04-26 17:44:17] [info] Elevator A now has 1 passenger(s)
+[2025-04-26 17:44:27] [info] Elevator A leaving floor 89
+[2025-04-26 17:44:29] [info] Elevator A stopped on floor 90
+[2025-04-26 17:44:29] [info] Elevator A picked up 1 passenger(s) on floor 90
+[2025-04-26 17:44:29] [info] Elevator A now has 2 passenger(s)
+[2025-04-26 17:44:39] [info] Elevator A leaving floor 90
+[2025-04-26 17:44:49] [info] Elevator A leaving floor 91
+[2025-04-26 17:44:51] [info] Elevator A stopped on floor 92
+[2025-04-26 17:44:51] [info] Elevator A dropped off 1 passenger(s) on floor 92
+[2025-04-26 17:44:51] [info] Elevator A now has 1 passenger(s)
+[2025-04-26 17:45:01] [info] Elevator A leaving floor 92
+[2025-04-26 17:45:03] [info] Elevator A stopped on floor 93
+[2025-04-26 17:45:03] [info] Elevator A picked up 1 passenger(s) on floor 93
+[2025-04-26 17:45:03] [info] Elevator A now has 2 passenger(s)
+[2025-04-26 17:45:13] [info] Elevator A leaving floor 93
+[2025-04-26 17:45:23] [info] Elevator A leaving floor 92
+[2025-04-26 17:45:33] [info] Elevator A leaving floor 91
+[2025-04-26 17:45:43] [info] Elevator A leaving floor 90
+[2025-04-26 17:45:53] [info] Elevator A leaving floor 89
+[2025-04-26 17:46:03] [info] Elevator A leaving floor 88
+[2025-04-26 17:46:13] [info] Elevator A leaving floor 87
+[2025-04-26 17:46:23] [info] Elevator A leaving floor 86
+[2025-04-26 17:46:33] [info] Elevator A leaving floor 85
+[2025-04-26 17:46:43] [info] Elevator A leaving floor 84
+[2025-04-26 17:46:53] [info] Elevator A leaving floor 83
+[2025-04-26 17:47:03] [info] Elevator A leaving floor 82
+[2025-04-26 17:47:13] [info] Elevator A leaving floor 81
+[2025-04-26 17:47:23] [info] Elevator A leaving floor 80
+[2025-04-26 17:47:33] [info] Elevator A leaving floor 79
+[2025-04-26 17:47:43] [info] Elevator A leaving floor 78
+[2025-04-26 17:47:53] [info] Elevator A leaving floor 77
+[2025-04-26 17:48:03] [info] Elevator A leaving floor 76
+[2025-04-26 17:48:13] [info] Elevator A leaving floor 75
+[2025-04-26 17:48:23] [info] Elevator A leaving floor 74
+[2025-04-26 17:48:33] [info] Elevator A leaving floor 73
+[2025-04-26 17:48:43] [info] Elevator A leaving floor 72
+[2025-04-26 17:48:53] [info] Elevator A leaving floor 71
+[2025-04-26 17:49:03] [info] Elevator A leaving floor 70
+[2025-04-26 17:49:13] [info] Elevator A leaving floor 69
+[2025-04-26 17:49:23] [info] Elevator A leaving floor 68
+[2025-04-26 17:49:25] [info] Elevator A stopped on floor 67
+[2025-04-26 17:49:25] [info] Elevator A picked up 1 passenger(s) on floor 67
+[2025-04-26 17:49:25] [info] Elevator A now has 3 passenger(s)
+[2025-04-26 17:49:35] [info] Elevator A leaving floor 67
+[2025-04-26 17:49:45] [info] Elevator A leaving floor 66
+[2025-04-26 17:49:47] [info] Elevator A stopped on floor 65
+[2025-04-26 17:49:47] [info] Elevator A dropped off 1 passenger(s) on floor 65
+[2025-04-26 17:49:47] [info] Elevator A now has 2 passenger(s)
+[2025-04-26 17:49:57] [info] Elevator A leaving floor 65
+[2025-04-26 17:50:07] [info] Elevator A leaving floor 64
+[2025-04-26 17:50:17] [info] Elevator A leaving floor 63
+[2025-04-26 17:50:27] [info] Elevator A leaving floor 62
+[2025-04-26 17:50:37] [info] Elevator A leaving floor 61
+[2025-04-26 17:50:47] [info] Elevator A leaving floor 60
+[2025-04-26 17:50:57] [info] Elevator A leaving floor 59
+[2025-04-26 17:51:07] [info] Elevator A leaving floor 58
+[2025-04-26 17:51:17] [info] Elevator A leaving floor 57
+[2025-04-26 17:51:27] [info] Elevator A leaving floor 56
+[2025-04-26 17:51:37] [info] Elevator A leaving floor 55
+[2025-04-26 17:51:47] [info] Elevator A leaving floor 54
+[2025-04-26 17:51:57] [info] Elevator A leaving floor 53
+[2025-04-26 17:52:07] [info] Elevator A leaving floor 52
+[2025-04-26 17:52:17] [info] Elevator A leaving floor 51
+[2025-04-26 17:52:19] [info] Elevator A stopped on floor 50
+[2025-04-26 17:52:19] [info] Elevator A picked up 1 passenger(s) on floor 50
+[2025-04-26 17:52:19] [info] Elevator A now has 3 passenger(s)
+[2025-04-26 17:52:29] [info] Elevator A leaving floor 50
+[2025-04-26 17:52:39] [info] Elevator A leaving floor 49
+[2025-04-26 17:52:49] [info] Elevator A leaving floor 48
+[2025-04-26 17:52:59] [info] Elevator A leaving floor 47
+[2025-04-26 17:53:09] [info] Elevator A leaving floor 46
+[2025-04-26 17:53:19] [info] Elevator A leaving floor 45
+[2025-04-26 17:53:29] [info] Elevator A leaving floor 44
+[2025-04-26 17:53:39] [info] Elevator A leaving floor 43
+[2025-04-26 17:53:49] [info] Elevator A leaving floor 42
+[2025-04-26 17:53:59] [info] Elevator A leaving floor 41
+[2025-04-26 17:54:09] [info] Elevator A leaving floor 40
+[2025-04-26 17:54:19] [info] Elevator A leaving floor 39
+[2025-04-26 17:54:29] [info] Elevator A leaving floor 38
+[2025-04-26 17:54:31] [info] Elevator A stopped on floor 37
+[2025-04-26 17:54:31] [info] Elevator A dropped off 1 passenger(s) on floor 37
+[2025-04-26 17:54:31] [info] Elevator A now has 2 passenger(s)
+[2025-04-26 17:54:41] [info] Elevator A leaving floor 37
+[2025-04-26 17:54:51] [info] Elevator A leaving floor 36
+[2025-04-26 17:55:01] [info] Elevator A leaving floor 35
+[2025-04-26 17:55:11] [info] Elevator A leaving floor 34
+[2025-04-26 17:55:21] [info] Elevator A leaving floor 33
+[2025-04-26 17:55:23] [info] Elevator A stopped on floor 32
+[2025-04-26 17:55:23] [info] Elevator A dropped off 1 passenger(s) on floor 32
+[2025-04-26 17:55:23] [info] Elevator A now has 1 passenger(s)
+[2025-04-26 17:55:33] [info] Elevator A leaving floor 32
+[2025-04-26 17:55:44] [info] Elevator A leaving floor 31
+[2025-04-26 17:55:54] [info] Elevator A leaving floor 30
+[2025-04-26 17:56:04] [info] Elevator A leaving floor 29
+[2025-04-26 17:56:06] [info] Elevator A stopped on floor 28
+[2025-04-26 17:56:06] [info] Elevator A dropped off 1 passenger(s) on floor 28
+[2025-04-26 17:56:06] [info] Elevator A now has 0 passenger(s)
+[2025-04-26 17:56:16] [info] Elevator A leaving floor 28
+[2025-04-26 17:56:27] [info] Elevator A leaving floor 27
+[2025-04-26 17:56:37] [info] Elevator A leaving floor 26
+[2025-04-26 17:56:47] [info] Elevator A leaving floor 25
+[2025-04-26 17:56:57] [info] Elevator A leaving floor 24
+[2025-04-26 17:57:07] [info] Elevator A leaving floor 23
+[2025-04-26 17:57:17] [info] Elevator A leaving floor 22
+[2025-04-26 17:57:27] [info] Elevator A leaving floor 21
+[2025-04-26 17:57:37] [info] Elevator A leaving floor 20
+[2025-04-26 17:57:47] [info] Elevator A leaving floor 19
+[2025-04-26 17:57:57] [info] Elevator A leaving floor 18
+[2025-04-26 17:58:07] [info] Elevator A leaving floor 17
+[2025-04-26 17:58:17] [info] Elevator A leaving floor 16
+[2025-04-26 17:58:27] [info] Elevator A leaving floor 15
+[2025-04-26 17:58:37] [info] Elevator A leaving floor 14
+[2025-04-26 17:58:47] [info] Elevator A leaving floor 13
+[2025-04-26 17:58:57] [info] Elevator A leaving floor 12
+[2025-04-26 17:59:07] [info] Elevator A leaving floor 11
+[2025-04-26 17:59:17] [info] Elevator A leaving floor 10
+[2025-04-26 17:59:27] [info] Elevator A leaving floor 9
+[2025-04-26 17:59:37] [info] Elevator A leaving floor 8
+[2025-04-26 17:59:47] [info] Elevator A leaving floor 7
+[2025-04-26 17:59:57] [info] Elevator A leaving floor 6
+[2025-04-26 18:00:07] [info] Elevator A leaving floor 5
+[2025-04-26 18:00:09] [info] Elevator A stopped on floor 4
+[2025-04-26 18:00:09] [info] Elevator A picked up 1 passenger(s) on floor 4
+[2025-04-26 18:00:09] [info] Elevator A now has 1 passenger(s)
+[2025-04-26 18:00:19] [info] Elevator A leaving floor 4
+[2025-04-26 18:00:21] [info] Elevator A stopped on floor 3
+[2025-04-26 18:00:21] [info] Elevator A picked up 1 passenger(s) on floor 3
+[2025-04-26 18:00:21] [info] Elevator A now has 2 passenger(s)
+[2025-04-26 18:00:31] [info] Elevator A leaving floor 3
+[2025-04-26 18:00:33] [info] Elevator A stopped on floor 2
+[2025-04-26 18:00:33] [info] Elevator A picked up 1 passenger(s) on floor 2
+[2025-04-26 18:00:33] [info] Elevator A now has 3 passenger(s)
+[2025-04-26 18:00:43] [info] Elevator A leaving floor 2
+[2025-04-26 18:01:03] [info] Elevator A leaving floor 1
+[2025-04-26 18:01:13] [info] Elevator A leaving floor 2
+[2025-04-26 18:01:23] [info] Elevator A leaving floor 3
+[2025-04-26 18:01:33] [info] Elevator A leaving floor 4
+[2025-04-26 18:01:43] [info] Elevator A leaving floor 5
+[2025-04-26 18:01:53] [info] Elevator A leaving floor 6
+[2025-04-26 18:02:03] [info] Elevator A leaving floor 7
+[2025-04-26 18:02:13] [info] Elevator A leaving floor 8
+[2025-04-26 18:02:23] [info] Elevator A leaving floor 9
+[2025-04-26 18:02:33] [info] Elevator A leaving floor 10
+[2025-04-26 18:02:43] [info] Elevator A leaving floor 11
+[2025-04-26 18:02:53] [info] Elevator A leaving floor 12
+[2025-04-26 18:03:03] [info] Elevator A leaving floor 13
+[2025-04-26 18:03:13] [info] Elevator A leaving floor 14
+[2025-04-26 18:03:23] [info] Elevator A leaving floor 15
+[2025-04-26 18:03:33] [info] Elevator A leaving floor 16
+[2025-04-26 18:03:43] [info] Elevator A leaving floor 17
+[2025-04-26 18:03:53] [info] Elevator A leaving floor 18
+[2025-04-26 18:04:03] [info] Elevator A leaving floor 19
+[2025-04-26 18:04:13] [info] Elevator A leaving floor 20
+[2025-04-26 18:04:23] [info] Elevator A leaving floor 21
+[2025-04-26 18:04:33] [info] Elevator A leaving floor 22
+[2025-04-26 18:04:43] [info] Elevator A leaving floor 23
+[2025-04-26 18:04:45] [info] Elevator A stopped on floor 24
+[2025-04-26 18:04:45] [info] Elevator A picked up 1 passenger(s) on floor 24
+[2025-04-26 18:04:45] [info] Elevator A now has 4 passenger(s)
+[2025-04-26 18:04:55] [info] Elevator A leaving floor 24
+[2025-04-26 18:05:05] [info] Elevator A leaving floor 25
+[2025-04-26 18:05:15] [info] Elevator A leaving floor 26
+[2025-04-26 18:05:25] [info] Elevator A leaving floor 27
+[2025-04-26 18:05:35] [info] Elevator A leaving floor 28
+[2025-04-26 18:05:45] [info] Elevator A leaving floor 29
+[2025-04-26 18:05:55] [info] Elevator A leaving floor 30
+[2025-04-26 18:06:05] [info] Elevator A leaving floor 31
+[2025-04-26 18:06:15] [info] Elevator A leaving floor 32
+[2025-04-26 18:06:25] [info] Elevator A leaving floor 33
+[2025-04-26 18:06:35] [info] Elevator A leaving floor 34
+[2025-04-26 18:06:37] [info] Elevator A stopped on floor 35
+[2025-04-26 18:06:37] [info] Elevator A dropped off 1 passenger(s) on floor 35
+[2025-04-26 18:06:37] [info] Elevator A now has 3 passenger(s)
+[2025-04-26 18:06:47] [info] Elevator A leaving floor 35
+[2025-04-26 18:06:57] [info] Elevator A leaving floor 36
+[2025-04-26 18:07:07] [info] Elevator A leaving floor 37
+[2025-04-26 18:07:17] [info] Elevator A leaving floor 38
+[2025-04-26 18:07:27] [info] Elevator A leaving floor 39
+[2025-04-26 18:07:37] [info] Elevator A leaving floor 40
+[2025-04-26 18:07:47] [info] Elevator A leaving floor 41
+[2025-04-26 18:07:57] [info] Elevator A leaving floor 42
+[2025-04-26 18:08:07] [info] Elevator A leaving floor 43
+[2025-04-26 18:08:17] [info] Elevator A leaving floor 44
+[2025-04-26 18:08:27] [info] Elevator A leaving floor 45
+[2025-04-26 18:08:37] [info] Elevator A leaving floor 46
+[2025-04-26 18:08:47] [info] Elevator A leaving floor 47
+[2025-04-26 18:08:57] [info] Elevator A leaving floor 48
+[2025-04-26 18:09:07] [info] Elevator A leaving floor 49
+[2025-04-26 18:09:17] [info] Elevator A leaving floor 50
+[2025-04-26 18:09:27] [info] Elevator A leaving floor 51
+[2025-04-26 18:09:37] [info] Elevator A leaving floor 52
+[2025-04-26 18:09:47] [info] Elevator A leaving floor 53
+[2025-04-26 18:09:57] [info] Elevator A leaving floor 54
+[2025-04-26 18:10:07] [info] Elevator A leaving floor 55
+[2025-04-26 18:10:09] [info] Elevator A stopped on floor 56
+[2025-04-26 18:10:09] [info] Elevator A dropped off 1 passenger(s) on floor 56
+[2025-04-26 18:10:09] [info] Elevator A now has 2 passenger(s)
+[2025-04-26 18:10:19] [info] Elevator A leaving floor 56
+[2025-04-26 18:10:29] [info] Elevator A leaving floor 57
+[2025-04-26 18:10:39] [info] Elevator A leaving floor 58
+[2025-04-26 18:10:49] [info] Elevator A leaving floor 59
+[2025-04-26 18:10:59] [info] Elevator A leaving floor 60
+[2025-04-26 18:11:09] [info] Elevator A leaving floor 61
+[2025-04-26 18:11:19] [info] Elevator A leaving floor 62
+[2025-04-26 18:11:29] [info] Elevator A leaving floor 63
+[2025-04-26 18:11:39] [info] Elevator A leaving floor 64
+[2025-04-26 18:11:49] [info] Elevator A leaving floor 65
+[2025-04-26 18:11:59] [info] Elevator A leaving floor 66
+[2025-04-26 18:12:09] [info] Elevator A leaving floor 67
+[2025-04-26 18:12:19] [info] Elevator A leaving floor 68
+[2025-04-26 18:12:29] [info] Elevator A leaving floor 69
+[2025-04-26 18:12:39] [info] Elevator A leaving floor 70
+[2025-04-26 18:12:49] [info] Elevator A leaving floor 71
+[2025-04-26 18:12:59] [info] Elevator A leaving floor 72
+[2025-04-26 18:13:09] [info] Elevator A leaving floor 73
+[2025-04-26 18:13:19] [info] Elevator A leaving floor 74
+[2025-04-26 18:13:29] [info] Elevator A leaving floor 75
+[2025-04-26 18:13:39] [info] Elevator A leaving floor 76
+[2025-04-26 18:13:41] [info] Elevator A stopped on floor 77
+[2025-04-26 18:13:41] [info] Elevator A dropped off 1 passenger(s) on floor 77
+[2025-04-26 18:13:41] [info] Elevator A picked up 1 passenger(s) on floor 77
+[2025-04-26 18:13:41] [info] Elevator A now has 2 passenger(s)
+[2025-04-26 18:13:51] [info] Elevator A leaving floor 77
+[2025-04-26 18:14:01] [info] Elevator A leaving floor 78
+[2025-04-26 18:14:11] [info] Elevator A leaving floor 77
+[2025-04-26 18:14:21] [info] Elevator A leaving floor 76
+[2025-04-26 18:14:31] [info] Elevator A leaving floor 75
+[2025-04-26 18:14:41] [info] Elevator A leaving floor 74
+[2025-04-26 18:14:44] [info] Elevator A stopped on floor 73
+[2025-04-26 18:14:44] [info] Elevator A dropped off 1 passenger(s) on floor 73
+[2025-04-26 18:14:44] [info] Elevator A now has 1 passenger(s)
+[2025-04-26 18:14:54] [info] Elevator A leaving floor 73
+[2025-04-26 18:15:04] [info] Elevator A leaving floor 72
+[2025-04-26 18:15:14] [info] Elevator A leaving floor 71
+[2025-04-26 18:15:24] [info] Elevator A leaving floor 70
+[2025-04-26 18:15:34] [info] Elevator A leaving floor 69
+[2025-04-26 18:15:44] [info] Elevator A leaving floor 68
+[2025-04-26 18:15:54] [info] Elevator A leaving floor 67
+[2025-04-26 18:16:04] [info] Elevator A leaving floor 66
+[2025-04-26 18:16:14] [info] Elevator A leaving floor 65
+[2025-04-26 18:16:24] [info] Elevator A leaving floor 64
+[2025-04-26 18:16:26] [info] Elevator A stopped on floor 63
+[2025-04-26 18:16:26] [info] Elevator A picked up 2 passenger(s) on floor 63
+[2025-04-26 18:16:26] [info] Elevator A now has 3 passenger(s)
+[2025-04-26 18:16:36] [info] Elevator A leaving floor 63
+[2025-04-26 18:16:46] [info] Elevator A leaving floor 62
+[2025-04-26 18:16:56] [info] Elevator A leaving floor 61
+[2025-04-26 18:17:06] [info] Elevator A leaving floor 60
+[2025-04-26 18:17:16] [info] Elevator A leaving floor 59
+[2025-04-26 18:17:26] [info] Elevator A leaving floor 58
+[2025-04-26 18:17:36] [info] Elevator A leaving floor 57
+[2025-04-26 18:17:46] [info] Elevator A leaving floor 56
+[2025-04-26 18:17:56] [info] Elevator A leaving floor 55
+[2025-04-26 18:18:06] [info] Elevator A leaving floor 54
+[2025-04-26 18:18:16] [info] Elevator A leaving floor 53
+[2025-04-26 18:18:26] [info] Elevator A leaving floor 52
+[2025-04-26 18:18:28] [info] Elevator A stopped on floor 51
+[2025-04-26 18:18:28] [info] Elevator A picked up 1 passenger(s) on floor 51
+[2025-04-26 18:18:28] [info] Elevator A now has 4 passenger(s)
+[2025-04-26 18:18:38] [info] Elevator A leaving floor 51
+[2025-04-26 18:18:48] [info] Elevator A leaving floor 50
+[2025-04-26 18:18:58] [info] Elevator A leaving floor 49
+[2025-04-26 18:19:08] [info] Elevator A leaving floor 48
+[2025-04-26 18:19:18] [info] Elevator A leaving floor 47
+[2025-04-26 18:19:28] [info] Elevator A leaving floor 46
+[2025-04-26 18:19:38] [info] Elevator A leaving floor 45
+[2025-04-26 18:19:40] [info] Elevator A stopped on floor 44
+[2025-04-26 18:19:40] [info] Elevator A picked up 1 passenger(s) on floor 44
+[2025-04-26 18:19:40] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 18:19:50] [info] Elevator A leaving floor 44
+[2025-04-26 18:20:00] [info] Elevator A leaving floor 43
+[2025-04-26 18:20:10] [info] Elevator A leaving floor 42
+[2025-04-26 18:20:20] [info] Elevator A leaving floor 41
+[2025-04-26 18:20:30] [info] Elevator A leaving floor 40
+[2025-04-26 18:20:32] [info] Elevator A stopped on floor 39
+[2025-04-26 18:20:32] [info] Elevator A picked up 2 passenger(s) on floor 39
+[2025-04-26 18:20:32] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 18:20:42] [info] Elevator A leaving floor 39
+[2025-04-26 18:20:52] [info] Elevator A leaving floor 38
+[2025-04-26 18:21:02] [info] Elevator A leaving floor 37
+[2025-04-26 18:21:12] [info] Elevator A leaving floor 36
+[2025-04-26 18:21:22] [info] Elevator A leaving floor 35
+[2025-04-26 18:21:32] [info] Elevator A leaving floor 34
+[2025-04-26 18:21:42] [info] Elevator A leaving floor 33
+[2025-04-26 18:21:44] [info] Elevator A stopped on floor 32
+[2025-04-26 18:21:44] [info] Elevator A picked up 1 passenger(s) on floor 32
+[2025-04-26 18:21:44] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 18:21:54] [info] Elevator A leaving floor 32
+[2025-04-26 18:22:04] [info] Elevator A leaving floor 31
+[2025-04-26 18:22:14] [info] Elevator A leaving floor 30
+[2025-04-26 18:22:24] [info] Elevator A leaving floor 29
+[2025-04-26 18:22:34] [info] Elevator A leaving floor 28
+[2025-04-26 18:22:44] [info] Elevator A leaving floor 27
+[2025-04-26 18:22:54] [info] Elevator A leaving floor 26
+[2025-04-26 18:23:04] [info] Elevator A leaving floor 25
+[2025-04-26 18:23:14] [info] Elevator A leaving floor 24
+[2025-04-26 18:23:24] [info] Elevator A leaving floor 23
+[2025-04-26 18:23:34] [info] Elevator A leaving floor 22
+[2025-04-26 18:23:44] [info] Elevator A leaving floor 21
+[2025-04-26 18:23:46] [info] Elevator A stopped on floor 20
+[2025-04-26 18:23:46] [info] Elevator A dropped off 1 passenger(s) on floor 20
+[2025-04-26 18:23:46] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 18:23:56] [info] Elevator A leaving floor 20
+[2025-04-26 18:23:58] [info] Elevator A stopped on floor 19
+[2025-04-26 18:23:58] [info] Elevator A dropped off 1 passenger(s) on floor 19
+[2025-04-26 18:23:58] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 18:24:08] [info] Elevator A leaving floor 19
+[2025-04-26 18:24:18] [info] Elevator A leaving floor 20
+[2025-04-26 18:24:28] [info] Elevator A leaving floor 21
+[2025-04-26 18:24:38] [info] Elevator A leaving floor 22
+[2025-04-26 18:24:48] [info] Elevator A leaving floor 23
+[2025-04-26 18:24:58] [info] Elevator A leaving floor 24
+[2025-04-26 18:25:08] [info] Elevator A leaving floor 25
+[2025-04-26 18:25:18] [info] Elevator A leaving floor 26
+[2025-04-26 18:25:28] [info] Elevator A leaving floor 27
+[2025-04-26 18:25:38] [info] Elevator A leaving floor 28
+[2025-04-26 18:25:48] [info] Elevator A leaving floor 29
+[2025-04-26 18:25:58] [info] Elevator A leaving floor 30
+[2025-04-26 18:26:08] [info] Elevator A leaving floor 31
+[2025-04-26 18:26:18] [info] Elevator A leaving floor 32
+[2025-04-26 18:26:28] [info] Elevator A leaving floor 33
+[2025-04-26 18:26:38] [info] Elevator A leaving floor 34
+[2025-04-26 18:26:48] [info] Elevator A leaving floor 35
+[2025-04-26 18:26:58] [info] Elevator A leaving floor 36
+[2025-04-26 18:27:08] [info] Elevator A leaving floor 37
+[2025-04-26 18:27:18] [info] Elevator A leaving floor 38
+[2025-04-26 18:27:28] [info] Elevator A leaving floor 39
+[2025-04-26 18:27:38] [info] Elevator A leaving floor 40
+[2025-04-26 18:27:48] [info] Elevator A leaving floor 41
+[2025-04-26 18:27:50] [info] Elevator A stopped on floor 42
+[2025-04-26 18:27:50] [info] Elevator A picked up 1 passenger(s) on floor 42
+[2025-04-26 18:27:50] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 18:28:00] [info] Elevator A leaving floor 42
+[2025-04-26 18:28:10] [info] Elevator A leaving floor 43
+[2025-04-26 18:28:12] [info] Elevator A stopped on floor 44
+[2025-04-26 18:28:12] [info] Elevator A picked up 1 passenger(s) on floor 44
+[2025-04-26 18:28:12] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 18:28:22] [info] Elevator A leaving floor 44
+[2025-04-26 18:28:32] [info] Elevator A leaving floor 45
+[2025-04-26 18:28:42] [info] Elevator A leaving floor 46
+[2025-04-26 18:28:52] [info] Elevator A leaving floor 47
+[2025-04-26 18:29:02] [info] Elevator A leaving floor 48
+[2025-04-26 18:29:12] [info] Elevator A leaving floor 49
+[2025-04-26 18:29:22] [info] Elevator A leaving floor 50
+[2025-04-26 18:29:32] [info] Elevator A leaving floor 51
+[2025-04-26 18:29:42] [info] Elevator A leaving floor 52
+[2025-04-26 18:29:52] [info] Elevator A leaving floor 53
+[2025-04-26 18:30:02] [info] Elevator A leaving floor 54
+[2025-04-26 18:30:12] [info] Elevator A leaving floor 55
+[2025-04-26 18:30:22] [info] Elevator A leaving floor 56
+[2025-04-26 18:30:32] [info] Elevator A leaving floor 57
+[2025-04-26 18:30:42] [info] Elevator A leaving floor 58
+[2025-04-26 18:30:52] [info] Elevator A leaving floor 59
+[2025-04-26 18:31:02] [info] Elevator A leaving floor 60
+[2025-04-26 18:31:12] [info] Elevator A leaving floor 61
+[2025-04-26 18:31:22] [info] Elevator A leaving floor 62
+[2025-04-26 18:31:32] [info] Elevator A leaving floor 63
+[2025-04-26 18:31:42] [info] Elevator A leaving floor 64
+[2025-04-26 18:31:52] [info] Elevator A leaving floor 65
+[2025-04-26 18:32:02] [info] Elevator A leaving floor 66
+[2025-04-26 18:32:12] [info] Elevator A leaving floor 67
+[2025-04-26 18:32:22] [info] Elevator A leaving floor 68
+[2025-04-26 18:32:25] [info] Elevator A stopped on floor 69
+[2025-04-26 18:32:25] [info] Elevator A dropped off 1 passenger(s) on floor 69
+[2025-04-26 18:32:25] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 18:32:35] [info] Elevator A leaving floor 69
+[2025-04-26 18:32:45] [info] Elevator A leaving floor 70
+[2025-04-26 18:32:55] [info] Elevator A leaving floor 71
+[2025-04-26 18:33:05] [info] Elevator A leaving floor 72
+[2025-04-26 18:33:15] [info] Elevator A leaving floor 73
+[2025-04-26 18:33:17] [info] Elevator A stopped on floor 74
+[2025-04-26 18:33:17] [info] Elevator A picked up 1 passenger(s) on floor 74
+[2025-04-26 18:33:17] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 18:33:27] [info] Elevator A leaving floor 74
+[2025-04-26 18:33:37] [info] Elevator A leaving floor 75
+[2025-04-26 18:33:39] [info] Elevator A stopped on floor 76
+[2025-04-26 18:33:39] [info] Elevator A dropped off 1 passenger(s) on floor 76
+[2025-04-26 18:33:39] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 18:33:49] [info] Elevator A leaving floor 76
+[2025-04-26 18:33:59] [info] Elevator A leaving floor 77
+[2025-04-26 18:34:09] [info] Elevator A leaving floor 78
+[2025-04-26 18:34:19] [info] Elevator A leaving floor 79
+[2025-04-26 18:34:29] [info] Elevator A leaving floor 80
+[2025-04-26 18:34:39] [info] Elevator A leaving floor 81
+[2025-04-26 18:34:49] [info] Elevator A leaving floor 82
+[2025-04-26 18:34:51] [info] Elevator A stopped on floor 83
+[2025-04-26 18:34:51] [info] Elevator A picked up 1 passenger(s) on floor 83
+[2025-04-26 18:34:51] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 18:35:01] [info] Elevator A leaving floor 83
+[2025-04-26 18:35:03] [info] Elevator A stopped on floor 84
+[2025-04-26 18:35:03] [info] Elevator A dropped off 1 passenger(s) on floor 84
+[2025-04-26 18:35:03] [info] Elevator A picked up 1 passenger(s) on floor 84
+[2025-04-26 18:35:03] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 18:35:13] [info] Elevator A leaving floor 84
+[2025-04-26 18:35:23] [info] Elevator A leaving floor 85
+[2025-04-26 18:35:33] [info] Elevator A leaving floor 86
+[2025-04-26 18:35:43] [info] Elevator A leaving floor 87
+[2025-04-26 18:35:45] [info] Elevator A stopped on floor 88
+[2025-04-26 18:35:45] [info] Elevator A dropped off 1 passenger(s) on floor 88
+[2025-04-26 18:35:45] [info] Elevator A picked up 1 passenger(s) on floor 88
+[2025-04-26 18:35:45] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 18:35:55] [info] Elevator A leaving floor 88
+[2025-04-26 18:35:57] [info] Elevator A stopped on floor 89
+[2025-04-26 18:35:57] [info] Elevator A dropped off 1 passenger(s) on floor 89
+[2025-04-26 18:35:57] [info] Elevator A picked up 1 passenger(s) on floor 89
+[2025-04-26 18:35:57] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 18:36:07] [info] Elevator A leaving floor 89
+[2025-04-26 18:36:17] [info] Elevator A leaving floor 88
+[2025-04-26 18:36:27] [info] Elevator A leaving floor 87
+[2025-04-26 18:36:37] [info] Elevator A leaving floor 86
+[2025-04-26 18:36:47] [info] Elevator A leaving floor 85
+[2025-04-26 18:36:57] [info] Elevator A leaving floor 84
+[2025-04-26 18:37:07] [info] Elevator A leaving floor 83
+[2025-04-26 18:37:17] [info] Elevator A leaving floor 82
+[2025-04-26 18:37:27] [info] Elevator A leaving floor 81
+[2025-04-26 18:37:37] [info] Elevator A leaving floor 80
+[2025-04-26 18:37:39] [info] Elevator A stopped on floor 79
+[2025-04-26 18:37:39] [info] Elevator A dropped off 1 passenger(s) on floor 79
+[2025-04-26 18:37:39] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 18:37:49] [info] Elevator A leaving floor 79
+[2025-04-26 18:37:51] [info] Elevator A stopped on floor 78
+[2025-04-26 18:37:51] [info] Elevator A picked up 1 passenger(s) on floor 78
+[2025-04-26 18:37:51] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 18:38:01] [info] Elevator A leaving floor 78
+[2025-04-26 18:38:11] [info] Elevator A leaving floor 77
+[2025-04-26 18:38:21] [info] Elevator A leaving floor 76
+[2025-04-26 18:38:31] [info] Elevator A leaving floor 75
+[2025-04-26 18:38:41] [info] Elevator A leaving floor 74
+[2025-04-26 18:38:51] [info] Elevator A leaving floor 73
+[2025-04-26 18:39:01] [info] Elevator A leaving floor 72
+[2025-04-26 18:39:11] [info] Elevator A leaving floor 71
+[2025-04-26 18:39:21] [info] Elevator A leaving floor 70
+[2025-04-26 18:39:31] [info] Elevator A leaving floor 69
+[2025-04-26 18:39:41] [info] Elevator A leaving floor 68
+[2025-04-26 18:39:51] [info] Elevator A leaving floor 67
+[2025-04-26 18:40:01] [info] Elevator A leaving floor 66
+[2025-04-26 18:40:11] [info] Elevator A leaving floor 65
+[2025-04-26 18:40:21] [info] Elevator A leaving floor 64
+[2025-04-26 18:40:31] [info] Elevator A leaving floor 63
+[2025-04-26 18:40:41] [info] Elevator A leaving floor 62
+[2025-04-26 18:40:51] [info] Elevator A leaving floor 61
+[2025-04-26 18:41:01] [info] Elevator A leaving floor 60
+[2025-04-26 18:41:11] [info] Elevator A leaving floor 59
+[2025-04-26 18:41:13] [info] Elevator A stopped on floor 58
+[2025-04-26 18:41:13] [info] Elevator A dropped off 1 passenger(s) on floor 58
+[2025-04-26 18:41:13] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 18:41:23] [info] Elevator A leaving floor 58
+[2025-04-26 18:41:33] [info] Elevator A leaving floor 57
+[2025-04-26 18:41:43] [info] Elevator A leaving floor 56
+[2025-04-26 18:41:53] [info] Elevator A leaving floor 55
+[2025-04-26 18:42:03] [info] Elevator A leaving floor 54
+[2025-04-26 18:42:13] [info] Elevator A leaving floor 53
+[2025-04-26 18:42:15] [info] Elevator A stopped on floor 52
+[2025-04-26 18:42:15] [info] Elevator A dropped off 1 passenger(s) on floor 52
+[2025-04-26 18:42:15] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 18:42:25] [info] Elevator A leaving floor 52
+[2025-04-26 18:42:27] [info] Elevator A stopped on floor 51
+[2025-04-26 18:42:27] [info] Elevator A picked up 1 passenger(s) on floor 51
+[2025-04-26 18:42:27] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 18:42:37] [info] Elevator A leaving floor 51
+[2025-04-26 18:42:47] [info] Elevator A leaving floor 50
+[2025-04-26 18:42:57] [info] Elevator A leaving floor 49
+[2025-04-26 18:43:07] [info] Elevator A leaving floor 48
+[2025-04-26 18:43:17] [info] Elevator A leaving floor 47
+[2025-04-26 18:43:27] [info] Elevator A leaving floor 46
+[2025-04-26 18:43:37] [info] Elevator A leaving floor 45
+[2025-04-26 18:43:47] [info] Elevator A leaving floor 44
+[2025-04-26 18:43:57] [info] Elevator A leaving floor 43
+[2025-04-26 18:44:07] [info] Elevator A leaving floor 42
+[2025-04-26 18:44:17] [info] Elevator A leaving floor 41
+[2025-04-26 18:44:27] [info] Elevator A leaving floor 40
+[2025-04-26 18:44:37] [info] Elevator A leaving floor 39
+[2025-04-26 18:44:47] [info] Elevator A leaving floor 38
+[2025-04-26 18:44:49] [info] Elevator A stopped on floor 37
+[2025-04-26 18:44:49] [info] Elevator A picked up 1 passenger(s) on floor 37
+[2025-04-26 18:44:49] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 18:44:59] [info] Elevator A leaving floor 37
+[2025-04-26 18:45:09] [info] Elevator A leaving floor 36
+[2025-04-26 18:45:19] [info] Elevator A leaving floor 35
+[2025-04-26 18:45:29] [info] Elevator A leaving floor 34
+[2025-04-26 18:45:31] [info] Elevator A stopped on floor 33
+[2025-04-26 18:45:31] [info] Elevator A dropped off 1 passenger(s) on floor 33
+[2025-04-26 18:45:31] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 18:45:41] [info] Elevator A leaving floor 33
+[2025-04-26 18:45:51] [info] Elevator A leaving floor 32
+[2025-04-26 18:45:53] [info] Elevator A stopped on floor 31
+[2025-04-26 18:45:53] [info] Elevator A dropped off 1 passenger(s) on floor 31
+[2025-04-26 18:45:53] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 18:46:03] [info] Elevator A leaving floor 31
+[2025-04-26 18:46:05] [info] Elevator A stopped on floor 30
+[2025-04-26 18:46:05] [info] Elevator A picked up 1 passenger(s) on floor 30
+[2025-04-26 18:46:05] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 18:46:15] [info] Elevator A leaving floor 30
+[2025-04-26 18:46:17] [info] Elevator A stopped on floor 29
+[2025-04-26 18:46:17] [info] Elevator A dropped off 1 passenger(s) on floor 29
+[2025-04-26 18:46:17] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 18:46:27] [info] Elevator A leaving floor 29
+[2025-04-26 18:46:37] [info] Elevator A leaving floor 28
+[2025-04-26 18:46:47] [info] Elevator A leaving floor 27
+[2025-04-26 18:46:49] [info] Elevator A stopped on floor 26
+[2025-04-26 18:46:49] [info] Elevator A dropped off 1 passenger(s) on floor 26
+[2025-04-26 18:46:49] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 18:46:59] [info] Elevator A leaving floor 26
+[2025-04-26 18:47:09] [info] Elevator A leaving floor 25
+[2025-04-26 18:47:19] [info] Elevator A leaving floor 24
+[2025-04-26 18:47:29] [info] Elevator A leaving floor 23
+[2025-04-26 18:47:39] [info] Elevator A leaving floor 22
+[2025-04-26 18:47:41] [info] Elevator A stopped on floor 21
+[2025-04-26 18:47:41] [info] Elevator A dropped off 1 passenger(s) on floor 21
+[2025-04-26 18:47:41] [info] Elevator A picked up 1 passenger(s) on floor 21
+[2025-04-26 18:47:41] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 18:47:51] [info] Elevator A leaving floor 21
+[2025-04-26 18:48:01] [info] Elevator A leaving floor 20
+[2025-04-26 18:48:11] [info] Elevator A leaving floor 19
+[2025-04-26 18:48:13] [info] Elevator A stopped on floor 18
+[2025-04-26 18:48:13] [info] Elevator A picked up 1 passenger(s) on floor 18
+[2025-04-26 18:48:13] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 18:48:23] [info] Elevator A leaving floor 18
+[2025-04-26 18:48:33] [info] Elevator A leaving floor 17
+[2025-04-26 18:48:35] [info] Elevator A stopped on floor 16
+[2025-04-26 18:48:35] [info] Elevator A dropped off 1 passenger(s) on floor 16
+[2025-04-26 18:48:35] [info] Elevator A picked up 1 passenger(s) on floor 16
+[2025-04-26 18:48:35] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 18:48:45] [info] Elevator A leaving floor 16
+[2025-04-26 18:48:47] [info] Elevator A stopped on floor 15
+[2025-04-26 18:48:47] [info] Elevator A dropped off 1 passenger(s) on floor 15
+[2025-04-26 18:48:47] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 18:48:57] [info] Elevator A leaving floor 15
+[2025-04-26 18:48:59] [info] Elevator A stopped on floor 14
+[2025-04-26 18:48:59] [info] Elevator A picked up 1 passenger(s) on floor 14
+[2025-04-26 18:48:59] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 18:49:09] [info] Elevator A leaving floor 14
+[2025-04-26 18:49:11] [info] Elevator A stopped on floor 13
+[2025-04-26 18:49:11] [info] Elevator A picked up 1 passenger(s) on floor 13
+[2025-04-26 18:49:11] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 18:49:21] [info] Elevator A leaving floor 13
+[2025-04-26 18:49:31] [info] Elevator A leaving floor 12
+[2025-04-26 18:49:41] [info] Elevator A leaving floor 11
+[2025-04-26 18:49:43] [info] Elevator A stopped on floor 10
+[2025-04-26 18:49:43] [info] Elevator A dropped off 1 passenger(s) on floor 10
+[2025-04-26 18:49:43] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 18:49:54] [info] Elevator A leaving floor 10
+[2025-04-26 18:49:56] [info] Elevator A stopped on floor 9
+[2025-04-26 18:49:56] [info] Elevator A dropped off 1 passenger(s) on floor 9
+[2025-04-26 18:49:56] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 18:50:06] [info] Elevator A leaving floor 9
+[2025-04-26 18:50:16] [info] Elevator A leaving floor 8
+[2025-04-26 18:50:26] [info] Elevator A leaving floor 9
+[2025-04-26 18:50:36] [info] Elevator A leaving floor 10
+[2025-04-26 18:50:46] [info] Elevator A leaving floor 11
+[2025-04-26 18:50:56] [info] Elevator A leaving floor 12
+[2025-04-26 18:51:06] [info] Elevator A leaving floor 13
+[2025-04-26 18:51:16] [info] Elevator A leaving floor 14
+[2025-04-26 18:51:26] [info] Elevator A leaving floor 15
+[2025-04-26 18:51:36] [info] Elevator A leaving floor 16
+[2025-04-26 18:51:46] [info] Elevator A leaving floor 17
+[2025-04-26 18:51:56] [info] Elevator A leaving floor 18
+[2025-04-26 18:52:06] [info] Elevator A leaving floor 19
+[2025-04-26 18:52:16] [info] Elevator A leaving floor 20
+[2025-04-26 18:52:18] [info] Elevator A stopped on floor 21
+[2025-04-26 18:52:18] [info] Elevator A picked up 1 passenger(s) on floor 21
+[2025-04-26 18:52:18] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 18:52:28] [info] Elevator A leaving floor 21
+[2025-04-26 18:52:38] [info] Elevator A leaving floor 22
+[2025-04-26 18:52:48] [info] Elevator A leaving floor 23
+[2025-04-26 18:52:58] [info] Elevator A leaving floor 24
+[2025-04-26 18:53:08] [info] Elevator A leaving floor 25
+[2025-04-26 18:53:18] [info] Elevator A leaving floor 26
+[2025-04-26 18:53:28] [info] Elevator A leaving floor 27
+[2025-04-26 18:53:38] [info] Elevator A leaving floor 28
+[2025-04-26 18:53:48] [info] Elevator A leaving floor 29
+[2025-04-26 18:53:58] [info] Elevator A leaving floor 30
+[2025-04-26 18:54:08] [info] Elevator A leaving floor 31
+[2025-04-26 18:54:18] [info] Elevator A leaving floor 32
+[2025-04-26 18:54:28] [info] Elevator A leaving floor 33
+[2025-04-26 18:54:38] [info] Elevator A leaving floor 34
+[2025-04-26 18:54:48] [info] Elevator A leaving floor 35
+[2025-04-26 18:54:50] [info] Elevator A stopped on floor 36
+[2025-04-26 18:54:50] [info] Elevator A dropped off 1 passenger(s) on floor 36
+[2025-04-26 18:54:50] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 18:55:00] [info] Elevator A leaving floor 36
+[2025-04-26 18:55:10] [info] Elevator A leaving floor 37
+[2025-04-26 18:55:20] [info] Elevator A leaving floor 38
+[2025-04-26 18:55:30] [info] Elevator A leaving floor 39
+[2025-04-26 18:55:40] [info] Elevator A leaving floor 40
+[2025-04-26 18:55:50] [info] Elevator A leaving floor 41
+[2025-04-26 18:56:00] [info] Elevator A leaving floor 42
+[2025-04-26 18:56:10] [info] Elevator A leaving floor 43
+[2025-04-26 18:56:20] [info] Elevator A leaving floor 44
+[2025-04-26 18:56:30] [info] Elevator A leaving floor 45
+[2025-04-26 18:56:32] [info] Elevator A stopped on floor 46
+[2025-04-26 18:56:32] [info] Elevator A picked up 1 passenger(s) on floor 46
+[2025-04-26 18:56:32] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 18:56:42] [info] Elevator A leaving floor 46
+[2025-04-26 18:56:52] [info] Elevator A leaving floor 47
+[2025-04-26 18:56:54] [info] Elevator A stopped on floor 48
+[2025-04-26 18:56:54] [info] Elevator A dropped off 1 passenger(s) on floor 48
+[2025-04-26 18:56:54] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 18:57:04] [info] Elevator A leaving floor 48
+[2025-04-26 18:57:14] [info] Elevator A leaving floor 49
+[2025-04-26 18:57:24] [info] Elevator A leaving floor 50
+[2025-04-26 18:57:34] [info] Elevator A leaving floor 51
+[2025-04-26 18:57:36] [info] Elevator A stopped on floor 52
+[2025-04-26 18:57:36] [info] Elevator A picked up 1 passenger(s) on floor 52
+[2025-04-26 18:57:36] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 18:57:46] [info] Elevator A leaving floor 52
+[2025-04-26 18:57:48] [info] Elevator A stopped on floor 53
+[2025-04-26 18:57:48] [info] Elevator A picked up 1 passenger(s) on floor 53
+[2025-04-26 18:57:48] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 18:57:58] [info] Elevator A leaving floor 53
+[2025-04-26 18:58:08] [info] Elevator A leaving floor 54
+[2025-04-26 18:58:18] [info] Elevator A leaving floor 55
+[2025-04-26 18:58:28] [info] Elevator A leaving floor 56
+[2025-04-26 18:58:30] [info] Elevator A stopped on floor 57
+[2025-04-26 18:58:30] [info] Elevator A dropped off 1 passenger(s) on floor 57
+[2025-04-26 18:58:30] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 18:58:40] [info] Elevator A leaving floor 57
+[2025-04-26 18:58:50] [info] Elevator A leaving floor 58
+[2025-04-26 18:59:00] [info] Elevator A leaving floor 59
+[2025-04-26 18:59:02] [info] Elevator A stopped on floor 60
+[2025-04-26 18:59:02] [info] Elevator A dropped off 1 passenger(s) on floor 60
+[2025-04-26 18:59:02] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 18:59:12] [info] Elevator A leaving floor 60
+[2025-04-26 18:59:22] [info] Elevator A leaving floor 61
+[2025-04-26 18:59:32] [info] Elevator A leaving floor 62
+[2025-04-26 18:59:42] [info] Elevator A leaving floor 63
+[2025-04-26 18:59:52] [info] Elevator A leaving floor 64
+[2025-04-26 19:00:02] [info] Elevator A leaving floor 65
+[2025-04-26 19:00:12] [info] Elevator A leaving floor 66
+[2025-04-26 19:00:14] [info] Elevator A stopped on floor 67
+[2025-04-26 19:00:14] [info] Elevator A dropped off 2 passenger(s) on floor 67
+[2025-04-26 19:00:14] [info] Elevator A now has 3 passenger(s)
+[2025-04-26 19:00:24] [info] Elevator A leaving floor 67
+[2025-04-26 19:00:34] [info] Elevator A leaving floor 68
+[2025-04-26 19:00:44] [info] Elevator A leaving floor 67
+[2025-04-26 19:00:54] [info] Elevator A leaving floor 66
+[2025-04-26 19:01:04] [info] Elevator A leaving floor 65
+[2025-04-26 19:01:14] [info] Elevator A leaving floor 64
+[2025-04-26 19:01:24] [info] Elevator A leaving floor 63
+[2025-04-26 19:01:34] [info] Elevator A leaving floor 62
+[2025-04-26 19:01:44] [info] Elevator A leaving floor 61
+[2025-04-26 19:01:54] [info] Elevator A leaving floor 60
+[2025-04-26 19:02:04] [info] Elevator A leaving floor 59
+[2025-04-26 19:02:14] [info] Elevator A leaving floor 58
+[2025-04-26 19:02:24] [info] Elevator A leaving floor 57
+[2025-04-26 19:02:34] [info] Elevator A leaving floor 56
+[2025-04-26 19:02:44] [info] Elevator A leaving floor 55
+[2025-04-26 19:02:54] [info] Elevator A leaving floor 54
+[2025-04-26 19:03:04] [info] Elevator A leaving floor 53
+[2025-04-26 19:03:14] [info] Elevator A leaving floor 52
+[2025-04-26 19:03:24] [info] Elevator A leaving floor 51
+[2025-04-26 19:03:34] [info] Elevator A leaving floor 50
+[2025-04-26 19:03:36] [info] Elevator A stopped on floor 49
+[2025-04-26 19:03:36] [info] Elevator A picked up 1 passenger(s) on floor 49
+[2025-04-26 19:03:36] [info] Elevator A now has 4 passenger(s)
+[2025-04-26 19:03:46] [info] Elevator A leaving floor 49
+[2025-04-26 19:03:57] [info] Elevator A leaving floor 48
+[2025-04-26 19:04:07] [info] Elevator A leaving floor 47
+[2025-04-26 19:04:17] [info] Elevator A leaving floor 46
+[2025-04-26 19:04:27] [info] Elevator A leaving floor 45
+[2025-04-26 19:04:37] [info] Elevator A leaving floor 44
+[2025-04-26 19:04:47] [info] Elevator A leaving floor 43
+[2025-04-26 19:04:57] [info] Elevator A leaving floor 42
+[2025-04-26 19:05:07] [info] Elevator A leaving floor 41
+[2025-04-26 19:05:17] [info] Elevator A leaving floor 40
+[2025-04-26 19:05:27] [info] Elevator A leaving floor 39
+[2025-04-26 19:05:37] [info] Elevator A leaving floor 38
+[2025-04-26 19:05:47] [info] Elevator A leaving floor 37
+[2025-04-26 19:05:57] [info] Elevator A leaving floor 36
+[2025-04-26 19:06:07] [info] Elevator A leaving floor 35
+[2025-04-26 19:06:17] [info] Elevator A leaving floor 34
+[2025-04-26 19:06:27] [info] Elevator A leaving floor 33
+[2025-04-26 19:06:29] [info] Elevator A stopped on floor 32
+[2025-04-26 19:06:29] [info] Elevator A picked up 1 passenger(s) on floor 32
+[2025-04-26 19:06:29] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 19:06:39] [info] Elevator A leaving floor 32
+[2025-04-26 19:06:49] [info] Elevator A leaving floor 31
+[2025-04-26 19:06:59] [info] Elevator A leaving floor 30
+[2025-04-26 19:07:09] [info] Elevator A leaving floor 29
+[2025-04-26 19:07:19] [info] Elevator A leaving floor 28
+[2025-04-26 19:07:29] [info] Elevator A leaving floor 27
+[2025-04-26 19:07:39] [info] Elevator A leaving floor 26
+[2025-04-26 19:07:49] [info] Elevator A leaving floor 25
+[2025-04-26 19:07:59] [info] Elevator A leaving floor 24
+[2025-04-26 19:08:09] [info] Elevator A leaving floor 23
+[2025-04-26 19:08:19] [info] Elevator A leaving floor 22
+[2025-04-26 19:08:29] [info] Elevator A leaving floor 21
+[2025-04-26 19:08:39] [info] Elevator A leaving floor 20
+[2025-04-26 19:08:49] [info] Elevator A leaving floor 19
+[2025-04-26 19:08:59] [info] Elevator A leaving floor 18
+[2025-04-26 19:09:09] [info] Elevator A leaving floor 17
+[2025-04-26 19:09:19] [info] Elevator A leaving floor 16
+[2025-04-26 19:09:29] [info] Elevator A leaving floor 15
+[2025-04-26 19:09:39] [info] Elevator A leaving floor 14
+[2025-04-26 19:09:49] [info] Elevator A leaving floor 13
+[2025-04-26 19:09:59] [info] Elevator A leaving floor 12
+[2025-04-26 19:10:09] [info] Elevator A leaving floor 11
+[2025-04-26 19:10:11] [info] Elevator A stopped on floor 10
+[2025-04-26 19:10:11] [info] Elevator A dropped off 1 passenger(s) on floor 10
+[2025-04-26 19:10:11] [info] Elevator A picked up 1 passenger(s) on floor 10
+[2025-04-26 19:10:11] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 19:10:21] [info] Elevator A leaving floor 10
+[2025-04-26 19:10:31] [info] Elevator A leaving floor 9
+[2025-04-26 19:10:41] [info] Elevator A leaving floor 8
+[2025-04-26 19:10:43] [info] Elevator A stopped on floor 7
+[2025-04-26 19:10:43] [info] Elevator A picked up 1 passenger(s) on floor 7
+[2025-04-26 19:10:43] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 19:10:53] [info] Elevator A leaving floor 7
+[2025-04-26 19:11:03] [info] Elevator A leaving floor 6
+[2025-04-26 19:11:05] [info] Elevator A stopped on floor 5
+[2025-04-26 19:11:05] [info] Elevator A dropped off 1 passenger(s) on floor 5
+[2025-04-26 19:11:05] [info] Elevator A picked up 1 passenger(s) on floor 5
+[2025-04-26 19:11:05] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 19:11:15] [info] Elevator A leaving floor 5
+[2025-04-26 19:11:17] [info] Elevator A stopped on floor 4
+[2025-04-26 19:11:17] [info] Elevator A picked up 1 passenger(s) on floor 4
+[2025-04-26 19:11:17] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 19:11:27] [info] Elevator A leaving floor 4
+[2025-04-26 19:11:37] [info] Elevator A leaving floor 5
+[2025-04-26 19:11:47] [info] Elevator A leaving floor 6
+[2025-04-26 19:11:57] [info] Elevator A leaving floor 7
+[2025-04-26 19:12:07] [info] Elevator A leaving floor 8
+[2025-04-26 19:12:09] [info] Elevator A stopped on floor 9
+[2025-04-26 19:12:09] [info] Elevator A dropped off 1 passenger(s) on floor 9
+[2025-04-26 19:12:09] [info] Elevator A picked up 1 passenger(s) on floor 9
+[2025-04-26 19:12:09] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 19:12:19] [info] Elevator A leaving floor 9
+[2025-04-26 19:12:29] [info] Elevator A leaving floor 10
+[2025-04-26 19:12:39] [info] Elevator A leaving floor 11
+[2025-04-26 19:12:49] [info] Elevator A leaving floor 12
+[2025-04-26 19:12:51] [info] Elevator A stopped on floor 13
+[2025-04-26 19:12:51] [info] Elevator A picked up 1 passenger(s) on floor 13
+[2025-04-26 19:12:51] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 19:13:01] [info] Elevator A leaving floor 13
+[2025-04-26 19:13:11] [info] Elevator A leaving floor 14
+[2025-04-26 19:13:13] [info] Elevator A stopped on floor 15
+[2025-04-26 19:13:13] [info] Elevator A dropped off 1 passenger(s) on floor 15
+[2025-04-26 19:13:13] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 19:13:23] [info] Elevator A leaving floor 15
+[2025-04-26 19:13:33] [info] Elevator A leaving floor 16
+[2025-04-26 19:13:43] [info] Elevator A leaving floor 17
+[2025-04-26 19:13:53] [info] Elevator A leaving floor 18
+[2025-04-26 19:14:03] [info] Elevator A leaving floor 19
+[2025-04-26 19:14:13] [info] Elevator A leaving floor 20
+[2025-04-26 19:14:23] [info] Elevator A leaving floor 21
+[2025-04-26 19:14:25] [info] Elevator A stopped on floor 22
+[2025-04-26 19:14:25] [info] Elevator A picked up 1 passenger(s) on floor 22
+[2025-04-26 19:14:25] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 19:14:35] [info] Elevator A leaving floor 22
+[2025-04-26 19:14:45] [info] Elevator A leaving floor 23
+[2025-04-26 19:14:55] [info] Elevator A leaving floor 24
+[2025-04-26 19:15:05] [info] Elevator A leaving floor 25
+[2025-04-26 19:15:15] [info] Elevator A leaving floor 26
+[2025-04-26 19:15:25] [info] Elevator A leaving floor 27
+[2025-04-26 19:15:35] [info] Elevator A leaving floor 28
+[2025-04-26 19:15:45] [info] Elevator A leaving floor 29
+[2025-04-26 19:15:55] [info] Elevator A leaving floor 30
+[2025-04-26 19:16:05] [info] Elevator A leaving floor 31
+[2025-04-26 19:16:15] [info] Elevator A leaving floor 32
+[2025-04-26 19:16:25] [info] Elevator A leaving floor 33
+[2025-04-26 19:16:35] [info] Elevator A leaving floor 34
+[2025-04-26 19:16:45] [info] Elevator A leaving floor 35
+[2025-04-26 19:16:55] [info] Elevator A leaving floor 36
+[2025-04-26 19:17:05] [info] Elevator A leaving floor 37
+[2025-04-26 19:17:15] [info] Elevator A leaving floor 38
+[2025-04-26 19:17:26] [info] Elevator A leaving floor 39
+[2025-04-26 19:17:36] [info] Elevator A leaving floor 40
+[2025-04-26 19:17:46] [info] Elevator A leaving floor 41
+[2025-04-26 19:17:56] [info] Elevator A leaving floor 42
+[2025-04-26 19:18:06] [info] Elevator A leaving floor 43
+[2025-04-26 19:18:16] [info] Elevator A leaving floor 44
+[2025-04-26 19:18:26] [info] Elevator A leaving floor 45
+[2025-04-26 19:18:36] [info] Elevator A leaving floor 46
+[2025-04-26 19:18:38] [info] Elevator A stopped on floor 47
+[2025-04-26 19:18:38] [info] Elevator A dropped off 1 passenger(s) on floor 47
+[2025-04-26 19:18:38] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 19:18:48] [info] Elevator A leaving floor 47
+[2025-04-26 19:18:58] [info] Elevator A leaving floor 48
+[2025-04-26 19:19:08] [info] Elevator A leaving floor 49
+[2025-04-26 19:19:10] [info] Elevator A stopped on floor 50
+[2025-04-26 19:19:10] [info] Elevator A dropped off 1 passenger(s) on floor 50
+[2025-04-26 19:19:10] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 19:19:20] [info] Elevator A leaving floor 50
+[2025-04-26 19:19:30] [info] Elevator A leaving floor 51
+[2025-04-26 19:19:32] [info] Elevator A stopped on floor 52
+[2025-04-26 19:19:32] [info] Elevator A dropped off 1 passenger(s) on floor 52
+[2025-04-26 19:19:32] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 19:19:42] [info] Elevator A leaving floor 52
+[2025-04-26 19:19:52] [info] Elevator A leaving floor 53
+[2025-04-26 19:20:02] [info] Elevator A leaving floor 54
+[2025-04-26 19:20:12] [info] Elevator A leaving floor 55
+[2025-04-26 19:20:14] [info] Elevator A stopped on floor 56
+[2025-04-26 19:20:14] [info] Elevator A dropped off 1 passenger(s) on floor 56
+[2025-04-26 19:20:14] [info] Elevator A now has 4 passenger(s)
+[2025-04-26 19:20:24] [info] Elevator A leaving floor 56
+[2025-04-26 19:20:34] [info] Elevator A leaving floor 57
+[2025-04-26 19:20:44] [info] Elevator A leaving floor 58
+[2025-04-26 19:20:54] [info] Elevator A leaving floor 59
+[2025-04-26 19:21:04] [info] Elevator A leaving floor 60
+[2025-04-26 19:21:14] [info] Elevator A leaving floor 61
+[2025-04-26 19:21:24] [info] Elevator A leaving floor 62
+[2025-04-26 19:21:34] [info] Elevator A leaving floor 63
+[2025-04-26 19:21:44] [info] Elevator A leaving floor 64
+[2025-04-26 19:21:54] [info] Elevator A leaving floor 65
+[2025-04-26 19:21:56] [info] Elevator A stopped on floor 66
+[2025-04-26 19:21:56] [info] Elevator A dropped off 1 passenger(s) on floor 66
+[2025-04-26 19:21:56] [info] Elevator A now has 3 passenger(s)
+[2025-04-26 19:22:06] [info] Elevator A leaving floor 66
+[2025-04-26 19:22:16] [info] Elevator A leaving floor 67
+[2025-04-26 19:22:26] [info] Elevator A leaving floor 68
+[2025-04-26 19:22:36] [info] Elevator A leaving floor 69
+[2025-04-26 19:22:46] [info] Elevator A leaving floor 70
+[2025-04-26 19:22:48] [info] Elevator A stopped on floor 71
+[2025-04-26 19:22:48] [info] Elevator A picked up 1 passenger(s) on floor 71
+[2025-04-26 19:22:48] [info] Elevator A now has 4 passenger(s)
+[2025-04-26 19:22:58] [info] Elevator A leaving floor 71
+[2025-04-26 19:23:08] [info] Elevator A leaving floor 72
+[2025-04-26 19:23:18] [info] Elevator A leaving floor 73
+[2025-04-26 19:23:28] [info] Elevator A leaving floor 74
+[2025-04-26 19:23:30] [info] Elevator A stopped on floor 75
+[2025-04-26 19:23:30] [info] Elevator A dropped off 1 passenger(s) on floor 75
+[2025-04-26 19:23:30] [info] Elevator A now has 3 passenger(s)
+[2025-04-26 19:23:40] [info] Elevator A leaving floor 75
+[2025-04-26 19:23:42] [info] Elevator A stopped on floor 76
+[2025-04-26 19:23:42] [info] Elevator A picked up 1 passenger(s) on floor 76
+[2025-04-26 19:23:42] [info] Elevator A now has 4 passenger(s)
+[2025-04-26 19:23:52] [info] Elevator A leaving floor 76
+[2025-04-26 19:23:54] [info] Elevator A stopped on floor 77
+[2025-04-26 19:23:54] [info] Elevator A picked up 1 passenger(s) on floor 77
+[2025-04-26 19:23:54] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 19:24:04] [info] Elevator A leaving floor 77
+[2025-04-26 19:24:06] [info] Elevator A stopped on floor 78
+[2025-04-26 19:24:06] [info] Elevator A dropped off 1 passenger(s) on floor 78
+[2025-04-26 19:24:06] [info] Elevator A now has 4 passenger(s)
+[2025-04-26 19:24:16] [info] Elevator A leaving floor 78
+[2025-04-26 19:24:26] [info] Elevator A leaving floor 79
+[2025-04-26 19:24:28] [info] Elevator A stopped on floor 80
+[2025-04-26 19:24:28] [info] Elevator A picked up 1 passenger(s) on floor 80
+[2025-04-26 19:24:28] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 19:24:38] [info] Elevator A leaving floor 80
+[2025-04-26 19:24:48] [info] Elevator A leaving floor 81
+[2025-04-26 19:24:58] [info] Elevator A leaving floor 82
+[2025-04-26 19:25:08] [info] Elevator A leaving floor 83
+[2025-04-26 19:25:10] [info] Elevator A stopped on floor 84
+[2025-04-26 19:25:10] [info] Elevator A picked up 1 passenger(s) on floor 84
+[2025-04-26 19:25:10] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 19:25:20] [info] Elevator A leaving floor 84
+[2025-04-26 19:25:30] [info] Elevator A leaving floor 85
+[2025-04-26 19:25:40] [info] Elevator A leaving floor 86
+[2025-04-26 19:25:50] [info] Elevator A leaving floor 87
+[2025-04-26 19:26:00] [info] Elevator A leaving floor 88
+[2025-04-26 19:26:10] [info] Elevator A leaving floor 89
+[2025-04-26 19:26:12] [info] Elevator A stopped on floor 90
+[2025-04-26 19:26:12] [info] Elevator A picked up 1 passenger(s) on floor 90
+[2025-04-26 19:26:12] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 19:26:22] [info] Elevator A leaving floor 90
+[2025-04-26 19:26:24] [info] Elevator A stopped on floor 91
+[2025-04-26 19:26:24] [info] Elevator A picked up 1 passenger(s) on floor 91
+[2025-04-26 19:26:24] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 19:26:34] [info] Elevator A leaving floor 91
+[2025-04-26 19:26:44] [info] Elevator A leaving floor 92
+[2025-04-26 19:26:46] [info] Elevator A stopped on floor 93
+[2025-04-26 19:26:46] [info] Elevator A dropped off 1 passenger(s) on floor 93
+[2025-04-26 19:26:46] [info] Elevator A picked up 1 passenger(s) on floor 93
+[2025-04-26 19:26:46] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 19:26:56] [info] Elevator A leaving floor 93
+[2025-04-26 19:27:06] [info] Elevator A leaving floor 94
+[2025-04-26 19:27:16] [info] Elevator A leaving floor 93
+[2025-04-26 19:27:26] [info] Elevator A leaving floor 92
+[2025-04-26 19:27:36] [info] Elevator A leaving floor 91
+[2025-04-26 19:27:46] [info] Elevator A leaving floor 90
+[2025-04-26 19:27:56] [info] Elevator A leaving floor 89
+[2025-04-26 19:28:06] [info] Elevator A leaving floor 88
+[2025-04-26 19:28:16] [info] Elevator A leaving floor 87
+[2025-04-26 19:28:26] [info] Elevator A leaving floor 86
+[2025-04-26 19:28:36] [info] Elevator A leaving floor 85
+[2025-04-26 19:28:46] [info] Elevator A leaving floor 84
+[2025-04-26 19:28:56] [info] Elevator A leaving floor 83
+[2025-04-26 19:29:06] [info] Elevator A leaving floor 82
+[2025-04-26 19:29:16] [info] Elevator A leaving floor 81
+[2025-04-26 19:29:26] [info] Elevator A leaving floor 80
+[2025-04-26 19:29:36] [info] Elevator A leaving floor 79
+[2025-04-26 19:29:46] [info] Elevator A leaving floor 78
+[2025-04-26 19:29:56] [info] Elevator A leaving floor 77
+[2025-04-26 19:30:06] [info] Elevator A leaving floor 76
+[2025-04-26 19:30:16] [info] Elevator A leaving floor 75
+[2025-04-26 19:30:26] [info] Elevator A leaving floor 74
+[2025-04-26 19:30:28] [info] Elevator A stopped on floor 73
+[2025-04-26 19:30:28] [info] Elevator A dropped off 1 passenger(s) on floor 73
+[2025-04-26 19:30:28] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 19:30:38] [info] Elevator A leaving floor 73
+[2025-04-26 19:30:48] [info] Elevator A leaving floor 72
+[2025-04-26 19:30:51] [info] Elevator A stopped on floor 71
+[2025-04-26 19:30:51] [info] Elevator A dropped off 1 passenger(s) on floor 71
+[2025-04-26 19:30:51] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 19:31:01] [info] Elevator A leaving floor 71
+[2025-04-26 19:31:11] [info] Elevator A leaving floor 70
+[2025-04-26 19:31:21] [info] Elevator A leaving floor 69
+[2025-04-26 19:31:23] [info] Elevator A stopped on floor 68
+[2025-04-26 19:31:23] [info] Elevator A dropped off 1 passenger(s) on floor 68
+[2025-04-26 19:31:23] [info] Elevator A picked up 2 passenger(s) on floor 68
+[2025-04-26 19:31:23] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 19:31:33] [info] Elevator A leaving floor 68
+[2025-04-26 19:31:43] [info] Elevator A leaving floor 67
+[2025-04-26 19:31:53] [info] Elevator A leaving floor 66
+[2025-04-26 19:31:55] [info] Elevator A stopped on floor 65
+[2025-04-26 19:31:55] [info] Elevator A picked up 1 passenger(s) on floor 65
+[2025-04-26 19:31:55] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 19:32:05] [info] Elevator A leaving floor 65
+[2025-04-26 19:32:07] [info] Elevator A stopped on floor 64
+[2025-04-26 19:32:07] [info] Elevator A dropped off 2 passenger(s) on floor 64
+[2025-04-26 19:32:07] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 19:32:17] [info] Elevator A leaving floor 64
+[2025-04-26 19:32:27] [info] Elevator A leaving floor 63
+[2025-04-26 19:32:37] [info] Elevator A leaving floor 62
+[2025-04-26 19:32:47] [info] Elevator A leaving floor 61
+[2025-04-26 19:32:57] [info] Elevator A leaving floor 60
+[2025-04-26 19:33:07] [info] Elevator A leaving floor 59
+[2025-04-26 19:33:17] [info] Elevator A leaving floor 58
+[2025-04-26 19:33:27] [info] Elevator A leaving floor 57
+[2025-04-26 19:33:37] [info] Elevator A leaving floor 56
+[2025-04-26 19:33:47] [info] Elevator A leaving floor 55
+[2025-04-26 19:33:57] [info] Elevator A leaving floor 54
+[2025-04-26 19:34:07] [info] Elevator A leaving floor 53
+[2025-04-26 19:34:17] [info] Elevator A leaving floor 52
+[2025-04-26 19:34:27] [info] Elevator A leaving floor 51
+[2025-04-26 19:34:37] [info] Elevator A leaving floor 50
+[2025-04-26 19:34:47] [info] Elevator A leaving floor 49
+[2025-04-26 19:34:57] [info] Elevator A leaving floor 48
+[2025-04-26 19:35:07] [info] Elevator A leaving floor 47
+[2025-04-26 19:35:17] [info] Elevator A leaving floor 46
+[2025-04-26 19:35:27] [info] Elevator A leaving floor 45
+[2025-04-26 19:35:29] [info] Elevator A stopped on floor 44
+[2025-04-26 19:35:29] [info] Elevator A dropped off 1 passenger(s) on floor 44
+[2025-04-26 19:35:29] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 19:35:39] [info] Elevator A leaving floor 44
+[2025-04-26 19:35:49] [info] Elevator A leaving floor 43
+[2025-04-26 19:35:59] [info] Elevator A leaving floor 42
+[2025-04-26 19:36:09] [info] Elevator A leaving floor 41
+[2025-04-26 19:36:19] [info] Elevator A leaving floor 40
+[2025-04-26 19:36:29] [info] Elevator A leaving floor 39
+[2025-04-26 19:36:39] [info] Elevator A leaving floor 38
+[2025-04-26 19:36:49] [info] Elevator A leaving floor 37
+[2025-04-26 19:36:59] [info] Elevator A leaving floor 36
+[2025-04-26 19:37:09] [info] Elevator A leaving floor 35
+[2025-04-26 19:37:11] [info] Elevator A stopped on floor 34
+[2025-04-26 19:37:11] [info] Elevator A dropped off 1 passenger(s) on floor 34
+[2025-04-26 19:37:11] [info] Elevator A now has 4 passenger(s)
+[2025-04-26 19:37:21] [info] Elevator A leaving floor 34
+[2025-04-26 19:37:31] [info] Elevator A leaving floor 33
+[2025-04-26 19:37:41] [info] Elevator A leaving floor 32
+[2025-04-26 19:37:51] [info] Elevator A leaving floor 31
+[2025-04-26 19:38:01] [info] Elevator A leaving floor 30
+[2025-04-26 19:38:11] [info] Elevator A leaving floor 29
+[2025-04-26 19:38:21] [info] Elevator A leaving floor 28
+[2025-04-26 19:38:31] [info] Elevator A leaving floor 27
+[2025-04-26 19:38:41] [info] Elevator A leaving floor 26
+[2025-04-26 19:38:43] [info] Elevator A stopped on floor 25
+[2025-04-26 19:38:43] [info] Elevator A dropped off 1 passenger(s) on floor 25
+[2025-04-26 19:38:43] [info] Elevator A now has 3 passenger(s)
+[2025-04-26 19:38:53] [info] Elevator A leaving floor 25
+[2025-04-26 19:39:03] [info] Elevator A leaving floor 24
+[2025-04-26 19:39:13] [info] Elevator A leaving floor 23
+[2025-04-26 19:39:23] [info] Elevator A leaving floor 22
+[2025-04-26 19:39:33] [info] Elevator A leaving floor 21
+[2025-04-26 19:39:43] [info] Elevator A leaving floor 20
+[2025-04-26 19:39:53] [info] Elevator A leaving floor 19
+[2025-04-26 19:40:03] [info] Elevator A leaving floor 18
+[2025-04-26 19:40:13] [info] Elevator A leaving floor 17
+[2025-04-26 19:40:23] [info] Elevator A leaving floor 16
+[2025-04-26 19:40:33] [info] Elevator A leaving floor 15
+[2025-04-26 19:40:43] [info] Elevator A leaving floor 14
+[2025-04-26 19:40:45] [info] Elevator A stopped on floor 13
+[2025-04-26 19:40:45] [info] Elevator A dropped off 1 passenger(s) on floor 13
+[2025-04-26 19:40:45] [info] Elevator A now has 2 passenger(s)
+[2025-04-26 19:40:55] [info] Elevator A leaving floor 13
+[2025-04-26 19:41:05] [info] Elevator A leaving floor 12
+[2025-04-26 19:41:15] [info] Elevator A leaving floor 11
+[2025-04-26 19:41:25] [info] Elevator A leaving floor 10
+[2025-04-26 19:41:27] [info] Elevator A stopped on floor 9
+[2025-04-26 19:41:27] [info] Elevator A dropped off 1 passenger(s) on floor 9
+[2025-04-26 19:41:27] [info] Elevator A now has 1 passenger(s)
+[2025-04-26 19:41:37] [info] Elevator A leaving floor 9
+[2025-04-26 19:41:47] [info] Elevator A leaving floor 8
+[2025-04-26 19:41:57] [info] Elevator A leaving floor 9
+[2025-04-26 19:42:07] [info] Elevator A leaving floor 10
+[2025-04-26 19:42:17] [info] Elevator A leaving floor 11
+[2025-04-26 19:42:27] [info] Elevator A leaving floor 12
+[2025-04-26 19:42:37] [info] Elevator A leaving floor 13
+[2025-04-26 19:42:47] [info] Elevator A leaving floor 14
+[2025-04-26 19:42:57] [info] Elevator A leaving floor 15
+[2025-04-26 19:43:07] [info] Elevator A leaving floor 16
+[2025-04-26 19:43:17] [info] Elevator A leaving floor 17
+[2025-04-26 19:43:27] [info] Elevator A leaving floor 18
+[2025-04-26 19:43:37] [info] Elevator A leaving floor 19
+[2025-04-26 19:43:47] [info] Elevator A leaving floor 20
+[2025-04-26 19:43:57] [info] Elevator A leaving floor 21
+[2025-04-26 19:44:08] [info] Elevator A leaving floor 22
+[2025-04-26 19:44:18] [info] Elevator A leaving floor 23
+[2025-04-26 19:44:28] [info] Elevator A leaving floor 24
+[2025-04-26 19:44:38] [info] Elevator A leaving floor 25
+[2025-04-26 19:44:48] [info] Elevator A leaving floor 26
+[2025-04-26 19:44:58] [info] Elevator A leaving floor 27
+[2025-04-26 19:45:08] [info] Elevator A leaving floor 28
+[2025-04-26 19:45:18] [info] Elevator A leaving floor 29
+[2025-04-26 19:45:28] [info] Elevator A leaving floor 30
+[2025-04-26 19:45:38] [info] Elevator A leaving floor 31
+[2025-04-26 19:45:40] [info] Elevator A stopped on floor 32
+[2025-04-26 19:45:40] [info] Elevator A picked up 1 passenger(s) on floor 32
+[2025-04-26 19:45:40] [info] Elevator A now has 2 passenger(s)
+[2025-04-26 19:45:50] [info] Elevator A leaving floor 32
+[2025-04-26 19:46:00] [info] Elevator A leaving floor 33
+[2025-04-26 19:46:02] [info] Elevator A stopped on floor 34
+[2025-04-26 19:46:02] [info] Elevator A picked up 2 passenger(s) on floor 34
+[2025-04-26 19:46:02] [info] Elevator A now has 4 passenger(s)
+[2025-04-26 19:46:12] [info] Elevator A leaving floor 34
+[2025-04-26 19:46:22] [info] Elevator A leaving floor 35
+[2025-04-26 19:46:24] [info] Elevator A stopped on floor 36
+[2025-04-26 19:46:24] [info] Elevator A dropped off 1 passenger(s) on floor 36
+[2025-04-26 19:46:24] [info] Elevator A now has 3 passenger(s)
+[2025-04-26 19:46:34] [info] Elevator A leaving floor 36
+[2025-04-26 19:46:44] [info] Elevator A leaving floor 37
+[2025-04-26 19:46:54] [info] Elevator A leaving floor 38
+[2025-04-26 19:47:04] [info] Elevator A leaving floor 39
+[2025-04-26 19:47:14] [info] Elevator A leaving floor 40
+[2025-04-26 19:47:24] [info] Elevator A leaving floor 41
+[2025-04-26 19:47:34] [info] Elevator A leaving floor 42
+[2025-04-26 19:47:44] [info] Elevator A leaving floor 43
+[2025-04-26 19:47:54] [info] Elevator A leaving floor 44
+[2025-04-26 19:48:04] [info] Elevator A leaving floor 45
+[2025-04-26 19:48:14] [info] Elevator A leaving floor 46
+[2025-04-26 19:48:24] [info] Elevator A leaving floor 47
+[2025-04-26 19:48:34] [info] Elevator A leaving floor 48
+[2025-04-26 19:48:44] [info] Elevator A leaving floor 49
+[2025-04-26 19:48:54] [info] Elevator A leaving floor 50
+[2025-04-26 19:49:04] [info] Elevator A leaving floor 51
+[2025-04-26 19:49:14] [info] Elevator A leaving floor 52
+[2025-04-26 19:49:24] [info] Elevator A leaving floor 53
+[2025-04-26 19:49:34] [info] Elevator A leaving floor 54
+[2025-04-26 19:49:44] [info] Elevator A leaving floor 55
+[2025-04-26 19:49:54] [info] Elevator A leaving floor 56
+[2025-04-26 19:50:04] [info] Elevator A leaving floor 57
+[2025-04-26 19:50:14] [info] Elevator A leaving floor 58
+[2025-04-26 19:50:24] [info] Elevator A leaving floor 59
+[2025-04-26 19:50:34] [info] Elevator A leaving floor 60
+[2025-04-26 19:50:36] [info] Elevator A stopped on floor 61
+[2025-04-26 19:50:36] [info] Elevator A picked up 1 passenger(s) on floor 61
+[2025-04-26 19:50:36] [info] Elevator A now has 4 passenger(s)
+[2025-04-26 19:50:46] [info] Elevator A leaving floor 61
+[2025-04-26 19:50:56] [info] Elevator A leaving floor 62
+[2025-04-26 19:51:06] [info] Elevator A leaving floor 63
+[2025-04-26 19:51:16] [info] Elevator A leaving floor 64
+[2025-04-26 19:51:26] [info] Elevator A leaving floor 65
+[2025-04-26 19:51:36] [info] Elevator A leaving floor 66
+[2025-04-26 19:51:38] [info] Elevator A stopped on floor 67
+[2025-04-26 19:51:38] [info] Elevator A picked up 1 passenger(s) on floor 67
+[2025-04-26 19:51:38] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 19:51:48] [info] Elevator A leaving floor 67
+[2025-04-26 19:51:58] [info] Elevator A leaving floor 68
+[2025-04-26 19:52:08] [info] Elevator A leaving floor 69
+[2025-04-26 19:52:18] [info] Elevator A leaving floor 70
+[2025-04-26 19:52:28] [info] Elevator A leaving floor 71
+[2025-04-26 19:52:30] [info] Elevator A stopped on floor 72
+[2025-04-26 19:52:30] [info] Elevator A picked up 1 passenger(s) on floor 72
+[2025-04-26 19:52:30] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 19:52:40] [info] Elevator A leaving floor 72
+[2025-04-26 19:52:42] [info] Elevator A stopped on floor 73
+[2025-04-26 19:52:42] [info] Elevator A picked up 1 passenger(s) on floor 73
+[2025-04-26 19:52:42] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 19:52:52] [info] Elevator A leaving floor 73
+[2025-04-26 19:52:54] [info] Elevator A stopped on floor 74
+[2025-04-26 19:52:54] [info] Elevator A picked up 1 passenger(s) on floor 74
+[2025-04-26 19:52:54] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 19:53:04] [info] Elevator A leaving floor 74
+[2025-04-26 19:53:14] [info] Elevator A leaving floor 75
+[2025-04-26 19:53:24] [info] Elevator A leaving floor 76
+[2025-04-26 19:53:34] [info] Elevator A leaving floor 77
+[2025-04-26 19:53:44] [info] Elevator A leaving floor 78
+[2025-04-26 19:53:46] [info] Elevator A stopped on floor 79
+[2025-04-26 19:53:46] [info] Elevator A dropped off 1 passenger(s) on floor 79
+[2025-04-26 19:53:46] [info] Elevator A picked up 1 passenger(s) on floor 79
+[2025-04-26 19:53:46] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 19:53:56] [info] Elevator A leaving floor 79
+[2025-04-26 19:53:58] [info] Elevator A stopped on floor 80
+[2025-04-26 19:53:58] [info] Elevator A dropped off 1 passenger(s) on floor 80
+[2025-04-26 19:53:58] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 19:54:08] [info] Elevator A leaving floor 80
+[2025-04-26 19:54:18] [info] Elevator A leaving floor 81
+[2025-04-26 19:54:28] [info] Elevator A leaving floor 80
+[2025-04-26 19:54:38] [info] Elevator A leaving floor 79
+[2025-04-26 19:54:48] [info] Elevator A leaving floor 78
+[2025-04-26 19:54:58] [info] Elevator A leaving floor 77
+[2025-04-26 19:55:08] [info] Elevator A leaving floor 76
+[2025-04-26 19:55:18] [info] Elevator A leaving floor 75
+[2025-04-26 19:55:28] [info] Elevator A leaving floor 74
+[2025-04-26 19:55:38] [info] Elevator A leaving floor 73
+[2025-04-26 19:55:48] [info] Elevator A leaving floor 72
+[2025-04-26 19:55:58] [info] Elevator A leaving floor 71
+[2025-04-26 19:56:08] [info] Elevator A leaving floor 70
+[2025-04-26 19:56:18] [info] Elevator A leaving floor 69
+[2025-04-26 19:56:28] [info] Elevator A leaving floor 68
+[2025-04-26 19:56:30] [info] Elevator A stopped on floor 67
+[2025-04-26 19:56:30] [info] Elevator A picked up 1 passenger(s) on floor 67
+[2025-04-26 19:56:30] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 19:56:40] [info] Elevator A leaving floor 67
+[2025-04-26 19:56:50] [info] Elevator A leaving floor 66
+[2025-04-26 19:57:00] [info] Elevator A leaving floor 65
+[2025-04-26 19:57:10] [info] Elevator A leaving floor 64
+[2025-04-26 19:57:20] [info] Elevator A leaving floor 63
+[2025-04-26 19:57:30] [info] Elevator A leaving floor 62
+[2025-04-26 19:57:40] [info] Elevator A leaving floor 61
+[2025-04-26 19:57:50] [info] Elevator A leaving floor 60
+[2025-04-26 19:58:00] [info] Elevator A leaving floor 59
+[2025-04-26 19:58:10] [info] Elevator A leaving floor 58
+[2025-04-26 19:58:20] [info] Elevator A leaving floor 57
+[2025-04-26 19:58:30] [info] Elevator A leaving floor 56
+[2025-04-26 19:58:40] [info] Elevator A leaving floor 55
+[2025-04-26 19:58:42] [info] Elevator A stopped on floor 54
+[2025-04-26 19:58:42] [info] Elevator A dropped off 1 passenger(s) on floor 54
+[2025-04-26 19:58:42] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 19:58:52] [info] Elevator A leaving floor 54
+[2025-04-26 19:59:02] [info] Elevator A leaving floor 53
+[2025-04-26 19:59:12] [info] Elevator A leaving floor 52
+[2025-04-26 19:59:22] [info] Elevator A leaving floor 51
+[2025-04-26 19:59:32] [info] Elevator A leaving floor 50
+[2025-04-26 19:59:43] [info] Elevator A leaving floor 49
+[2025-04-26 19:59:53] [info] Elevator A leaving floor 48
+[2025-04-26 20:00:03] [info] Elevator A leaving floor 47
+[2025-04-26 20:00:13] [info] Elevator A leaving floor 46
+[2025-04-26 20:00:23] [info] Elevator A leaving floor 45
+[2025-04-26 20:00:25] [info] Elevator A stopped on floor 44
+[2025-04-26 20:00:25] [info] Elevator A dropped off 1 passenger(s) on floor 44
+[2025-04-26 20:00:25] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 20:00:35] [info] Elevator A leaving floor 44
+[2025-04-26 20:00:45] [info] Elevator A leaving floor 43
+[2025-04-26 20:00:55] [info] Elevator A leaving floor 42
+[2025-04-26 20:01:05] [info] Elevator A leaving floor 41
+[2025-04-26 20:01:15] [info] Elevator A leaving floor 40
+[2025-04-26 20:01:25] [info] Elevator A leaving floor 39
+[2025-04-26 20:01:35] [info] Elevator A leaving floor 38
+[2025-04-26 20:01:45] [info] Elevator A leaving floor 37
+[2025-04-26 20:01:55] [info] Elevator A leaving floor 36
+[2025-04-26 20:02:05] [info] Elevator A leaving floor 35
+[2025-04-26 20:02:15] [info] Elevator A leaving floor 34
+[2025-04-26 20:02:17] [info] Elevator A stopped on floor 33
+[2025-04-26 20:02:17] [info] Elevator A picked up 1 passenger(s) on floor 33
+[2025-04-26 20:02:17] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 20:02:27] [info] Elevator A leaving floor 33
+[2025-04-26 20:02:37] [info] Elevator A leaving floor 32
+[2025-04-26 20:02:47] [info] Elevator A leaving floor 31
+[2025-04-26 20:02:57] [info] Elevator A leaving floor 30
+[2025-04-26 20:03:07] [info] Elevator A leaving floor 29
+[2025-04-26 20:03:17] [info] Elevator A leaving floor 28
+[2025-04-26 20:03:27] [info] Elevator A leaving floor 27
+[2025-04-26 20:03:37] [info] Elevator A leaving floor 26
+[2025-04-26 20:03:47] [info] Elevator A leaving floor 25
+[2025-04-26 20:03:57] [info] Elevator A leaving floor 24
+[2025-04-26 20:03:59] [info] Elevator A stopped on floor 23
+[2025-04-26 20:03:59] [info] Elevator A dropped off 1 passenger(s) on floor 23
+[2025-04-26 20:03:59] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 20:04:09] [info] Elevator A leaving floor 23
+[2025-04-26 20:04:11] [info] Elevator A stopped on floor 22
+[2025-04-26 20:04:11] [info] Elevator A picked up 1 passenger(s) on floor 22
+[2025-04-26 20:04:11] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 20:04:21] [info] Elevator A leaving floor 22
+[2025-04-26 20:04:23] [info] Elevator A stopped on floor 21
+[2025-04-26 20:04:23] [info] Elevator A dropped off 1 passenger(s) on floor 21
+[2025-04-26 20:04:23] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 20:04:33] [info] Elevator A leaving floor 21
+[2025-04-26 20:04:35] [info] Elevator A stopped on floor 20
+[2025-04-26 20:04:35] [info] Elevator A picked up 1 passenger(s) on floor 20
+[2025-04-26 20:04:35] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 20:04:45] [info] Elevator A leaving floor 20
+[2025-04-26 20:04:55] [info] Elevator A leaving floor 19
+[2025-04-26 20:05:05] [info] Elevator A leaving floor 18
+[2025-04-26 20:05:15] [info] Elevator A leaving floor 17
+[2025-04-26 20:05:25] [info] Elevator A leaving floor 16
+[2025-04-26 20:05:35] [info] Elevator A leaving floor 15
+[2025-04-26 20:05:45] [info] Elevator A leaving floor 14
+[2025-04-26 20:05:55] [info] Elevator A leaving floor 13
+[2025-04-26 20:06:05] [info] Elevator A leaving floor 12
+[2025-04-26 20:06:15] [info] Elevator A leaving floor 11
+[2025-04-26 20:06:17] [info] Elevator A stopped on floor 10
+[2025-04-26 20:06:17] [info] Elevator A dropped off 1 passenger(s) on floor 10
+[2025-04-26 20:06:17] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 20:06:27] [info] Elevator A leaving floor 10
+[2025-04-26 20:06:37] [info] Elevator A leaving floor 9
+[2025-04-26 20:06:39] [info] Elevator A stopped on floor 8
+[2025-04-26 20:06:39] [info] Elevator A picked up 1 passenger(s) on floor 8
+[2025-04-26 20:06:39] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 20:06:49] [info] Elevator A leaving floor 8
+[2025-04-26 20:06:51] [info] Elevator A stopped on floor 7
+[2025-04-26 20:06:51] [info] Elevator A picked up 1 passenger(s) on floor 7
+[2025-04-26 20:06:51] [info] Elevator A now has 8 passenger(s)
+[2025-04-26 20:07:01] [info] Elevator A leaving floor 7
+[2025-04-26 20:07:11] [info] Elevator A leaving floor 6
+[2025-04-26 20:07:21] [info] Elevator A leaving floor 5
+[2025-04-26 20:07:31] [info] Elevator A leaving floor 4
+[2025-04-26 20:07:33] [info] Elevator A stopped on floor 3
+[2025-04-26 20:07:33] [info] Elevator A dropped off 1 passenger(s) on floor 3
+[2025-04-26 20:07:33] [info] Elevator A now has 7 passenger(s)
+[2025-04-26 20:07:43] [info] Elevator A leaving floor 3
+[2025-04-26 20:07:53] [info] Elevator A leaving floor 2
+[2025-04-26 20:08:03] [info] Elevator A leaving floor 3
+[2025-04-26 20:08:13] [info] Elevator A leaving floor 4
+[2025-04-26 20:08:23] [info] Elevator A leaving floor 5
+[2025-04-26 20:08:33] [info] Elevator A leaving floor 6
+[2025-04-26 20:08:43] [info] Elevator A leaving floor 7
+[2025-04-26 20:08:53] [info] Elevator A leaving floor 8
+[2025-04-26 20:09:03] [info] Elevator A leaving floor 9
+[2025-04-26 20:09:13] [info] Elevator A leaving floor 10
+[2025-04-26 20:09:23] [info] Elevator A leaving floor 11
+[2025-04-26 20:09:33] [info] Elevator A leaving floor 12
+[2025-04-26 20:09:43] [info] Elevator A leaving floor 13
+[2025-04-26 20:09:53] [info] Elevator A leaving floor 14
+[2025-04-26 20:10:03] [info] Elevator A leaving floor 15
+[2025-04-26 20:10:13] [info] Elevator A leaving floor 16
+[2025-04-26 20:10:23] [info] Elevator A leaving floor 17
+[2025-04-26 20:10:33] [info] Elevator A leaving floor 18
+[2025-04-26 20:10:43] [info] Elevator A leaving floor 19
+[2025-04-26 20:10:53] [info] Elevator A leaving floor 20
+[2025-04-26 20:11:03] [info] Elevator A leaving floor 21
+[2025-04-26 20:11:13] [info] Elevator A leaving floor 22
+[2025-04-26 20:11:23] [info] Elevator A leaving floor 23
+[2025-04-26 20:11:33] [info] Elevator A leaving floor 24
+[2025-04-26 20:11:43] [info] Elevator A leaving floor 25
+[2025-04-26 20:11:53] [info] Elevator A leaving floor 26
+[2025-04-26 20:12:03] [info] Elevator A leaving floor 27
+[2025-04-26 20:12:13] [info] Elevator A leaving floor 28
+[2025-04-26 20:12:23] [info] Elevator A leaving floor 29
+[2025-04-26 20:12:33] [info] Elevator A leaving floor 30
+[2025-04-26 20:12:43] [info] Elevator A leaving floor 31
+[2025-04-26 20:12:53] [info] Elevator A leaving floor 32
+[2025-04-26 20:13:03] [info] Elevator A leaving floor 33
+[2025-04-26 20:13:13] [info] Elevator A leaving floor 34
+[2025-04-26 20:13:23] [info] Elevator A leaving floor 35
+[2025-04-26 20:13:25] [info] Elevator A stopped on floor 36
+[2025-04-26 20:13:25] [info] Elevator A dropped off 1 passenger(s) on floor 36
+[2025-04-26 20:13:25] [info] Elevator A now has 6 passenger(s)
+[2025-04-26 20:13:35] [info] Elevator A leaving floor 36
+[2025-04-26 20:13:45] [info] Elevator A leaving floor 37
+[2025-04-26 20:13:55] [info] Elevator A leaving floor 38
+[2025-04-26 20:14:05] [info] Elevator A leaving floor 39
+[2025-04-26 20:14:15] [info] Elevator A leaving floor 40
+[2025-04-26 20:14:25] [info] Elevator A leaving floor 41
+[2025-04-26 20:14:35] [info] Elevator A leaving floor 42
+[2025-04-26 20:14:37] [info] Elevator A stopped on floor 43
+[2025-04-26 20:14:37] [info] Elevator A dropped off 1 passenger(s) on floor 43
+[2025-04-26 20:14:37] [info] Elevator A now has 5 passenger(s)
+[2025-04-26 20:14:47] [info] Elevator A leaving floor 43
+[2025-04-26 20:14:57] [info] Elevator A leaving floor 44
+[2025-04-26 20:15:07] [info] Elevator A leaving floor 45
+[2025-04-26 20:15:17] [info] Elevator A leaving floor 46
+[2025-04-26 20:15:27] [info] Elevator A leaving floor 47
+[2025-04-26 20:15:37] [info] Elevator A leaving floor 48
+[2025-04-26 20:15:47] [info] Elevator A leaving floor 49
+[2025-04-26 20:15:57] [info] Elevator A leaving floor 50
+[2025-04-26 20:16:07] [info] Elevator A leaving floor 51
+[2025-04-26 20:16:17] [info] Elevator A leaving floor 52
+[2025-04-26 20:16:27] [info] Elevator A leaving floor 53
+[2025-04-26 20:16:37] [info] Elevator A leaving floor 54
+[2025-04-26 20:16:47] [info] Elevator A leaving floor 55
+[2025-04-26 20:16:57] [info] Elevator A leaving floor 56
+[2025-04-26 20:17:07] [info] Elevator A leaving floor 57
+[2025-04-26 20:17:17] [info] Elevator A leaving floor 58
+[2025-04-26 20:17:27] [info] Elevator A leaving floor 59
+[2025-04-26 20:17:37] [info] Elevator A leaving floor 60
+[2025-04-26 20:17:47] [info] Elevator A leaving floor 61
+[2025-04-26 20:17:50] [info] Elevator A stopped on floor 62
+[2025-04-26 20:17:50] [info] Elevator A dropped off 2 passenger(s) on floor 62
+[2025-04-26 20:17:50] [info] Elevator A now has 3 passenger(s)
+[2025-04-26 20:18:00] [info] Elevator A leaving floor 62
+[2025-04-26 20:18:10] [info] Elevator A leaving floor 63
+[2025-04-26 20:18:20] [info] Elevator A leaving floor 64
+[2025-04-26 20:18:30] [info] Elevator A leaving floor 65
+[2025-04-26 20:18:40] [info] Elevator A leaving floor 66
+[2025-04-26 20:18:50] [info] Elevator A leaving floor 67
+[2025-04-26 20:19:00] [info] Elevator A leaving floor 68
+[2025-04-26 20:19:10] [info] Elevator A leaving floor 69
+[2025-04-26 20:19:20] [info] Elevator A leaving floor 70
+[2025-04-26 20:19:30] [info] Elevator A leaving floor 71
+[2025-04-26 20:19:40] [info] Elevator A leaving floor 72
+[2025-04-26 20:19:50] [info] Elevator A leaving floor 73
+[2025-04-26 20:20:00] [info] Elevator A leaving floor 74
+[2025-04-26 20:20:10] [info] Elevator A leaving floor 75
+[2025-04-26 20:20:20] [info] Elevator A leaving floor 76
+[2025-04-26 20:20:30] [info] Elevator A leaving floor 77
+[2025-04-26 20:20:40] [info] Elevator A leaving floor 78
+[2025-04-26 20:20:42] [info] Elevator A stopped on floor 79
+[2025-04-26 20:20:42] [info] Elevator A dropped off 1 passenger(s) on floor 79
+[2025-04-26 20:20:42] [info] Elevator A now has 2 passenger(s)
+[2025-04-26 20:20:52] [info] Elevator A leaving floor 79
+[2025-04-26 20:21:02] [info] Elevator A leaving floor 80
+[2025-04-26 20:21:12] [info] Elevator A leaving floor 81
+[2025-04-26 20:21:22] [info] Elevator A leaving floor 82
+[2025-04-26 20:21:32] [info] Elevator A leaving floor 83
+[2025-04-26 20:21:42] [info] Elevator A leaving floor 84
+[2025-04-26 20:21:52] [info] Elevator A leaving floor 85
+[2025-04-26 20:21:54] [info] Elevator A stopped on floor 86
+[2025-04-26 20:21:54] [info] Elevator A dropped off 1 passenger(s) on floor 86
+[2025-04-26 20:21:54] [info] Elevator A now has 1 passenger(s)
+[2025-04-26 20:22:04] [info] Elevator A leaving floor 86
+[2025-04-26 20:22:14] [info] Elevator A leaving floor 87
+[2025-04-26 20:22:24] [info] Elevator A leaving floor 88
+[2025-04-26 20:22:34] [info] Elevator A leaving floor 89
+[2025-04-26 20:22:44] [info] Elevator A leaving floor 90
+[2025-04-26 20:22:54] [info] Elevator A leaving floor 91
+[2025-04-26 20:23:04] [info] Elevator A leaving floor 92
+[2025-04-26 20:23:14] [info] Elevator A leaving floor 93
+[2025-04-26 20:23:24] [info] Elevator A leaving floor 94
+[2025-04-26 20:23:34] [info] Elevator A leaving floor 95
+[2025-04-26 20:23:36] [info] Elevator A stopped on floor 96
+[2025-04-26 20:23:36] [info] Elevator A dropped off 1 passenger(s) on floor 96
+[2025-04-26 20:23:36] [info] Elevator A picked up 1 passenger(s) on floor 96
+[2025-04-26 20:23:36] [info] Elevator A now has 1 passenger(s)
+[2025-04-26 20:23:46] [info] Elevator A leaving floor 96
+[2025-04-26 20:23:48] [info] Elevator A stopped on floor 97
+[2025-04-26 20:23:48] [info] Elevator A picked up 1 passenger(s) on floor 97
+[2025-04-26 20:23:48] [info] Elevator A now has 2 passenger(s)
+[2025-04-26 20:23:58] [info] Elevator A leaving floor 97
+[2025-04-26 20:24:08] [info] Elevator A leaving floor 96
+[2025-04-26 20:24:18] [info] Elevator A leaving floor 95
+[2025-04-26 20:24:28] [info] Elevator A leaving floor 94
+[2025-04-26 20:24:38] [info] Elevator A leaving floor 93
+[2025-04-26 20:24:48] [info] Elevator A leaving floor 92
+[2025-04-26 20:24:58] [info] Elevator A leaving floor 91
+[2025-04-26 20:25:08] [info] Elevator A leaving floor 90
+[2025-04-26 20:25:18] [info] Elevator A leaving floor 89
+[2025-04-26 20:25:28] [info] Elevator A leaving floor 88
+[2025-04-26 20:25:38] [info] Elevator A leaving floor 87
+[2025-04-26 20:25:48] [info] Elevator A leaving floor 86
+[2025-04-26 20:25:58] [info] Elevator A leaving floor 85
+[2025-04-26 20:26:08] [info] Elevator A leaving floor 84
+[2025-04-26 20:26:18] [info] Elevator A leaving floor 83
+[2025-04-26 20:26:28] [info] Elevator A leaving floor 82
+[2025-04-26 20:26:38] [info] Elevator A leaving floor 81
+[2025-04-26 20:26:48] [info] Elevator A leaving floor 80
+[2025-04-26 20:26:58] [info] Elevator A leaving floor 79
+[2025-04-26 20:27:08] [info] Elevator A leaving floor 78
+[2025-04-26 20:27:18] [info] Elevator A leaving floor 77
+[2025-04-26 20:27:28] [info] Elevator A leaving floor 76
+[2025-04-26 20:27:38] [info] Elevator A leaving floor 75
+[2025-04-26 20:27:48] [info] Elevator A leaving floor 74
+[2025-04-26 20:27:58] [info] Elevator A leaving floor 73
+[2025-04-26 20:28:08] [info] Elevator A leaving floor 72
+[2025-04-26 20:28:18] [info] Elevator A leaving floor 71
+[2025-04-26 20:28:28] [info] Elevator A leaving floor 70
+[2025-04-26 20:28:38] [info] Elevator A leaving floor 69
+[2025-04-26 20:28:48] [info] Elevator A leaving floor 68
+[2025-04-26 20:28:58] [info] Elevator A leaving floor 67
+[2025-04-26 20:29:08] [info] Elevator A leaving floor 66
+[2025-04-26 20:29:18] [info] Elevator A leaving floor 65
+[2025-04-26 20:29:28] [info] Elevator A leaving floor 64
+[2025-04-26 20:29:38] [info] Elevator A leaving floor 63
+[2025-04-26 20:29:48] [info] Elevator A leaving floor 62
+[2025-04-26 20:29:58] [info] Elevator A leaving floor 61
+[2025-04-26 20:30:08] [info] Elevator A leaving floor 60
+[2025-04-26 20:30:18] [info] Elevator A leaving floor 59
+[2025-04-26 20:30:28] [info] Elevator A leaving floor 58
+[2025-04-26 20:30:38] [info] Elevator A leaving floor 57
+[2025-04-26 20:30:48] [info] Elevator A leaving floor 56
+[2025-04-26 20:30:58] [info] Elevator A leaving floor 55
+[2025-04-26 20:31:08] [info] Elevator A leaving floor 54
+[2025-04-26 20:31:18] [info] Elevator A leaving floor 53
+[2025-04-26 20:31:28] [info] Elevator A leaving floor 52
+[2025-04-26 20:31:38] [info] Elevator A leaving floor 51
+[2025-04-26 20:31:48] [info] Elevator A leaving floor 50
+[2025-04-26 20:31:58] [info] Elevator A leaving floor 49
+[2025-04-26 20:32:08] [info] Elevator A leaving floor 48
+[2025-04-26 20:32:18] [info] Elevator A leaving floor 47
+[2025-04-26 20:32:20] [info] Elevator A stopped on floor 46
+[2025-04-26 20:32:20] [info] Elevator A dropped off 1 passenger(s) on floor 46
+[2025-04-26 20:32:20] [info] Elevator A now has 1 passenger(s)
+[2025-04-26 20:32:30] [info] Elevator A leaving floor 46
+[2025-04-26 20:32:40] [info] Elevator A leaving floor 45
+[2025-04-26 20:32:50] [info] Elevator A leaving floor 44
+[2025-04-26 20:33:00] [info] Elevator A leaving floor 43
+[2025-04-26 20:33:10] [info] Elevator A leaving floor 42
+[2025-04-26 20:33:20] [info] Elevator A leaving floor 41
+[2025-04-26 20:33:30] [info] Elevator A leaving floor 40
+[2025-04-26 20:33:40] [info] Elevator A leaving floor 39
+[2025-04-26 20:33:50] [info] Elevator A leaving floor 38
+[2025-04-26 20:34:00] [info] Elevator A leaving floor 37
+[2025-04-26 20:34:10] [info] Elevator A leaving floor 36
+[2025-04-26 20:34:20] [info] Elevator A leaving floor 35
+[2025-04-26 20:34:30] [info] Elevator A leaving floor 34
+[2025-04-26 20:34:40] [info] Elevator A leaving floor 33
+[2025-04-26 20:34:50] [info] Elevator A leaving floor 32
+[2025-04-26 20:35:00] [info] Elevator A leaving floor 31
+[2025-04-26 20:35:10] [info] Elevator A leaving floor 30
+[2025-04-26 20:35:20] [info] Elevator A leaving floor 29
+[2025-04-26 20:35:30] [info] Elevator A leaving floor 28
+[2025-04-26 20:35:40] [info] Elevator A leaving floor 27
+[2025-04-26 20:35:50] [info] Elevator A leaving floor 26
+[2025-04-26 20:36:00] [info] Elevator A leaving floor 25
+[2025-04-26 20:36:10] [info] Elevator A leaving floor 24
+[2025-04-26 20:36:20] [info] Elevator A leaving floor 23
+[2025-04-26 20:36:30] [info] Elevator A leaving floor 22
+[2025-04-26 20:36:40] [info] Elevator A leaving floor 21
+[2025-04-26 20:36:42] [info] Elevator A stopped on floor 20
+[2025-04-26 20:36:42] [info] Elevator A dropped off 1 passenger(s) on floor 20
+[2025-04-26 20:36:42] [info] Elevator A now has 0 passenger(s)
+[2025-04-26 20:36:52] [info] Elevator A leaving floor 20
+[2025-04-26 20:40:01] [info] Elevator Simulation ended.

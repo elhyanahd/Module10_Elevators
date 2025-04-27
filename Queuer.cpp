@@ -36,7 +36,7 @@ void PassengerQueuer::beginQueue()
 
         //loop through the csv file and store passengers startTime, desired floor, and
         //current floor location. Then queue the passengers up to on their desired floor
-        while(getline(input, line) && passengerCount < 15)
+        while(getline(input, line))
         {   
             //Seperate column by delimeter and store information of new Passanger
             //create new Passanger object with the information
