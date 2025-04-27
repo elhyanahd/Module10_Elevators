@@ -269,19 +269,6 @@ int Elevator::getDropOffRequests()
 }
 
 /**
- * @brief Return whether the Elevator object's
- *        finished picking up and dropping off passengers
- * 
- * @return true 
- * @return false 
- */
-bool Elevator::didLoopEnd()
-{
-    lock_guard<mutex> lock(simulationMutex);
-    return simulationEnd;
-}
-
-/**
  * @brief When called, sets the elvator direction to the 
  *        based on the given requested floor 
  * 

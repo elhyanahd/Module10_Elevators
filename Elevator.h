@@ -28,7 +28,6 @@ class Elevator
             elevatorStatus(Movement::UP), elevatorDirection(Movement::UP), currentFloor(1), averageTime(averageTime),
             elevatorID(ID), logger(logger), simulationEnd(false), passengersInElevator({}), averageTimeMutex(averageTimeMutex) {}
         void simulationLoop(std::shared_ptr<PassengerQueuer> queuer);
-        bool didLoopEnd();
         
     protected:
         void pickUpPassengers(std::shared_ptr<PassengerQueuer> queuer, int requestedFloor);
@@ -41,7 +40,6 @@ class Elevator
     private:
         int currentFloor;
         bool simulationEnd;
-        std::chrono::time_point<std::chrono::high_resolution_clock> startTime;
         std::string elevatorID;
         Movement elevatorDirection;
         Movement elevatorStatus;
